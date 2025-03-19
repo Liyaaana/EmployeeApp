@@ -1,0 +1,50 @@
+﻿@page
+@model EmployeeApp.Pages.EmployeeManagement.EditModel
+@{
+    ViewData["Title"] = "Edit Employee";
+}
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">Edit Employee</h2>
+
+        <form method="post">
+            <input type="hidden" asp-for="Employee.Id" />
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" asp-for="Employee.Name" class="form-control" required />
+                <span asp-validation-for="Employee.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" asp-for="Employee.Email" class="form-control" required />
+                <span asp-validation-for="Employee.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" asp-for="Employee.PhoneNumber" class="form-control" required />
+                <span asp-validation-for="Employee.PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Department</label>
+                <input type="text" asp-for="Employee.Department" class="form-control" required />
+                <span asp-validation-for="Employee.Department" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Salary</label>
+                <input type="number" asp-for="Employee.Salary" class="form-control" required />
+                <span asp-validation-for="Employee.Salary" class="text-danger"></span>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

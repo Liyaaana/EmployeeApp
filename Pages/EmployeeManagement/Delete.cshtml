@@ -1,0 +1,21 @@
+﻿@page
+@model EmployeeApp.Pages.EmployeeManagement.DeleteModel
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center text-danger">Delete Employee</h2>
+        <p class="text-center">Are you sure you want to delete <strong>@Model.Employee.Name</strong>?</p>
+
+        <form method="post">
+            <input type="hidden" asp-for="Employee.Id" />
+
+            <div class="btn-container">
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

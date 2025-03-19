@@ -1,0 +1,48 @@
+﻿@page
+@model EmployeeApp.Pages.EmployeeManagement.CreateModel
+@{
+    ViewData["Title"] = "Add New Employee";
+}
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">Add Employee</h2>
+
+        <form method="post">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" asp-for="Employee.Name" class="form-control" required />
+                <span asp-validation-for="Employee.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" asp-for="Employee.Email" class="form-control" required />
+                <span asp-validation-for="Employee.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" asp-for="Employee.PhoneNumber" class="form-control" required />
+                <span asp-validation-for="Employee.PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Department</label>
+                <input type="text" asp-for="Employee.Department" class="form-control" required />
+                <span asp-validation-for="Employee.Department" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Salary</label>
+                <input type="number" asp-for="Employee.Salary" class="form-control" required />
+                <span asp-validation-for="Employee.Salary" class="text-danger"></span>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
