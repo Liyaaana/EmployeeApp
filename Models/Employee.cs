@@ -15,5 +15,6 @@ namespace EmployeeApp.Models
 
         [Required]
         public decimal Salary { get; set; }
+
     }
 }

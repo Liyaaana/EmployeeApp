@@ -3,140 +3,187 @@
   "WorkspaceRootPath": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\_leavetableadminpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\_leavetableadminpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\leaveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\leaveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\_leavetablepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\_leavetablepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\_addleavepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\_addleavepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\_leavedetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\_leavedetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_loginpartial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_loginpartial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\migrations\\20250318110448_addfullnametousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:migrations\\20250318110448_addfullnametousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapplog20250318.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapplog20250318.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250318.log||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250318.log||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\leaves\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250415.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250415.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\calendarevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\calendarevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\migrations\\20250415124251_addemployeeidtoapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:migrations\\20250415124251_addemployeeidtoapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250413.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250413.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapplog20250318.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapplog20250318.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250409.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250409.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250408_001.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250408_001.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250408.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250408.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250328.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250328.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250321.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250321.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250320.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250320.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250318.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250318.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250406.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250406.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\migrations\\20250318083353_fixemployeesalaryprecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:migrations\\20250318083353_fixemployeesalaryprecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250319.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250319.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\logs\\employeeapp20250318_001.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250318_001.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -149,14 +196,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\employeeapp.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:employeeapp.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\employeeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:employeeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\migrations\\20250318093710_initialcreatefix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:migrations\\20250318093710_initialcreatefix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -166,197 +205,212 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-17T16:06:15.371Z",
+              "Title": "_LeaveTableAdminPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveTableAdminPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\_LeaveTableAdminPartial.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveTableAdminPartial.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\_LeaveTableAdminPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T15:14:06.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAADoAAAALAAAAAAAAAA==",
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\Admin.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\Admin.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T14:26:30.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T15:14:10.873Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Create.cshtml",
-              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Create.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Create.cshtml",
-              "RelativeToolTip": "Pages\\EmployeeManagement\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T14:14:19.695Z"
+              "Title": "Admin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\Admin.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\Admin.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\Admin.cshtml.cs",
+              "RelativeToolTip": "Pages\\Leaves\\Admin.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:27:01.675Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Index.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Index.cshtml",
-              "RelativeToolTip": "Pages\\EmployeeManagement\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T14:14:32.406Z"
+              "Title": "LeaveViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\LeaveViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LeaveViewModel.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\LeaveViewModel.cs",
+              "RelativeToolTip": "Models\\LeaveViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:27:37.538Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "_LeaveTablePartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveTablePartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\_LeaveTablePartial.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveTablePartial.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\_LeaveTablePartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T15:14:07.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_AddLeavePartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_AddLeavePartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\_AddLeavePartial.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_AddLeavePartial.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\_AddLeavePartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T15:14:03.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_LeaveDetailsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveDetailsPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\_LeaveDetailsPartial.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveDetailsPartial.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\_LeaveDetailsPartial.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T15:14:05.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Leave.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\Leave.cs",
+              "RelativeDocumentMoniker": "Models\\Leave.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\Leave.cs",
+              "RelativeToolTip": "Models\\Leave.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T13:06:03.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T13:05:55.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T15:14:31.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\User.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\User.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\User.cshtml.cs",
+              "RelativeToolTip": "Pages\\Leaves\\User.cshtml.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAuwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T15:22:27.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\User.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\User.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\User.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\User.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T15:14:12.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Leaves\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Pages\\Leaves\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T15:14:09.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T13:05:45.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAALAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-19T05:15:10.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml",
-              "RelativeToolTip": "Pages\\Account\\Logout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T15:37:12.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T14:12:50.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T15:14:18.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T16:18:07.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T16:10:02.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_LoginPartial.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_LoginPartial.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_LoginPartial.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_LoginPartial.cshtml.cs",
-              "RelativeToolTip": "Pages\\Shared\\_LoginPartial.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T07:55:44.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-17T16:11:49.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\EmployeeManagement\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:22:23.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T14:52:45.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:25:09.119Z"
+              "WhenOpened": "2025-04-18T11:29:38.349Z"
             },
             {
               "$type": "Document",
@@ -366,205 +420,277 @@
               "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T05:14:28.545Z"
+              "WhenOpened": "2025-04-18T11:29:39.828Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:27:04.415Z"
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T13:46:41.872Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml.cs",
-              "RelativeToolTip": "Pages\\Account\\Logout.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:37:14.239Z"
+              "Title": "EmployeeApp20250415.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250415.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250415.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250415.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250415.log",
+              "ViewState": "AgIAAOIoAAAAAAAAAAAAAAMpAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-15T14:17:03.093Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAADwvzUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:19:13.467Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T09:47:29.866Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
+              "Title": "CalendarEvent.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\CalendarEvent.cs",
+              "RelativeDocumentMoniker": "Models\\CalendarEvent.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\CalendarEvent.cs",
+              "RelativeToolTip": "Models\\CalendarEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:04:49.527Z"
+              "WhenOpened": "2025-04-15T13:21:55.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EmployeeApp20250318.log",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250318.log",
-              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250318.log",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250318.log",
-              "RelativeToolTip": "Logs\\EmployeeApp20250318.log",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-18T11:08:07.26Z"
+              "DocumentIndex": 20,
+              "Title": "20250415124251_AddEmployeeIdToApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250415124251_AddEmployeeIdToApplicationUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250415124251_AddEmployeeIdToApplicationUser.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250415124251_AddEmployeeIdToApplicationUser.cs",
+              "RelativeToolTip": "Migrations\\20250415124251_AddEmployeeIdToApplicationUser.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T12:44:16.034Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "EmployeeApp20250413.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250413.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250413.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250413.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250413.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-13T12:03:25.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "EmployeeAppLog20250318.txt",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeAppLog20250318.txt",
               "RelativeDocumentMoniker": "Logs\\EmployeeAppLog20250318.txt",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeAppLog20250318.txt",
               "RelativeToolTip": "Logs\\EmployeeAppLog20250318.txt",
-              "ViewState": "AgIAAOQIAAAAAAAAAAAAAAYJAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOkIAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-03-18T09:23:51.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20250318110448_AddFullNameToUsers.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250318110448_AddFullNameToUsers.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250318110448_AddFullNameToUsers.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250318110448_AddFullNameToUsers.cs",
-              "RelativeToolTip": "Migrations\\20250318110448_AddFullNameToUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T11:04:48.619Z"
+              "WhenOpened": "2025-04-08T08:38:47.631Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:11:59.781Z"
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T11:53:41.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EmployeeApp20250409.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250409.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250409.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250409.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250409.log",
+              "ViewState": "AgIAABQHAAAAAAAAAABBwNQJAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-09T07:59:20.094Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
+              "RelativeToolTip": "Pages\\Calendar\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T15:49:13.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "User.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\User.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml.cs",
+              "RelativeToolTip": "Pages\\Calendar\\User.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T17:28:57.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\User.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
+              "RelativeToolTip": "Pages\\Calendar\\User.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T15:49:45.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Admin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
+              "RelativeToolTip": "Pages\\Calendar\\Admin.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwCcAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:55:39.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_LoginPartial.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T17:11:27.316Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EmployeeApp20250408_001.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408_001.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250408_001.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408_001.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250408_001.log",
+              "ViewState": "AgIAAI4NAAAAAAAAAABBwKINAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-08T16:24:03.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EmployeeApp20250408.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250408.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250408.log",
+              "ViewState": "AgIAALgXAAAAAAAAAABBwNIXAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-08T09:13:25.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EmployeeApp20250328.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250328.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250328.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250328.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250328.log",
+              "ViewState": "AgIAAFIJAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-08T08:39:31.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EmployeeApp20250320.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250320.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250320.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250320.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250320.log",
+              "ViewState": "AgIAAMEAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-08T08:39:20.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EmployeeApp20250321.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250321.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250321.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250321.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250321.log",
+              "ViewState": "AgIAAFkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-24T06:51:45.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EmployeeApp20250318.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250318.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250318.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250318.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250318.log",
+              "ViewState": "AgIAADoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-08T08:39:12.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EmployeeApp20250406.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250406.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250406.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250406.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250406.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-08T08:39:09.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-17T14:25:32.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:20:01.869Z"
+              "WhenOpened": "2025-04-01T08:23:20.473Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "20250318093710_InitialCreateFix.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250318093710_InitialCreateFix.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250318093710_InitialCreateFix.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250318093710_InitialCreateFix.cs",
-              "RelativeToolTip": "Migrations\\20250318093710_InitialCreateFix.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:37:10.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:11:41.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Services\\TokenService.cs",
-              "RelativeToolTip": "Services\\TokenService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:15:50.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml.cs",
-              "RelativeToolTip": "Pages\\EmployeeManagement\\Edit.cshtml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvywAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:22:50.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml.cs",
-              "RelativeToolTip": "Pages\\EmployeeManagement\\Delete.cshtml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:21:07.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Create.cshtml.cs",
-              "RelativeToolTip": "Pages\\EmployeeManagement\\Create.cshtml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:22:38.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -576,31 +702,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "20250318083353_FixEmployeeSalaryPrecision.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250318083353_FixEmployeeSalaryPrecision.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250318083353_FixEmployeeSalaryPrecision.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250318083353_FixEmployeeSalaryPrecision.cs",
-              "RelativeToolTip": "Migrations\\20250318083353_FixEmployeeSalaryPrecision.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T08:34:04.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T16:10:57.528Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:22:50.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-24T15:20:18.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml.cs",
+              "RelativeToolTip": "Pages\\EmployeeManagement\\Delete.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T14:21:07.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EmployeeApp20250319.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250319.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250319.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250319.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250319.log",
+              "ViewState": "AgIAAFYLAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-24T06:52:16.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EmployeeApp20250318_001.log",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250318_001.log",
+              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250318_001.log",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250318_001.log",
+              "RelativeToolTip": "Logs\\EmployeeApp20250318_001.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-24T06:51:57.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:37:14.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\EmployeeManagement\\Edit.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T14:22:50.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -612,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
@@ -624,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 48,
               "Title": "EmployeeApp.csproj.Backup.tmp",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\EmployeeApp.csproj.Backup.tmp",
               "RelativeDocumentMoniker": "EmployeeApp.csproj.Backup.tmp",
@@ -635,26 +821,8 @@
               "WhenOpened": "2025-03-17T15:21:56Z"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "EmployeeApp.csproj",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\EmployeeApp.csproj",
-              "RelativeDocumentMoniker": "EmployeeApp.csproj",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\EmployeeApp.csproj",
-              "RelativeToolTip": "EmployeeApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-17T15:03:56.069Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 242,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

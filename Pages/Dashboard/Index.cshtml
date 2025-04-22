@@ -4,25 +4,65 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="container mt-4">
-    <h2 class="mb-4">Dashboard</h2>
+<h2 class="mb-4 text-center">Employee Dashboard</h2>
 
-    <form method="get" class="d-flex mb-4">
-        <input type="text" class="form-control me-2" asp-for="SearchQuery" placeholder="Search employees..." />
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
+<!-- Summary Cards -->
+<div class="row justify-content-center mb-4">
+    <div class="col-md-4 col-lg-3 mb-3">
+        <div class="card text-white bg-success shadow-sm h-100">
+            <div class="card-body d-flex align-items-center">
+                <i class="bi bi-people-fill fs-1 me-3"></i>
+                <div>
+                    <h6 class="card-title mb-1">Total Employees</h6>
+                    <p class="card-text fs-5 fw-bold mb-0">@Model.TotalEmployees</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-3 mb-3">
+        <div class="card text-white bg-warning shadow-sm h-100">
+            <div class="card-body d-flex align-items-center">
+                <i class="bi bi-building fs-1 me-3"></i>
+                <div>
+                    <h6 class="card-title mb-1">Total Departments</h6>
+                    <p class="card-text fs-5 fw-bold mb-0">@Model.TotalDepartments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <table class="table table-striped table-bordered">
-        <thead class="table-dark">
+<!-- Search + Toggle Section -->
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-8 mx-auto">
+            <input type="text" id="searchInput" class="form-control shadow-sm" placeholder="Search Employees by Name (Min 3 letters)">
+        </div>
+    </div>
+
+    <div class="row mb-4 text-center">
+        <div class="col">
+            <button id="toggleEmployeesBtn" class="btn btn-primary text-white px-4 py-2 fw-bold rounded shadow-sm">Show All Employees</button>
+        </div>
+    </div>
+</div>
+
+<!-- 👇 Table -->
+<div class="container" id="employeeTable" style="display: block;">
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
             <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Phone</th>
+                <th>PhoneNumber</th>
                 <th>Department</th>
-                <th>Salary</th>
+                @if (Model.IsAdmin)
+                {
+                    <th id="salaryHeader">Salary</th>
+                }
             </tr>
         </thead>
-        <tbody>
+        <tbody id="employeeTableBody">
             @foreach (var employee in Model.Employees)
             {
                 <tr>
@@ -30,9 +70,107 @@
                     <td>@employee.Email</td>
                     <td>@employee.PhoneNumber</td>
                     <td>@employee.Department</td>
-                    <td>@employee.Salary</td>
+                    @if (Model.IsAdmin)
+                    {
+                        <td>@employee.Salary</td>
+                    }
                 </tr>
             }
         </tbody>
     </table>
 </div>
+
+<!-- 👇 Pagination -->
+<div class="container" id="pagination" style="display: @(Model.TotalPages > 1 ? "block" : "none");">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a class="page-link" href="?page=@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+@section Scripts {
+    <script>
+        let isVisible = true;
+
+        $(document).ready(function () {
+            $("#toggleEmployeesBtn").text("Hide All Employees");
+
+            $("#toggleEmployeesBtn").click(function () {
+                isVisible = !isVisible;
+
+                if (isVisible) {
+                    $("#employeeTable").show();
+                    $("#pagination").show();
+                    $("#toggleEmployeesBtn").text("Hide All Employees");
+                } else {
+                    $("#employeeTable").hide();
+                    $("#pagination").hide();
+                    $("#toggleEmployeesBtn").text("Show All Employees");
+                }
+            });
+
+            $("#searchInput").on("input", function () {
+                var query = $(this).val();
+
+                if (query.length < 1) {
+                    location.reload();
+                    return;
+                }
+
+                $.ajax({
+                    url: '?handler=SearchEmployees',
+                    method: 'GET',
+                    data: { query: query },
+                    success: function (response) {
+                        $("#employeeTableBody").empty();
+
+                        var employees = response.employees;
+                        var isAdmin = response.isAdmin;
+
+                        if (!isAdmin) {
+                            $("th#salaryHeader").hide();
+                        } else {
+                            $("th#salaryHeader").show();
+                        }
+
+                        if (employees.length === 0) {
+                            $("#employeeTableBody").append(`<tr><td colspan="${isAdmin ? 5 : 4}">No employees found.</td></tr>`);
+                        } else {
+                            employees.forEach(emp => {
+                                const row = `
+                                    <tr>
+                                        <td>${emp.name}</td>
+                                        <td>${emp.email}</td>
+                                        <td>${emp.phoneNumber}</td>
+                                        <td>${emp.department}</td>
+                                        ${isAdmin ? `<td>${emp.salary ?? "N/A"}</td>` : ""}
+                                    </tr>
+                                `;
+                                $("#employeeTableBody").append(row);
+                            });
+                        }
+
+                        if (employees.length < 5) {
+                            $("#pagination").hide();
+                        } else {
+                            $("#pagination").show();
+                        }
+
+                        if (!isVisible) {
+                            $("#employeeTable").show();
+                            $("#pagination").hide();
+                            $("#toggleEmployeesBtn").text("Hide All Employees");
+                            isVisible = true;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

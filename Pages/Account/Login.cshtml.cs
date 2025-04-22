@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace EmployeeApp.Pages.Account
@@ -22,32 +24,37 @@ namespace EmployeeApp.Pages.Account
 
         public class LoginInputModel
         {
+            [Required(ErrorMessage = "Email is required")]
+            [EmailAddress(ErrorMessage = "Invalid email format")]
+            [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|net|org|edu|gov|in|us|co\.uk|io)$",
+                ErrorMessage = "Invalid email domain")]
             public string Email { get; set; }
+
+            [Required(ErrorMessage = "Password is required")]
+            [MinLength(6, ErrorMessage = "Password must be at least 6 characters long")]
             public string Password { get; set; }
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<JsonResult> OnPostLoginAsync(string email, string password)
         {
             if (!ModelState.IsValid)
             {
-                return Page();
+                return new JsonResult(new { success = false, error = "Invalid input data." });
             }
 
-            var user = await _userManager.FindByEmailAsync(Input.Email);
+            var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                return Page();
+                return new JsonResult(new { success = false, error = "No account found with this email." });
             }
 
-            var result = await _signInManager.PasswordSignInAsync(user.UserName, Input.Password, false, false);
-            if (result.Succeeded)
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, password, false, false);
+            if (!result.Succeeded)
             {
-                return RedirectToPage("/Dashboard/Index");
+                return new JsonResult(new { success = false, error = "Incorrect password." });
             }
 
-            ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-            return Page();
+            return new JsonResult(new { success = true });
         }
     }
 }

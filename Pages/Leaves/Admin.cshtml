@@ -1,0 +1,69 @@
+﻿@page
+@model EmployeeApp.Pages.Leaves.AdminModel
+@{
+    ViewData["Title"] = "Leave Management - Admin";
+}
+
+<h2>Leave Management</h2>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <input type="text" id="searchByName" placeholder="Search by Name" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <select id="filterStatus" class="form-select">
+            <option value="">All Statuses</option>
+            <option value="Pending">Pending</option>
+            <option value="Approved">Approved</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+    </div>
+</div>
+
+<div id="LeaveTableContainer">
+    @await Html.PartialAsync("_LeaveTableAdminPartial", Model.Leaves)
+</div>
+
+<!-- Leave Details Modal remains the same -->
+
+@section Scripts {
+    <script>
+        function filterAdminTable() {
+    const name = $("#searchByName").val().toLowerCase();
+    const status = $("#filterStatus").val();
+
+    let visibleRows = 0;
+
+    $("#LeaveTableContainer tbody tr").each(function () {
+        const row = $(this);
+        const rowName = row.find("td:nth-child(2)").text().toLowerCase(); // Adjusted index for Name
+        const rowStatus = row.find("td:nth-child(6)").text().trim();     // Adjusted index for Status
+
+        const matchName = rowName.includes(name);
+        const matchStatus = !status || rowStatus === status;
+
+        const showRow = matchName && matchStatus;
+        row.toggle(showRow);
+
+        if (showRow) visibleRows++;
+    });
+
+    $(".no-data-alert").remove(); // remove old alerts
+
+    if (visibleRows === 0) {
+        const message = name && !status
+            ? "No leave found for entered name."
+            : status && !name
+                ? "No leave found for selected status."
+                : "No leave found matching criteria.";
+
+        $("#LeaveTableContainer").append(`<div class="no-data-alert alert alert-warning text-center mt-2">${message}</div>`);
+    }
+}
+
+$(document).ready(function () {
+    $("#searchByName, #filterStatus").on("input change", filterAdminTable);
+});
+
+</script>
+}

@@ -1,0 +1,1231 @@
+2025-04-10 11:45:38.671 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-10 11:45:39.946 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 11:45:40.003 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 11:45:40.011 +05:30 [INF] EmployeeApp started successfully.
+2025-04-10 11:45:40.142 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-10 11:45:40.144 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-10 11:45:40.187 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-10 11:45:40.190 +05:30 [INF] Hosting environment: Development
+2025-04-10 11:45:40.191 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-10 11:45:40.641 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-10 11:45:40.755 +05:30 [INF] Executing endpoint '/Index'
+2025-04-10 11:45:40.781 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-10 11:45:40.793 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-10 11:45:40.795 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-10 11:45:40.797 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 11:45:40.798 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 11:45:40.836 +05:30 [INF] Executed page /Index in 50.6014ms
+2025-04-10 11:45:40.840 +05:30 [INF] Executed endpoint '/Index'
+2025-04-10 11:45:40.843 +05:30 [INF] HTTP GET / responded 200 in 112.8633 ms
+2025-04-10 11:45:40.848 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 209.8194ms
+2025-04-10 11:45:40.855 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 11:45:40.855 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 11:45:40.864 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.8585ms
+2025-04-10 11:45:40.915 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.7996ms
+2025-04-10 11:45:45.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 11:45:45.676 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 11:45:45.694 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 11:45:45.704 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 11:45:45.706 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 11:45:45.762 +05:30 [INF] Executed page /Account/Login in 65.2733ms
+2025-04-10 11:45:45.765 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 11:45:45.767 +05:30 [INF] HTTP GET /Account/Login responded 200 in 93.0041 ms
+2025-04-10 11:45:45.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 102.5589ms
+2025-04-10 11:45:45.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 11:45:45.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 11:45:45.788 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.8401ms
+2025-04-10 11:45:45.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.3418ms
+2025-04-10 11:45:51.284 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 233
+2025-04-10 11:45:51.292 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 11:45:51.294 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 11:45:51.331 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-04-10 11:45:51.415 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-10 11:45:51.466 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-04-10 11:45:51.596 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 11:45:51.635 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 11:45:51.643 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 11:45:51.653 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 11:45:51.659 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-04-10 11:45:51.662 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 11:45:51.665 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 11:45:51.673 +05:30 [INF] Executed page /Account/Login in 377.9687ms
+2025-04-10 11:45:51.675 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 11:45:51.676 +05:30 [INF] HTTP POST /Account/Login responded 200 in 388.7067 ms
+2025-04-10 11:45:51.681 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 396.7783ms
+2025-04-10 11:45:51.686 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-10 11:45:51.694 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-10 11:45:51.697 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-10 11:45:51.699 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 11:45:51.744 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-10 11:45:51.758 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-10 11:45:51.779 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 11:45:51.812 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 11:45:51.820 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 11:45:51.829 +05:30 [INF] Executed page /Dashboard/Index in 131.1448ms
+2025-04-10 11:45:51.831 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-10 11:45:51.833 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 144.0995 ms
+2025-04-10 11:45:51.836 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 150.0169ms
+2025-04-10 11:45:51.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 11:45:51.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 11:45:51.846 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.3729ms
+2025-04-10 11:45:51.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.295ms
+2025-04-10 11:45:57.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Calendar/Admin - null null
+2025-04-10 11:45:57.874 +05:30 [INF] Executing endpoint '/Calendar/Admin'
+2025-04-10 11:45:57.877 +05:30 [INF] Route matched with {page = "/Calendar/Admin"}. Executing page /Calendar/Admin
+2025-04-10 11:45:57.879 +05:30 [INF] Executing handler method EmployeeApp.Pages.Calendar.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 11:45:57.910 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[AppliedDate], [l].[Department], [l].[Description], [l].[From], [l].[LeaveType], [l].[Status], [l].[To], [l].[UserId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+2025-04-10 11:45:57.936 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 11:45:57.939 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 11:45:57.941 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 11:45:57.952 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 11:45:57.961 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 11:45:57.963 +05:30 [INF] Executed page /Calendar/Admin in 84.3755ms
+2025-04-10 11:45:57.964 +05:30 [INF] Executed endpoint '/Calendar/Admin'
+2025-04-10 11:45:57.965 +05:30 [INF] HTTP GET /Calendar/Admin responded 200 in 96.8387 ms
+2025-04-10 11:45:57.968 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Calendar/Admin - 200 null text/html; charset=utf-8 105.7601ms
+2025-04-10 11:45:57.978 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 11:45:57.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 11:45:57.984 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.2322ms
+2025-04-10 11:45:57.984 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.1193ms
+2025-04-10 11:50:24.325 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-10 11:50:24.335 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-10 11:50:24.336 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-10 11:50:24.336 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 11:50:24.345 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-10 11:50:24.349 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-10 11:50:24.350 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 11:50:24.358 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 11:50:24.363 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 11:50:24.365 +05:30 [INF] Executed page /Dashboard/Index in 28.849ms
+2025-04-10 11:50:24.366 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-10 11:50:24.366 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 33.3599 ms
+2025-04-10 11:50:24.368 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 42.971ms
+2025-04-10 11:50:24.380 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 11:50:24.380 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 11:50:24.384 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.1098ms
+2025-04-10 11:50:24.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1769ms
+2025-04-10 11:55:08.657 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-10 11:55:10.114 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 11:55:10.182 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 11:55:10.189 +05:30 [INF] EmployeeApp started successfully.
+2025-04-10 11:55:10.378 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-10 11:55:10.380 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-10 11:55:10.425 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-10 11:55:10.428 +05:30 [INF] Hosting environment: Development
+2025-04-10 11:55:10.429 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-10 11:55:11.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-10 11:55:11.454 +05:30 [INF] Executing endpoint '/Index'
+2025-04-10 11:55:11.473 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-10 11:55:11.480 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-10 11:55:11.481 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-10 11:55:11.485 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 11:55:11.486 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 11:55:11.579 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 11:55:11.652 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 11:55:11.694 +05:30 [INF] Executed page /Index in 216.4274ms
+2025-04-10 11:55:11.698 +05:30 [INF] Executed endpoint '/Index'
+2025-04-10 11:55:11.705 +05:30 [INF] HTTP GET / responded 200 in 301.6938 ms
+2025-04-10 11:55:11.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 11:55:11.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 11:55:11.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 439.1515ms
+2025-04-10 11:55:11.744 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 34.0382ms
+2025-04-10 11:55:11.775 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.5153ms
+2025-04-10 12:07:43.853 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-10 12:07:44.729 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 12:07:44.779 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 12:07:44.786 +05:30 [INF] EmployeeApp started successfully.
+2025-04-10 12:07:44.853 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-10 12:07:44.856 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-10 12:07:44.896 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-10 12:07:44.898 +05:30 [INF] Hosting environment: Development
+2025-04-10 12:07:44.900 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-10 12:07:45.138 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-10 12:07:45.205 +05:30 [INF] Executing endpoint '/Index'
+2025-04-10 12:07:45.222 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-10 12:07:45.230 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-10 12:07:45.231 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-10 12:07:45.233 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:07:45.234 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:07:45.316 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:07:45.375 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:07:45.409 +05:30 [INF] Executed page /Index in 182.1398ms
+2025-04-10 12:07:45.414 +05:30 [INF] Executed endpoint '/Index'
+2025-04-10 12:07:45.418 +05:30 [INF] HTTP GET / responded 200 in 227.8330 ms
+2025-04-10 12:07:45.424 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:07:45.424 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:07:45.428 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 291.2645ms
+2025-04-10 12:07:45.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.6847ms
+2025-04-10 12:07:45.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.649ms
+2025-04-10 12:07:45.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/favicon.ico - null null
+2025-04-10 12:07:45.524 +05:30 [INF] The file /favicon.ico was not modified
+2025-04-10 12:07:45.526 +05:30 [INF] HTTP GET /favicon.ico responded 304 in 5.7817 ms
+2025-04-10 12:07:45.528 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/favicon.ico - 304 null image/x-icon 11.7543ms
+2025-04-10 12:07:48.667 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 12:07:48.681 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:07:48.688 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:07:48.690 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:07:48.745 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 12:07:48.750 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 12:07:48.750 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:07:48.751 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:07:48.763 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:07:48.766 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:07:48.771 +05:30 [INF] Executed page /Leaves/Admin in 81.5689ms
+2025-04-10 12:07:48.773 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:07:48.774 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 99.2270 ms
+2025-04-10 12:07:48.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 109.2061ms
+2025-04-10 12:07:48.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:07:48.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:07:48.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.7411ms
+2025-04-10 12:07:48.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.3818ms
+2025-04-10 12:07:54.958 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 12:07:54.986 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:07:54.989 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:07:54.998 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 12:07:55.026 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 12:07:55.032 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 12:07:55.035 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 12:07:55.045 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 10.8819ms.
+2025-04-10 12:07:55.048 +05:30 [INF] Executed page /Leaves/Admin in 55.8601ms
+2025-04-10 12:07:55.050 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:07:55.051 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 85.5313 ms
+2025-04-10 12:07:55.054 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 95.211ms
+2025-04-10 12:07:55.061 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/images/default-avatar.png - null null
+2025-04-10 12:07:55.064 +05:30 [INF] The file /images/default-avatar.png was not modified
+2025-04-10 12:07:55.065 +05:30 [INF] HTTP GET /images/default-avatar.png responded 304 in 1.3416 ms
+2025-04-10 12:07:55.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/images/default-avatar.png - 304 null image/png 4.712ms
+2025-04-10 12:08:16.547 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-04-10 12:08:16.555 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-04-10 12:08:16.559 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-04-10 12:08:16.564 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-04-10 12:08:16.567 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-04-10 12:08:16.568 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-04-10 12:08:16.568 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-04-10 12:08:16.571 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-04-10 12:08:16.574 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-04-10 12:08:16.575 +05:30 [INF] Executed page /Account/Logout in 13.7316ms
+2025-04-10 12:08:16.575 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-04-10 12:08:16.576 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 21.8128 ms
+2025-04-10 12:08:16.577 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 29.7602ms
+2025-04-10 12:08:16.579 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 12:08:16.582 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:08:16.590 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:08:16.591 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:08:16.592 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:08:16.614 +05:30 [INF] Executed page /Account/Login in 23.9325ms
+2025-04-10 12:08:16.617 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:08:16.618 +05:30 [INF] HTTP GET /Account/Login responded 200 in 36.9814 ms
+2025-04-10 12:08:16.621 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 42.087ms
+2025-04-10 12:08:16.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:08:16.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:08:16.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5684ms
+2025-04-10 12:08:16.636 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.2746ms
+2025-04-10 12:08:21.705 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 227
+2025-04-10 12:08:21.709 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:08:21.711 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:08:21.726 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-04-10 12:08:21.740 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-10 12:08:21.755 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-04-10 12:08:21.841 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 12:08:21.851 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:08:21.859 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 12:08:21.873 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 12:08:21.879 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-04-10 12:08:21.881 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 12:08:21.885 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 12:08:21.892 +05:30 [INF] Executed page /Account/Login in 177.7424ms
+2025-04-10 12:08:21.894 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:08:21.895 +05:30 [INF] HTTP POST /Account/Login responded 200 in 186.2306 ms
+2025-04-10 12:08:21.896 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 190.4425ms
+2025-04-10 12:08:21.902 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-10 12:08:21.906 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-10 12:08:21.911 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-10 12:08:21.912 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:08:21.940 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-10 12:08:21.948 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-10 12:08:21.969 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:08:21.976 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:08:21.980 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:08:21.983 +05:30 [INF] Executed page /Dashboard/Index in 71.9155ms
+2025-04-10 12:08:21.984 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-10 12:08:21.985 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 79.7871 ms
+2025-04-10 12:08:21.986 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 83.8819ms
+2025-04-10 12:08:21.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:08:21.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:08:21.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9999ms
+2025-04-10 12:08:21.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.7214ms
+2025-04-10 12:08:24.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/User - null null
+2025-04-10 12:08:24.007 +05:30 [INF] Executing endpoint '/Leaves/User'
+2025-04-10 12:08:24.013 +05:30 [INF] Route matched with {page = "/Leaves/User"}. Executing page /Leaves/User
+2025-04-10 12:08:24.015 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.UserModel.OnGet - ModelState is "Valid"
+2025-04-10 12:08:24.040 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveType], [l].[From], [l].[To], [l].[Description], [l].[AppliedDate], [l].[Status]
+FROM [Leaves] AS [l]
+WHERE [l].[UserId] = @__userId_0
+ORDER BY [l].[AppliedDate] DESC
+2025-04-10 12:08:24.045 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-10 12:08:24.046 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:08:24.048 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:08:24.052 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:08:24.055 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:08:24.057 +05:30 [INF] Executed page /Leaves/User in 42.4655ms
+2025-04-10 12:08:24.058 +05:30 [INF] Executed endpoint '/Leaves/User'
+2025-04-10 12:08:24.059 +05:30 [INF] HTTP GET /Leaves/User responded 200 in 54.9280 ms
+2025-04-10 12:08:24.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/User - 200 null text/html; charset=utf-8 60.6792ms
+2025-04-10 12:08:24.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:08:24.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:08:24.077 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8678ms
+2025-04-10 12:08:24.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.8075ms
+2025-04-10 12:08:46.969 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-04-10 12:08:46.976 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-04-10 12:08:46.977 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-04-10 12:08:46.979 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-04-10 12:08:46.980 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-04-10 12:08:46.981 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-04-10 12:08:46.982 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-04-10 12:08:46.982 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-04-10 12:08:46.983 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-04-10 12:08:46.984 +05:30 [INF] Executed page /Account/Logout in 5.8432ms
+2025-04-10 12:08:46.984 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-04-10 12:08:46.985 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 8.9952 ms
+2025-04-10 12:08:46.986 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 16.802ms
+2025-04-10 12:08:46.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 12:08:46.990 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:08:46.990 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:08:46.991 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:08:46.992 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:08:46.996 +05:30 [INF] Executed page /Account/Login in 5.5193ms
+2025-04-10 12:08:46.998 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:08:46.999 +05:30 [INF] HTTP GET /Account/Login responded 200 in 9.2771 ms
+2025-04-10 12:08:47.000 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 12.4691ms
+2025-04-10 12:08:47.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:08:47.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:08:47.013 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9729ms
+2025-04-10 12:08:47.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.1932ms
+2025-04-10 12:08:57.010 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 233
+2025-04-10 12:08:57.014 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:08:57.015 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:08:57.017 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-04-10 12:08:57.027 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-10 12:08:57.030 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-04-10 12:08:57.097 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 12:08:57.108 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:08:57.114 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 12:08:57.119 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 12:08:57.122 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-04-10 12:08:57.122 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 12:08:57.123 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 12:08:57.124 +05:30 [INF] Executed page /Account/Login in 108.4779ms
+2025-04-10 12:08:57.125 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:08:57.126 +05:30 [INF] HTTP POST /Account/Login responded 200 in 112.3615 ms
+2025-04-10 12:08:57.127 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 116.7967ms
+2025-04-10 12:08:57.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-10 12:08:57.135 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-10 12:08:57.136 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-10 12:08:57.138 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:08:57.143 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-10 12:08:57.146 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-10 12:08:57.147 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:08:57.150 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:08:57.154 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:08:57.157 +05:30 [INF] Executed page /Dashboard/Index in 20.2048ms
+2025-04-10 12:08:57.159 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-10 12:08:57.160 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 25.3011 ms
+2025-04-10 12:08:57.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 29.5288ms
+2025-04-10 12:08:57.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:08:57.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:08:57.172 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.6438ms
+2025-04-10 12:08:57.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.6007ms
+2025-04-10 12:08:59.794 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 12:08:59.800 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:08:59.801 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:08:59.802 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:08:59.814 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 12:08:59.817 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 12:08:59.819 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:08:59.819 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:08:59.824 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:08:59.828 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:08:59.830 +05:30 [INF] Executed page /Leaves/Admin in 27.712ms
+2025-04-10 12:08:59.831 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:08:59.831 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 31.9963 ms
+2025-04-10 12:08:59.833 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 39.2404ms
+2025-04-10 12:08:59.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:08:59.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:08:59.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.8029ms
+2025-04-10 12:08:59.848 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.8271ms
+2025-04-10 12:09:03.370 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=12 - null null
+2025-04-10 12:09:03.383 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:09:03.385 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:09:03.389 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 12:09:03.400 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 12:09:03.404 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 12:09:03.405 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 12:09:03.406 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 1.2696ms.
+2025-04-10 12:09:03.407 +05:30 [INF] Executed page /Leaves/Admin in 18.1628ms
+2025-04-10 12:09:03.408 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:09:03.409 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 26.7841 ms
+2025-04-10 12:09:03.410 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=12 - 200 null text/html; charset=utf-8 39.4884ms
+2025-04-10 12:09:05.216 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - application/x-www-form-urlencoded; charset=UTF-8 21
+2025-04-10 12:09:05.227 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:09:05.230 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:09:05.233 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnPostUpdateStatusAsync - ModelState is "Valid"
+2025-04-10 12:09:05.240 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AppliedDate], [l].[Department], [l].[Description], [l].[From], [l].[LeaveType], [l].[Status], [l].[To], [l].[UserId]
+FROM [Leaves] AS [l]
+WHERE [l].[Id] = @__p_0
+2025-04-10 12:09:05.322 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Leaves] SET [Status] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-04-10 12:09:05.337 +05:30 [INF] Executed handler method OnPostUpdateStatusAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 12:09:05.339 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 12:09:05.340 +05:30 [INF] Executed page /Leaves/Admin in 107.049ms
+2025-04-10 12:09:05.341 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:09:05.343 +05:30 [INF] HTTP POST /Leaves/Admin responded 200 in 117.4559 ms
+2025-04-10 12:09:05.345 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - 200 null application/json; charset=utf-8 128.8284ms
+2025-04-10 12:09:05.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 12:09:05.354 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:09:05.354 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:09:05.355 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:09:05.357 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 12:09:05.359 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 12:09:05.359 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:09:05.360 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:09:05.362 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:09:05.365 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:09:05.367 +05:30 [INF] Executed page /Leaves/Admin in 12.0551ms
+2025-04-10 12:09:05.368 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:09:05.370 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 16.5646 ms
+2025-04-10 12:09:05.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 20.2145ms
+2025-04-10 12:09:05.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:09:05.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:09:05.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.9143ms
+2025-04-10 12:09:05.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.7828ms
+2025-04-10 12:09:07.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=12 - null null
+2025-04-10 12:09:07.326 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:09:07.328 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:09:07.329 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 12:09:07.333 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 12:09:07.334 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 12:09:07.335 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 12:09:07.336 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 1.3039ms.
+2025-04-10 12:09:07.338 +05:30 [INF] Executed page /Leaves/Admin in 8.6841ms
+2025-04-10 12:09:07.339 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:09:07.340 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 14.7504 ms
+2025-04-10 12:09:07.343 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=12 - 200 null text/html; charset=utf-8 25.2484ms
+2025-04-10 12:09:08.998 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - application/x-www-form-urlencoded; charset=UTF-8 21
+2025-04-10 12:09:09.009 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:09:09.011 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:09:09.015 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnPostUpdateStatusAsync - ModelState is "Valid"
+2025-04-10 12:09:09.019 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AppliedDate], [l].[Department], [l].[Description], [l].[From], [l].[LeaveType], [l].[Status], [l].[To], [l].[UserId]
+FROM [Leaves] AS [l]
+WHERE [l].[Id] = @__p_0
+2025-04-10 12:09:09.024 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Leaves] SET [Status] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-04-10 12:09:09.025 +05:30 [INF] Executed handler method OnPostUpdateStatusAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 12:09:09.026 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 12:09:09.028 +05:30 [INF] Executed page /Leaves/Admin in 13.6936ms
+2025-04-10 12:09:09.029 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:09:09.031 +05:30 [INF] HTTP POST /Leaves/Admin responded 200 in 23.5637 ms
+2025-04-10 12:09:09.032 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - 200 null application/json; charset=utf-8 34.0609ms
+2025-04-10 12:09:09.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 12:09:09.040 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:09:09.041 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:09:09.042 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:09:09.046 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 12:09:09.047 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 12:09:09.048 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:09:09.048 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:09:09.050 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:09:09.055 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:09:09.056 +05:30 [INF] Executed page /Leaves/Admin in 14.6259ms
+2025-04-10 12:09:09.057 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:09:09.058 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 18.2006 ms
+2025-04-10 12:09:09.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 24.161ms
+2025-04-10 12:09:09.073 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:09:09.073 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:09:09.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.3934ms
+2025-04-10 12:09:09.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.7241ms
+2025-04-10 12:51:53.474 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-04-10 12:51:53.506 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:51:53.512 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 12:51:53.517 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:51:53.521 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 12:51:53.527 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 12:51:53.530 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-04-10 12:51:53.530 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-04-10 12:51:53.531 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-04-10 12:51:53.532 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-04-10 12:51:53.532 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-04-10 12:51:53.533 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-04-10 12:51:53.534 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-04-10 12:51:53.534 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-04-10 12:51:53.535 +05:30 [INF] Executed page /Account/Logout in 3.9305ms
+2025-04-10 12:51:53.535 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-04-10 12:51:53.536 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 52.5105 ms
+2025-04-10 12:51:53.537 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 63.139ms
+2025-04-10 12:51:53.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 12:51:53.544 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:51:53.545 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:51:53.546 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:51:53.546 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:51:53.549 +05:30 [INF] Executed page /Account/Login in 3.2624ms
+2025-04-10 12:51:53.549 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:51:53.550 +05:30 [INF] HTTP GET /Account/Login responded 200 in 6.1159 ms
+2025-04-10 12:51:53.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 10.0965ms
+2025-04-10 12:51:53.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:51:53.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:51:53.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7983ms
+2025-04-10 12:51:53.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.7334ms
+2025-04-10 12:51:54.557 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 12:51:54.566 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:51:54.567 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:51:54.568 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:51:54.569 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:51:54.570 +05:30 [INF] Executed page /Account/Login in 2.4042ms
+2025-04-10 12:51:54.572 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:51:54.573 +05:30 [INF] HTTP GET /Account/Login responded 200 in 6.7724 ms
+2025-04-10 12:51:54.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 17.05ms
+2025-04-10 12:51:54.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:51:54.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:51:54.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.9166ms
+2025-04-10 12:51:54.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.1897ms
+2025-04-10 12:59:05.579 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 233
+2025-04-10 12:59:05.582 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 12:59:05.583 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 12:59:05.587 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-04-10 12:59:05.594 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-10 12:59:05.598 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-04-10 12:59:05.661 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 12:59:05.667 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:59:05.672 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 12:59:05.675 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 12:59:05.677 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-04-10 12:59:05.677 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 12:59:05.678 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 12:59:05.678 +05:30 [INF] Executed page /Account/Login in 93.2181ms
+2025-04-10 12:59:05.680 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 12:59:05.681 +05:30 [INF] HTTP POST /Account/Login responded 200 in 98.6642 ms
+2025-04-10 12:59:05.682 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 102.9964ms
+2025-04-10 12:59:05.689 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-10 12:59:05.694 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-10 12:59:05.695 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-10 12:59:05.695 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:59:05.699 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-10 12:59:05.704 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-10 12:59:05.706 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:59:05.709 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:59:05.711 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:59:05.713 +05:30 [INF] Executed page /Dashboard/Index in 17.3962ms
+2025-04-10 12:59:05.713 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-10 12:59:05.714 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 20.4213 ms
+2025-04-10 12:59:05.715 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 25.9368ms
+2025-04-10 12:59:05.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:59:05.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:59:05.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.2924ms
+2025-04-10 12:59:05.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.906ms
+2025-04-10 12:59:08.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 12:59:08.110 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 12:59:08.111 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 12:59:08.112 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 12:59:08.120 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 12:59:08.121 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 12:59:08.121 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 12:59:08.122 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 12:59:08.124 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 12:59:08.126 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 12:59:08.129 +05:30 [INF] Executed page /Leaves/Admin in 17.2448ms
+2025-04-10 12:59:08.130 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 12:59:08.131 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 21.4996 ms
+2025-04-10 12:59:08.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 29.2468ms
+2025-04-10 12:59:08.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 12:59:08.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 12:59:08.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.7656ms
+2025-04-10 12:59:08.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3.9471ms
+2025-04-10 13:30:35.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 13:30:35.090 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 13:30:35.103 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 13:30:35.115 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 13:30:35.131 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 13:30:35.147 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 13:30:35.155 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:30:35.158 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:30:35.164 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:30:35.187 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:30:35.195 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:30:35.198 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:30:35.204 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 6.2373ms.
+2025-04-10 13:30:35.209 +05:30 [INF] Executed page /Leaves/Admin in 45.3019ms
+2025-04-10 13:30:35.214 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:30:35.216 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 167.6106 ms
+2025-04-10 13:30:35.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 179.8259ms
+2025-04-10 13:30:38.545 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 13:30:38.552 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:30:38.554 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:30:38.559 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:30:38.566 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:30:38.574 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:30:38.578 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:30:38.583 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 5.6128ms.
+2025-04-10 13:30:38.587 +05:30 [INF] Executed page /Leaves/Admin in 27.8959ms
+2025-04-10 13:30:38.589 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:30:38.592 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 41.6995 ms
+2025-04-10 13:30:38.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 53.4885ms
+2025-04-10 13:30:53.384 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 13:30:53.392 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:30:53.394 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:30:53.397 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:30:53.406 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:30:53.414 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:30:53.419 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:30:53.423 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 4.5555ms.
+2025-04-10 13:30:53.428 +05:30 [INF] Executed page /Leaves/Admin in 30.7245ms
+2025-04-10 13:30:53.433 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:30:53.437 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 46.2953 ms
+2025-04-10 13:30:53.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 59.0638ms
+2025-04-10 13:30:55.498 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - application/x-www-form-urlencoded; charset=UTF-8 21
+2025-04-10 13:30:55.506 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:30:55.508 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:30:55.513 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnPostUpdateStatusAsync - ModelState is "Valid"
+2025-04-10 13:30:55.523 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AppliedDate], [l].[Department], [l].[Description], [l].[From], [l].[LeaveType], [l].[Status], [l].[To], [l].[UserId]
+FROM [Leaves] AS [l]
+WHERE [l].[Id] = @__p_0
+2025-04-10 13:30:55.541 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Leaves] SET [Status] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-04-10 13:30:55.548 +05:30 [INF] Executed handler method OnPostUpdateStatusAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 13:30:55.554 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 13:30:55.558 +05:30 [INF] Executed page /Leaves/Admin in 46.3912ms
+2025-04-10 13:30:55.562 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:30:55.566 +05:30 [INF] HTTP POST /Leaves/Admin responded 200 in 61.1759 ms
+2025-04-10 13:30:55.572 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - 200 null application/json; charset=utf-8 74.0981ms
+2025-04-10 13:30:55.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 13:30:55.604 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:30:55.607 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:30:55.611 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 13:30:55.624 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 13:30:55.630 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 13:30:55.635 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 13:30:55.638 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:30:55.647 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 13:30:55.658 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 13:30:55.666 +05:30 [INF] Executed page /Leaves/Admin in 55.142ms
+2025-04-10 13:30:55.671 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:30:55.675 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 72.2475 ms
+2025-04-10 13:30:55.685 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 97.5166ms
+2025-04-10 13:30:55.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:30:55.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:30:55.710 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.4813ms
+2025-04-10 13:30:55.725 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.2538ms
+2025-04-10 13:30:58.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 13:30:58.036 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:30:58.041 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:30:58.045 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:30:58.058 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:30:58.068 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:30:58.073 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:30:58.076 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 3.9667ms.
+2025-04-10 13:30:58.082 +05:30 [INF] Executed page /Leaves/Admin in 37.4358ms
+2025-04-10 13:30:58.088 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:30:58.091 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 55.4593 ms
+2025-04-10 13:30:58.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 75.0775ms
+2025-04-10 13:31:14.982 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=12 - null null
+2025-04-10 13:31:14.989 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:31:14.992 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:31:14.996 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:31:15.031 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:31:15.041 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:31:15.046 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:31:15.051 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 5.6614ms.
+2025-04-10 13:31:15.058 +05:30 [INF] Executed page /Leaves/Admin in 62.1491ms
+2025-04-10 13:31:15.063 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:31:15.069 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 81.6553 ms
+2025-04-10 13:31:15.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=12 - 200 null text/html; charset=utf-8 93.8121ms
+2025-04-10 13:31:28.985 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 13:31:28.993 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:31:28.996 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:31:29.001 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:31:29.007 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:31:29.015 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:31:29.020 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:31:29.025 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 5.1607ms.
+2025-04-10 13:31:29.029 +05:30 [INF] Executed page /Leaves/Admin in 29.093ms
+2025-04-10 13:31:29.032 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:31:29.037 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 44.2512 ms
+2025-04-10 13:31:29.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 57.103ms
+2025-04-10 13:31:46.690 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - application/x-www-form-urlencoded; charset=UTF-8 21
+2025-04-10 13:31:46.701 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:31:46.706 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:31:46.710 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnPostUpdateStatusAsync - ModelState is "Valid"
+2025-04-10 13:31:46.720 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[AppliedDate], [l].[Department], [l].[Description], [l].[From], [l].[LeaveType], [l].[Status], [l].[To], [l].[UserId]
+FROM [Leaves] AS [l]
+WHERE [l].[Id] = @__p_0
+2025-04-10 13:31:46.738 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Leaves] SET [Status] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-04-10 13:31:46.746 +05:30 [INF] Executed handler method OnPostUpdateStatusAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 13:31:46.750 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 13:31:46.753 +05:30 [INF] Executed page /Leaves/Admin in 44.3472ms
+2025-04-10 13:31:46.758 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:31:46.762 +05:30 [INF] HTTP POST /Leaves/Admin responded 200 in 61.7447 ms
+2025-04-10 13:31:46.766 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Leaves/Admin?handler=UpdateStatus - 200 null application/json; charset=utf-8 76.6954ms
+2025-04-10 13:31:46.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin - null null
+2025-04-10 13:31:46.781 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:31:46.783 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:31:46.784 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 13:31:46.795 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+ORDER BY [l].[Id] DESC
+2025-04-10 13:31:46.800 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-04-10 13:31:46.803 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 13:31:46.805 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:31:46.812 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 13:31:46.820 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 13:31:46.827 +05:30 [INF] Executed page /Leaves/Admin in 42.5588ms
+2025-04-10 13:31:46.830 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:31:46.832 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 52.4053 ms
+2025-04-10 13:31:46.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin - 200 null text/html; charset=utf-8 63.6597ms
+2025-04-10 13:31:46.847 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:31:46.847 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:31:46.851 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.402ms
+2025-04-10 13:31:46.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.4094ms
+2025-04-10 13:32:40.234 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - null null
+2025-04-10 13:32:40.249 +05:30 [INF] Executing endpoint '/Leaves/Admin'
+2025-04-10 13:32:40.253 +05:30 [INF] Route matched with {page = "/Leaves/Admin"}. Executing page /Leaves/Admin
+2025-04-10 13:32:40.258 +05:30 [INF] Executing handler method EmployeeApp.Pages.Leaves.AdminModel.OnGetLeaveDetailsAsync - ModelState is "Valid"
+2025-04-10 13:32:40.293 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[UserId] AS [EmployeeId], COALESCE([a].[FullName], [a].[UserName]) AS [EmployeeName], [l].[LeaveType], COALESCE([a].[Department], N'N/A') AS [Department], DATEDIFF(day, [l].[From], [l].[To]) + 1 AS [Days], [l].[Status], [l].[Description], [l].[From], [l].[To]
+FROM [Leaves] AS [l]
+INNER JOIN [AspNetUsers] AS [a] ON [l].[UserId] = [a].[Id]
+WHERE [l].[Id] = @__id_0
+2025-04-10 13:32:40.305 +05:30 [INF] Executed handler method OnGetLeaveDetailsAsync, returned result Microsoft.AspNetCore.Mvc.PartialViewResult.
+2025-04-10 13:32:40.309 +05:30 [INF] Executing PartialViewResult, running view Leaves/_LeaveDetailsPartial.
+2025-04-10 13:32:40.314 +05:30 [INF] Executed PartialViewResult - view Leaves/_LeaveDetailsPartial executed in 4.803ms.
+2025-04-10 13:32:40.318 +05:30 [INF] Executed page /Leaves/Admin in 61.443ms
+2025-04-10 13:32:40.322 +05:30 [INF] Executed endpoint '/Leaves/Admin'
+2025-04-10 13:32:40.326 +05:30 [INF] HTTP GET /Leaves/Admin responded 200 in 78.5003 ms
+2025-04-10 13:32:40.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Leaves/Admin?handler=LeaveDetails&id=13 - 200 null text/html; charset=utf-8 99.5187ms
+2025-04-10 13:33:41.200 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-04-10 13:33:41.222 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-04-10 13:33:41.226 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-04-10 13:33:41.232 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-04-10 13:33:41.238 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-04-10 13:33:41.241 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-04-10 13:33:41.247 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-04-10 13:33:41.252 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-04-10 13:33:41.255 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-04-10 13:33:41.258 +05:30 [INF] Executed page /Account/Logout in 26.2931ms
+2025-04-10 13:33:41.260 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-04-10 13:33:41.261 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 41.3633 ms
+2025-04-10 13:33:41.264 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 63.6896ms
+2025-04-10 13:33:41.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 13:33:41.276 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 13:33:41.278 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 13:33:41.279 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 13:33:41.280 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:33:41.284 +05:30 [INF] Executed page /Account/Login in 4.7635ms
+2025-04-10 13:33:41.287 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 13:33:41.289 +05:30 [INF] HTTP GET /Account/Login responded 200 in 12.9785 ms
+2025-04-10 13:33:41.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 20.7479ms
+2025-04-10 13:33:41.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:33:41.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:33:41.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.3488ms
+2025-04-10 13:33:41.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.3086ms
+2025-04-10 13:42:00.768 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 199
+2025-04-10 13:42:00.774 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 13:42:00.777 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 13:42:00.784 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Invalid"
+2025-04-10 13:42:00.791 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 13:42:00.794 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType11`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 13:42:00.808 +05:30 [INF] Executed page /Account/Login in 29.324ms
+2025-04-10 13:42:00.811 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 13:42:00.814 +05:30 [INF] HTTP POST /Account/Login responded 200 in 39.6021 ms
+2025-04-10 13:42:00.823 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 54.8222ms
+2025-04-10 13:44:57.606 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-10 13:45:00.074 +05:30 [INF] Executed DbCommand (126ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 13:45:00.190 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 13:45:00.201 +05:30 [INF] EmployeeApp started successfully.
+2025-04-10 13:45:00.564 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-10 13:45:00.567 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-10 13:45:00.703 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-10 13:45:00.706 +05:30 [INF] Hosting environment: Development
+2025-04-10 13:45:00.707 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-10 13:45:01.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-10 13:45:01.725 +05:30 [INF] Executing endpoint '/Index'
+2025-04-10 13:45:01.803 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-10 13:45:01.835 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-10 13:45:01.839 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-10 13:45:01.848 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 13:45:01.850 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:45:01.982 +05:30 [INF] Executed page /Index in 165.0497ms
+2025-04-10 13:45:01.986 +05:30 [INF] Executed endpoint '/Index'
+2025-04-10 13:45:01.991 +05:30 [INF] HTTP GET / responded 200 in 317.5034 ms
+2025-04-10 13:45:02.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 569.0462ms
+2025-04-10 13:45:02.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:45:02.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:45:02.046 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 38.826ms
+2025-04-10 13:45:02.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.8798ms
+2025-04-10 13:46:18.766 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-10 13:46:19.944 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 13:46:20.038 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 13:46:20.052 +05:30 [INF] EmployeeApp started successfully.
+2025-04-10 13:46:20.171 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-10 13:46:20.174 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-10 13:46:20.230 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-10 13:46:20.234 +05:30 [INF] Hosting environment: Development
+2025-04-10 13:46:20.239 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-10 13:46:20.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-10 13:46:20.985 +05:30 [INF] Executing endpoint '/Index'
+2025-04-10 13:46:21.014 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-10 13:46:21.039 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-10 13:46:21.042 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-10 13:46:21.050 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 13:46:21.053 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:46:21.115 +05:30 [INF] Executed page /Index in 94.0501ms
+2025-04-10 13:46:21.118 +05:30 [INF] Executed endpoint '/Index'
+2025-04-10 13:46:21.123 +05:30 [INF] HTTP GET / responded 200 in 157.1439 ms
+2025-04-10 13:46:21.128 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:46:21.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:46:21.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 265.1477ms
+2025-04-10 13:46:21.140 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.8322ms
+2025-04-10 13:46:21.172 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.7774ms
+2025-04-10 13:46:23.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-10 13:46:23.591 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 13:46:23.612 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 13:46:23.623 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-10 13:46:23.627 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:46:23.706 +05:30 [INF] Executed page /Account/Login in 88.0856ms
+2025-04-10 13:46:23.710 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 13:46:23.714 +05:30 [INF] HTTP GET /Account/Login responded 200 in 130.7109 ms
+2025-04-10 13:46:23.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 155.8438ms
+2025-04-10 13:46:23.722 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:46:23.726 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:46:23.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 15.8877ms
+2025-04-10 13:46:23.756 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.6464ms
+2025-04-10 13:46:27.853 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 233
+2025-04-10 13:46:27.871 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-10 13:46:27.875 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-10 13:46:27.961 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-04-10 13:46:28.187 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-10 13:46:28.335 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-04-10 13:46:28.786 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-10 13:46:28.853 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 13:46:28.874 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-10 13:46:28.908 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-10 13:46:28.932 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-04-10 13:46:28.943 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-10 13:46:28.954 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-10 13:46:28.979 +05:30 [INF] Executed page /Account/Login in 1099.5523ms
+2025-04-10 13:46:28.984 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-10 13:46:28.989 +05:30 [INF] HTTP POST /Account/Login responded 200 in 1128.3857 ms
+2025-04-10 13:46:29.002 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 1149.0866ms
+2025-04-10 13:46:29.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-10 13:46:29.030 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-10 13:46:29.042 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-10 13:46:29.046 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-10 13:46:29.198 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-10 13:46:29.237 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-10 13:46:29.286 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-10 13:46:29.338 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-10 13:46:29.353 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-10 13:46:29.373 +05:30 [INF] Executed page /Dashboard/Index in 328.3677ms
+2025-04-10 13:46:29.378 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-10 13:46:29.383 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 360.9841 ms
+2025-04-10 13:46:29.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 381.6552ms
+2025-04-10 13:46:29.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-10 13:46:29.411 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-10 13:46:29.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.4018ms
+2025-04-10 13:46:29.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9559ms

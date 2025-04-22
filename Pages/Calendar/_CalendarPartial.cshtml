@@ -1,0 +1,28 @@
+﻿@model List<EmployeeApp.Models.CalendarEvent>
+
+<div class="container mt-4">
+    <h3>Company Calendar</h3>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ev in Model.OrderBy(e => e.Date))
+            {
+                <tr>
+                    <td>@ev.Date.ToString("dd MMM yyyy")</td>
+                    <td>@ev.Title</td>
+                    <td>
+                        <span class="badge @(ev.Type == "Holiday" ? "bg-warning text-dark" : "bg-info")">
+                            @ev.Type
+                        </span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -11,23 +11,60 @@
             <div class="card shadow-lg">
                 <div class="card-body">
                     <h2 class="text-center mb-4">Login</h2>
-                    <form method="post">
+
+                    <!-- Validation -->
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <form id="loginForm" method="post">
                         <div class="mb-3">
                             <label class="form-label">Email:</label>
-                            <input type="email" class="form-control" asp-for="Input.Email" required />
+                            <input type="email" class="form-control" asp-for="Input.Email" id="email" required />
+                            <span class="text-danger" asp-validation-for="Input.Email"></span>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Password:</label>
-                            <input type="password" class="form-control" asp-for="Input.Password" required />
+                            <input type="password" class="form-control" asp-for="Input.Password" id="password" required />
+                            <span class="text-danger" asp-validation-for="Input.Password"></span>
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Login</button>
+                        <p id="errorMessage" class="text-danger mt-2 text-center"></p>
                     </form>
-
-                    <p class="mt-3 text-center">Don't have an account? <a asp-page="/Account/Register">Register</a></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Enable Client-Side Validation & AJAX -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            $("#loginForm").submit(function (event) {
+                event.preventDefault(); // Prevent full page refresh
+
+                let email = $("#email").val();
+                let password = $("#password").val();
+                let token = $("input[name='__RequestVerificationToken']").val();
+
+                $.ajax({
+                    url: "?handler=Login",
+                    type: "POST",
+                    data: { email: email, password: password, __RequestVerificationToken: token },
+                    success: function (response) {
+                        if (response.success) {
+                            window.location.href = "/Dashboard/Index"; // Redirect on success
+                        } else {
+                            $("#errorMessage").text(response.error);
+                        }
+                    },
+                    error: function () {
+                        $("#errorMessage").text("An error occurred. Please try again.");
+                    }
+                });
+            });
+        });
+    </script>
+}

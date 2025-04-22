@@ -30,6 +30,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Calendar/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXJcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Calendar/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXJcVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Calendar/_CalendarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXJcX0NhbGVuZGFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,12 +70,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/_AddLeavePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXF9BZGRMZWF2ZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/_LeaveDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXF9MZWF2ZURldGFpbHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/_LeaveTableAdminPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXF9MZWF2ZVRhYmxlQWRtaW5QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/_LeaveTablePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXF9MZWF2ZVRhYmxlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Leaves/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhdmVzXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+[C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Settings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/liyan/Documents/GitHub/CCS/EmployeeApp/Pages/Shared/_ValidationScriptsPartial.cshtml]

@@ -1,0 +1,102 @@
+﻿@page
+@model EmployeeApp.Pages.Settings.IndexModel
+@{
+    ViewData["Title"] = "Settings";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow p-4" style="width: 400px;">
+        <h4 class="mb-4 text-center">Change Password</h4>
+
+        <div id="alert-placeholder">
+            @if (TempData["StatusMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["StatusMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @if (!ViewData.ModelState.IsValid && ViewData.ModelState.ErrorCount > 0)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <ul class="mb-0">
+                        @foreach (var modelError in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <li>@modelError.ErrorMessage</li>
+                        }
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+        </div>
+
+        <form id="changePasswordForm" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="Input.OldPassword"></label>
+                <input asp-for="Input.OldPassword" class="form-control" placeholder="Change Password" type="password" />
+                <span asp-validation-for="Input.OldPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Input.NewPassword"></label>
+                <input asp-for="Input.NewPassword" class="form-control" placeholder="New Password" type="password" />
+                <span asp-validation-for="Input.NewPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-4">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm Password" type="password" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block w-100">Change Password</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $('#changePasswordForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent actual submission until old password is verified
+
+            const oldPassword = $('#Input_OldPassword').val();
+            const token = $('input[name="__RequestVerificationToken"]').val();
+
+            // Step 1: Validate old password
+            $.ajax({
+                url: '@Url.Page("Index", "ValidateOldPassword")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(oldPassword),
+                headers: {
+                    'RequestVerificationToken': token
+                },
+                success: function (res) {
+                    if (res.valid) {
+                        // Allow the native form submission (triggers password manager)
+                        $('#changePasswordForm').off('submit'); // Remove the preventDefault
+                        $('#changePasswordForm').submit();
+                    } else {
+                        $('#Input_OldPassword').addClass('is-invalid');
+                        $('[asp-validation-for="Input.OldPassword"]').text('Old password is incorrect.');
+                        showError('Old password is incorrect.');
+                    }
+                },
+                error: function () {
+                    showError('Error validating old password.');
+                }
+            });
+
+            function showError(msg) {
+                const alert = `<div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+                                <ul><li>${msg}</li></ul>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                               </div>`;
+                $('#alert-placeholder').html(alert);
+            }
+        });
+    </script>
+}

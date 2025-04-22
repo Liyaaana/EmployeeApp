@@ -1,0 +1,38 @@
+﻿@model EmployeeApp.Pages.Leaves.UserModel.LeaveInputModel
+
+<form id="leaveForm" method="post">
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="LeaveType" class="form-label"></label>
+        <select asp-for="LeaveType" class="form-select">
+            <option value="">-- Select Leave Type --</option>
+            <option value="Casual">Casual</option>
+            <option value="Sick">Sick</option>
+            <option value="Earned">Earned</option>
+        </select>
+        <span asp-validation-for="LeaveType" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="From" class="form-label"></label>
+        <input asp-for="From" class="form-control" type="date" />
+        <span asp-validation-for="From" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="To" class="form-label"></label>
+        <input asp-for="To" class="form-control" type="date" />
+        <span asp-validation-for="To" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

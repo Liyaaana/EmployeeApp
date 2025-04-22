@@ -1,0 +1,32 @@
+﻿@using EmployeeApp.Models
+@model List<LeaveViewModel>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Emp ID</th>
+            <th>Employee Name</th>
+            <th>Leave Type</th>
+            <th>Department</th>
+            <th>Days</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var leave in Model)
+        {
+            <tr>
+                <td>@leave.EmployeeId</td>
+                <td>@leave.EmployeeName</td>
+                <td>@leave.LeaveType</td>
+                <td>@leave.Department</td>
+                <td>@(leave.To - leave.From).Days</td>
+                <td>@leave.Status</td>
+                <td>
+                    <button class="btn btn-info btnViewLeave" data-id="@leave.Id">View</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -177,3 +177,4 @@ C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\refint\Employee
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\EmployeeApp.pdb
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\EmployeeApp.genruntimeconfig.cache
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\ref\EmployeeApp.dll
+C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Bogus.dll

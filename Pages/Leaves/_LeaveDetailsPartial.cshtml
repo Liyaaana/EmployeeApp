@@ -1,0 +1,47 @@
+﻿@using EmployeeApp.Models
+@model LeaveViewModel
+
+<div class="modal-body">
+    <h5>Leave Details</h5>
+    <p><strong>Employee Name:</strong> @Model.EmployeeName</p>
+    <p><strong>Leave Type:</strong> @Model.LeaveType</p>
+    <p><strong>From:</strong> @Model.From.ToString("MM/dd/yyyy")</p>
+    <p><strong>To:</strong> @Model.To.ToString("MM/dd/yyyy")</p>
+    <p><strong>Department:</strong> @Model.Department</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Applied On:</strong> @Model.AppliedDate.ToString("MM/dd/yyyy")</p>
+    <button class="btn btn-success" id="btnAccept" data-id="@Model.Id" data-status="Approved">Accept</button>
+    <button class="btn btn-danger" id="btnReject" data-id="@Model.Id" data-status="Rejected">Reject</button>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.btnStatus').on('click', function () {
+                const id = $(this).data('id');
+                const status = $(this).data('status');
+                const token = $('input[name="__RequestVerificationToken"]').val() || $('meta[name="csrf-token"]').attr("content");
+
+                $.ajax({
+                    url: '/Leaves/Admin?handler=UpdateStatus',
+                    type: 'POST',
+                    data: { id: id, status: status },
+                    headers: {
+                        'RequestVerificationToken': token
+                    },
+                    success: function () {
+                        $('#leaveDetailsModal').modal('hide');
+                        setTimeout(() => {
+                            location.reload(); // Refresh page to reflect status change
+                        }, 500);
+                    },
+                    error: function (xhr) {
+                        alert('Failed to update leave status.');
+                        console.error(xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+}

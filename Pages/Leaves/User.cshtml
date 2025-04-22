@@ -1,0 +1,110 @@
+﻿@page
+@model EmployeeApp.Pages.Leaves.UserModel
+@{
+    ViewData["Title"] = "My Leaves";
+}
+
+<h2>My Leave Requests</h2>
+
+<button id="addLeaveBtn" class="btn btn-success mb-3">Apply Leave</button>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <select id="statusFilter" class="form-select">
+            <option value="">All</option>
+            <option value="Pending">Pending</option>
+            <option value="Approved">Approved</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+    </div>
+</div>
+
+<!-- Leave Table -->
+<div id="leaveTableContainer">
+    @await Html.PartialAsync("_LeaveTablePartial", Model.Leaves)
+</div>
+
+<!-- Leave Modal -->
+<div class="modal fade" id="leaveModal" tabindex="-1" aria-labelledby="leaveModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Apply Leave</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Form loads here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $(function () {
+            // Load add leave form
+            $("#addLeaveBtn").click(function () {
+                $.get("?handler=AddForm", function (data) {
+                    $("#modalBody").html(data);
+                    $("#leaveModal").modal("show");
+                });
+            });
+
+            // Submit leave form
+            $(document).on("submit", "#leaveForm", function (e) {
+                e.preventDefault();
+                const form = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "?handler=SubmitLeave",
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            $("#leaveModal").modal("hide");
+                            reloadLeaveTable();
+                        } else {
+                            $("#modalBody").html(response);
+                        }
+                    },
+                    error: function () {
+                        alert("Error submitting leave.");
+                    }
+                });
+            });
+
+            function reloadLeaveTable() {
+                $.get("?handler=TablePartial", function (html) {
+                    $("#leaveTableContainer").html(html);
+                });
+            }
+        });
+
+        function filterUserTable() {
+    const selectedStatus = $("#statusFilter").val();
+    let visibleCount = 0;
+
+    $("#leaveTableContainer tbody tr").each(function () {
+        const row = $(this);
+        const status = row.find("td:nth-child(4)").text().trim();
+        const match = !selectedStatus || status === selectedStatus;
+
+        row.toggle(match);
+        if (match) visibleCount++;
+    });
+
+    $("#userNoResultsMessage").remove(); // Clean up any old messages
+
+    if (visibleCount === 0) {
+        const message = "<div id='userNoResultsMessage' class='alert alert-warning mt-3'>No leave found for selected status.</div>";
+        $("#leaveTableContainer").append(message);
+    }
+}
+
+$(function () {
+    $("#statusFilter").on("change", filterUserTable);
+});
+</script>
+}
