@@ -12,6 +12,7 @@
         <input type="text" class="form-control w-25" id="searchBox" placeholder="Search by Name" />
 
         <div>
+            <button class="btn btn-outline-secondary me-2" onclick="filterStatus('All')">All</button>
             <button class="btn btn-outline-primary me-2" onclick="filterStatus('Pending')">Pending</button>
             <button class="btn btn-outline-success me-2" onclick="filterStatus('Approved')">Approved</button>
             <button class="btn btn-outline-danger" onclick="filterStatus('Rejected')">Rejected</button>
@@ -82,14 +83,14 @@
             let visibleCount = 0;
             $('#leaveTableBody tr').each(function () {
                 const rowStatus = $(this).data('status');
-                if (rowStatus === status) {
+                if (status === "All" || rowStatus === status) {
                     $(this).show();
                     visibleCount++;
                 } else {
                     $(this).hide();
                 }
             });
-            toggleDisplay(visibleCount);
+            toggleDisplay(visibleCount, status);
         }
 
         $('#searchBox').on('input', function () {
@@ -106,17 +107,28 @@
                 }
             });
 
-            toggleDisplay(visibleCount);
+            toggleDisplay(visibleCount, 'All'); // Reset message during search
         });
 
-        function toggleDisplay(visibleCount) {
+        function toggleDisplay(visibleCount, status) {
             if (visibleCount === 0) {
                 $('#leaveTable').hide();
-                $('#noLeaveAlert').removeClass('d-none');
+
+                let message = "No leave found.";
+                if (status === "Pending") message = "No pending leaves.";
+                else if (status === "Approved") message = "No approved leaves.";
+                else if (status === "Rejected") message = "No rejected leaves.";
+                else if (status === "All") message = "No leave records available.";
+
+                $('#noLeaveAlert').removeClass('d-none').text(message);
             } else {
                 $('#leaveTable').show();
                 $('#noLeaveAlert').addClass('d-none');
             }
         }
+
+        $(document).ready(function () {
+            filterStatus('All'); // Set default filter
+        });
     </script>
 }
