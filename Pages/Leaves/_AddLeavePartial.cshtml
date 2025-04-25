@@ -18,13 +18,13 @@
 
     <div class="mb-3">
         <label asp-for="From" class="form-label"></label>
-        <input asp-for="From" class="form-control" type="date" />
+        <input asp-for="From" class="form-control" type="date" value="@(Model.From != DateTime.MinValue ? Model.From.ToString("yyyy-MM-dd") : "")" />
         <span asp-validation-for="From" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="To" class="form-label"></label>
-        <input asp-for="To" class="form-control" type="date" />
+        <input asp-for="To" class="form-control" type="date" value="@(Model.To != DateTime.MinValue ? Model.To.ToString("yyyy-MM-dd") : "")" />
         <span asp-validation-for="To" class="text-danger"></span>
     </div>
 
@@ -36,3 +36,20 @@
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<script>
+    $(function () {
+        // Clear validation errors on any input change
+        $('#leaveForm').on('input change', 'input, select, textarea', function () {
+            const $field = $(this);
+            const fieldName = $field.attr("name");
+
+            // Clear corresponding field error
+            $(`span[data-valmsg-for='${fieldName}']`).text('');
+
+            // Clear summary errors
+            $('div.validation-summary-errors').empty();
+        });
+    });
+</script>
+

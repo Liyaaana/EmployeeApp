@@ -7,6 +7,7 @@
             <th>Emp ID</th>
             <th>Employee Name</th>
             <th>Leave Type</th>
+            <th>Applied Date</th>
             <th>Department</th>
             <th>Days</th>
             <th>Status</th>
@@ -20,8 +21,9 @@
                 <td>@leave.EmployeeId</td>
                 <td>@leave.EmployeeName</td>
                 <td>@leave.LeaveType</td>
+                <th>Applied Date</th>
                 <td>@leave.Department</td>
-                <td>@(leave.To - leave.From).Days</td>
+                <td>@leave.Days</td>
                 <td>@leave.Status</td>
                 <td>
                     <button class="btn btn-info btnViewLeave" data-id="@leave.Id">View</button>

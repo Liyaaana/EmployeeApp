@@ -1,27 +1,55 @@
 ﻿@model List<EmployeeApp.Models.LeaveViewModel>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Type</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Status</th>
-            <th>Reason</th>
-            <th>Requested On</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var leave in Model)
+@if (Model.Any())
+{
+    <div id="leaveTableWrapper">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>S No</th>
+                    <th>Leave Type</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Description</th>
+                    <th>Applied Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    var leave = Model[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>@leave.LeaveType</td>
+                        <td>@leave.From.ToString("dd-MM-yyyy")</td>
+                        <td>@leave.To.ToString("dd-MM-yyyy")</td>
+                        <td>@leave.Description</td>
+                        <td>@leave.AppliedDate.ToString("dd-MM-yyyy")</td>
+                        <td>@leave.Status</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div id="userNoResultsMessage" class="alert alert-warning mt-3">
+        No leave found for selected status.
+    </div>
+}
+
+
+@functions {
+    string GetBadgeClass(string status)
+    {
+        return status switch
         {
-            <tr>
-                <td>@leave.LeaveType</td>
-                <td>@leave.From.ToShortDateString()</td>
-                <td>@leave.To.ToShortDateString()</td>
-                <td>@leave.Status</td>
-                <td>@leave.Description</td>
-                <td>@leave.AppliedDate.ToShortDateString()</td>
-            </tr>
-        }
-    </tbody>
-</table>
+            "Pending" => "warning",
+            "Approved" => "success",
+            "Rejected" => "danger",
+            _ => "secondary"
+        };
+    }
+}

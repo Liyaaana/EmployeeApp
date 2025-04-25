@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
-using EmployeeApp.Services;
+using Microsoft.EntityFrameworkCore;
+using EmployeeApp.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EmployeeApp.Pages.Account
 {
@@ -12,19 +14,20 @@ namespace EmployeeApp.Pages.Account
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly EmployeeService _employeeService;
+        private readonly ApplicationDbContext _context;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<IdentityRole> roleManager,
-            EmployeeService employeeService)
+            ApplicationDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
-            _employeeService = employeeService;
+            _context = context;
         }
+
 
         [BindProperty]
         public RegisterInput Input { get; set; }
@@ -33,11 +36,6 @@ namespace EmployeeApp.Pages.Account
 
         public async Task<JsonResult> OnPostRegisterAsync(string fullName, string email, string password, string department)
         {
-            // Check if the admin is logged in, otherwise deny registration
-            var currentUser = await _userManager.GetUserAsync(User);
-            if (!await _userManager.IsInRoleAsync(currentUser, "Admin"))
-                return new JsonResult(new { success = false, error = "Only admin can create employees." });
-
             if (await _userManager.FindByEmailAsync(email) != null)
                 return new JsonResult(new { success = false, error = "An account with this email already exists." });
 
@@ -47,13 +45,26 @@ namespace EmployeeApp.Pages.Account
             if (!new EmailAddressAttribute().IsValid(email))
                 return new JsonResult(new { success = false, error = "Invalid email format." });
 
+            if (!System.Text.RegularExpressions.Regex.IsMatch(password, @"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z\d\s]).{6,}$"))
+                return new JsonResult(new { success = false, error = "Password must include at least one uppercase, one lowercase, one number, and one special character (excluding spaces)." });
+
+            bool isFirstUser = !_userManager.Users.Any();
+
+            // 🔍 Find the existing employee
+            var existingEmployee = await _context.Employees.FirstOrDefaultAsync(e => e.Email == email);
+            if (existingEmployee == null)
+            {
+                return new JsonResult(new { success = false, error = "No employee found with this email. Please add employee first." });
+            }
+
             var user = new ApplicationUser
             {
                 UserName = email,
                 Email = email,
                 FullName = fullName,
                 Department = department,
-                EmployeeCode = _employeeService.GenerateEmployeeCode(fullName)
+                EmployeeCode = existingEmployee.EmployeeCode,
+                EmployeeId = existingEmployee.Id // Link ApplicationUser to Employee
             };
 
             var result = await _userManager.CreateAsync(user, password);
@@ -63,14 +74,23 @@ namespace EmployeeApp.Pages.Account
                 return new JsonResult(new { success = false, error = errors });
             }
 
-            // Assign default role for the employee
-            await _userManager.AddToRoleAsync(user, "User");
+            if (!await _roleManager.RoleExistsAsync("Admin"))
+                await _roleManager.CreateAsync(new IdentityRole("Admin"));
 
-            // Log in the new user if needed
-            // await _signInManager.SignInAsync(user, isPersistent: false);
+            if (!await _roleManager.RoleExistsAsync("User"))
+                await _roleManager.CreateAsync(new IdentityRole("User"));
 
-            return new JsonResult(new { success = true });
+            if (isFirstUser)
+                await _userManager.AddToRoleAsync(user, "Admin");
+            else
+                await _userManager.AddToRoleAsync(user, "User");
+
+            await _signInManager.SignInAsync(user, isPersistent: false);
+
+            // Fetch the role after it's been assigned
+            return new JsonResult(new { success = true, message = "User registered successfully." });
         }
+
 
         public class RegisterInput
         {

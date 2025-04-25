@@ -4,12 +4,15 @@
     ViewData["Title"] = "My Leaves";
 }
 
-<h2>My Leave Requests</h2>
+<!-- Heading for the Page -->
+<h2 class="mb-4">My Leave Requests</h2>
 
-<button id="addLeaveBtn" class="btn btn-success mb-3">Apply Leave</button>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <!-- Apply Leave Button -->
+    <button id="addLeaveBtn" class="btn btn-success">Apply Leave</button>
 
-<div class="row mb-3">
-    <div class="col-md-4">
+    <!-- Filter Status Dropdown, aligned to the right -->
+    <div class="col-md-3">
         <select id="statusFilter" class="form-select">
             <option value="">All</option>
             <option value="Pending">Pending</option>
@@ -33,7 +36,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="modalBody">
-                <!-- Form loads here -->
+                <!-- AJAX Leave Form Loads Here -->
             </div>
         </div>
     </div>
@@ -45,7 +48,7 @@
 
     <script>
         $(function () {
-            // Load add leave form
+            // Show leave form in modal
             $("#addLeaveBtn").click(function () {
                 $.get("?handler=AddForm", function (data) {
                     $("#modalBody").html(data);
@@ -64,6 +67,7 @@
                     success: function (response) {
                         if (response.success) {
                             $("#leaveModal").modal("hide");
+                            form[0].reset();
                             reloadLeaveTable();
                         } else {
                             $("#modalBody").html(response);
@@ -75,36 +79,40 @@
                 });
             });
 
+            // Reload table from server after submission
             function reloadLeaveTable() {
-                $.get("?handler=TablePartial", function (html) {
-                    $("#leaveTableContainer").html(html);
+                $.get("?handler=TablePartial", function (data) {
+                    $("#leaveTableContainer").html(data);
+                    applyStatusFilter(); // reapply filter
                 });
             }
+
+            // Apply status filter
+            function applyStatusFilter() {
+                const selectedStatus = $("#statusFilter").val();
+                let visibleCount = 0;
+
+                const $rows = $("#leaveTableContainer tbody tr");
+                $rows.each(function () {
+                    const status = $(this).find("td:nth-child(7)").text().trim();
+                    const match = !selectedStatus || status === selectedStatus;
+
+                    $(this).toggle(match);
+                    if (match) visibleCount++;
+                });
+
+                $("#userNoResultsMessage").remove();
+
+                if (visibleCount === 0) {
+                    $("#leaveTableContainer table").hide();
+                    $("#leaveTableContainer").append(`<div id='userNoResultsMessage' class='alert alert-warning mt-3'>No leave found for selected status.</div>`);
+                } else {
+                    $("#leaveTableContainer table").show();
+                }
+            }
+
+            // Bind filter dropdown
+            $("#statusFilter").on("change", applyStatusFilter);
         });
-
-        function filterUserTable() {
-    const selectedStatus = $("#statusFilter").val();
-    let visibleCount = 0;
-
-    $("#leaveTableContainer tbody tr").each(function () {
-        const row = $(this);
-        const status = row.find("td:nth-child(4)").text().trim();
-        const match = !selectedStatus || status === selectedStatus;
-
-        row.toggle(match);
-        if (match) visibleCount++;
-    });
-
-    $("#userNoResultsMessage").remove(); // Clean up any old messages
-
-    if (visibleCount === 0) {
-        const message = "<div id='userNoResultsMessage' class='alert alert-warning mt-3'>No leave found for selected status.</div>";
-        $("#leaveTableContainer").append(message);
-    }
-}
-
-$(function () {
-    $("#statusFilter").on("change", filterUserTable);
-});
-</script>
+    </script>
 }

@@ -1,12 +1,13 @@
 ﻿using EmployeeApp.Data;
 using EmployeeApp.Models;
+using EmployeeApp.Services; 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 
 namespace EmployeeApp.Pages.EmployeeManagement
 {
@@ -14,13 +15,14 @@ namespace EmployeeApp.Pages.EmployeeManagement
     public class CreateModel : PageModel
     {
         private readonly ApplicationDbContext _context;
+        private readonly EmployeeService _employeeService;
 
-        public CreateModel(ApplicationDbContext context)
+        public CreateModel(ApplicationDbContext context, EmployeeService employeeService)
         {
             _context = context;
+            _employeeService = employeeService;
         }
 
-        // Used to populate the Department dropdown
         public List<SelectListItem> Department { get; set; } = new List<SelectListItem>
         {
             new SelectListItem { Value = "Finance", Text = "Finance" },
@@ -30,13 +32,11 @@ namespace EmployeeApp.Pages.EmployeeManagement
             new SelectListItem { Value = "Sales", Text = "Sales" }
         };
 
-        // Input model for form binding and validation
         [BindProperty]
         public EmployeeInputModel Employee { get; set; }
 
         public void OnGet()
         {
-            // Nothing to do for now, Departments are already initialized
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -46,13 +46,16 @@ namespace EmployeeApp.Pages.EmployeeManagement
                 return Page();
             }
 
+            var employeeCode = _employeeService.GenerateEmployeeCode(Employee.Name);
+
             var newEmployee = new Employee
             {
                 Name = Employee.Name,
                 Email = Employee.Email,
                 PhoneNumber = Employee.PhoneNumber,
                 Department = Employee.Department,
-                Salary = Employee.Salary
+                Salary = Employee.Salary,
+                EmployeeCode = employeeCode // Assign the generated EmployeeCode
             };
 
             _context.Employees.Add(newEmployee);

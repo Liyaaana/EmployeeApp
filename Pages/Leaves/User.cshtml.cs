@@ -24,19 +24,42 @@ namespace EmployeeApp.Pages.Leaves
         [BindProperty]
         public LeaveInputModel Leave { get; set; }
 
-        public class LeaveInputModel
+        public class LeaveInputModel : IValidatableObject
         {
             [Required(ErrorMessage = "Leave type is required")]
             public string LeaveType { get; set; }
 
             [Required(ErrorMessage = "Start date is required")]
+            [DataType(DataType.Date)]
+            [CustomFromDate(ErrorMessage = "Start date cannot be in the past.")]
             public DateTime From { get; set; }
 
             [Required(ErrorMessage = "End date is required")]
+            [DataType(DataType.Date)]
             public DateTime To { get; set; }
 
             [Required(ErrorMessage = "Description is required")]
             public string Description { get; set; }
+
+            public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+            {
+                if (To < From)
+                {
+                    yield return new ValidationResult("End date cannot be earlier than start date.", new[] { nameof(To) });
+                }
+            }
+        }
+
+        public class CustomFromDateAttribute : ValidationAttribute
+        {
+            public override bool IsValid(object value)
+            {
+                if (value is DateTime date)
+                {
+                    return date.Date >= DateTime.Today;
+                }
+                return false;
+            }
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -83,6 +106,23 @@ namespace EmployeeApp.Pages.Leaves
                 };
             }
 
+            // Log the model state errors
+            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+            {
+                Console.WriteLine("Model error: " + error.ErrorMessage); // Debug the error message
+            }
+
+            // Additional server-side validation
+            if (Leave.To < Leave.From)
+            {
+                ModelState.AddModelError("Leave.To", "To date cannot be earlier than From date.");
+                return new PartialViewResult
+                {
+                    ViewName = "_AddLeavePartial",
+                    ViewData = new Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<LeaveInputModel>(ViewData, Leave)
+                };
+            }
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
                 return Unauthorized();
@@ -91,6 +131,7 @@ namespace EmployeeApp.Pages.Leaves
             {
                 UserId = user.Id,
                 LeaveType = Leave.LeaveType,
+                Department = user.Department,
                 From = Leave.From,
                 To = Leave.To,
                 Description = Leave.Description,
@@ -103,6 +144,7 @@ namespace EmployeeApp.Pages.Leaves
 
             return new JsonResult(new { success = true });
         }
+
 
         public async Task<PartialViewResult> OnGetTablePartial()
         {

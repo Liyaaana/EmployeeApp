@@ -37,7 +37,6 @@ namespace EmployeeApp.Services
             var lastNumber = lastEmployee == null ? 0 : int.Parse(lastEmployee.EmployeeCode.Substring(3));
             var newNumber = lastNumber + 1;
 
-            // Generate the employee code: e.g., AVA027
             string employeeCode = $"{namePart}{newNumber:D4}";  // Ensure the number is 4 digits
 
             return employeeCode;

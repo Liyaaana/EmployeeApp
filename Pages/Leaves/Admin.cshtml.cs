@@ -29,6 +29,8 @@ namespace EmployeeApp.Pages.Leaves
                     LeaveType = l.LeaveType,
                     From = l.From,
                     To = l.To,
+                    AppliedDate = l.AppliedDate,
+                    Days = (int)(l.To - l.From).TotalDays + 1,
                     Status = l.Status,
                     Description = l.Description,
                     Department = l.Department
@@ -50,12 +52,14 @@ namespace EmployeeApp.Pages.Leaves
                     To = l.To,
                     Description = l.Description,
                     Department = l.Department,
-                    Status = l.Status
+                    Status = l.Status,
+                    Days = (int)(l.To - l.From).TotalDays + 1
                 })
                 .FirstOrDefault();
 
             return Partial("_LeaveDetailsPartial", leave);
         }
+
         public IActionResult OnPostUpdateStatus(int id, string status)
         {
             var leave = _context.Leaves.FirstOrDefault(l => l.Id == id);
@@ -63,9 +67,9 @@ namespace EmployeeApp.Pages.Leaves
             {
                 leave.Status = status;
                 _context.SaveChanges();
-                return new JsonResult(new { success = true });
             }
-            return new JsonResult(new { success = false });
+
+            return RedirectToPage("Admin");
         }
 
     }
