@@ -1,10 +1,12 @@
 ﻿using EmployeeApp.Data;
 using EmployeeApp.Models;
-using EmployeeApp.Services; 
+using EmployeeApp.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
@@ -16,11 +18,16 @@ namespace EmployeeApp.Pages.EmployeeManagement
     {
         private readonly ApplicationDbContext _context;
         private readonly EmployeeService _employeeService;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;  // Add this line
 
-        public CreateModel(ApplicationDbContext context, EmployeeService employeeService)
+        // Modify the constructor to accept RoleManager<IdentityRole>
+        public CreateModel(ApplicationDbContext context, EmployeeService employeeService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _context = context;
             _employeeService = employeeService;
+            _userManager = userManager;
+            _roleManager = roleManager; // Assign RoleManager to the field
         }
 
         public List<SelectListItem> Department { get; set; } = new List<SelectListItem>
@@ -46,6 +53,16 @@ namespace EmployeeApp.Pages.EmployeeManagement
                 return Page();
             }
 
+            // Check if employee with same email or phone number already exists
+            var existingEmployee = await _context.Employees
+                .FirstOrDefaultAsync(e => e.Email == Employee.Email || e.PhoneNumber == Employee.PhoneNumber);
+
+            if (existingEmployee != null)
+            {
+                TempData["EmployeeExists"] = "An employee with this email or phone number already exists.";
+                return RedirectToPage(); // This will redirect to the same page to show the alert
+            }
+
             var employeeCode = _employeeService.GenerateEmployeeCode(Employee.Name);
 
             var newEmployee = new Employee
@@ -58,10 +75,79 @@ namespace EmployeeApp.Pages.EmployeeManagement
                 EmployeeCode = employeeCode // Assign the generated EmployeeCode
             };
 
-            _context.Employees.Add(newEmployee);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Employees.Add(newEmployee);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error saving employee: {ex.Message}");
+            }
 
-            return RedirectToPage("Index");
+            // Generate password using the first 3 letters of the employee's name + "@123"
+            string passwordPrefix = Employee.Name.Length >= 3
+                ? Employee.Name.Substring(0, 3) // Use first 3 letters of name
+                : Employee.Name.PadRight(3, Employee.Name[Employee.Name.Length - 1]); // Repeat last letter for names with 2 letters or less
+
+            var password = passwordPrefix + "@123"; // Append "@123" to the prefix
+
+            var user = new ApplicationUser
+            {
+                UserName = Employee.Email,
+                Email = Employee.Email,
+                FullName = Employee.Name,
+                PhoneNumber = Employee.PhoneNumber,
+                Salary = Employee.Salary,
+                Department = Employee.Department,
+                EmployeeId = newEmployee.Id, // Link the employee
+                EmployeeCode = employeeCode
+            };
+
+            // Check if "Admin" and "User" roles exist, create them if not
+            if (!await _roleManager.RoleExistsAsync("Admin"))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("Admin"));
+            }
+
+            if (!await _roleManager.RoleExistsAsync("User"))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("User"));
+            }
+
+            // Create the ApplicationUser with the generated password
+            var result = await _userManager.CreateAsync(user, password);
+
+            if (result.Succeeded)
+            {
+                // Check if this is the first user and assign roles accordingly
+                bool isFirstUser = !_userManager.Users.Any();
+
+                if (isFirstUser)
+                {
+                    // Assign the first user as Admin
+                    await _userManager.AddToRoleAsync(user, "Admin");
+                }
+                else
+                {
+                    // Assign all subsequent users as User
+                    await _userManager.AddToRoleAsync(user, "User");
+                }
+
+                // Add success message using TempData
+                TempData["EmployeeAdded"] = "Employee successfully added!";
+
+                // Redirect to the Index page and show success message
+                return RedirectToPage("/EmployeeManagement/Index");
+            }
+
+            // If there are errors during user creation, add them to the ModelState
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return Page();
         }
 
         public class EmployeeInputModel

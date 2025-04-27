@@ -20,6 +20,13 @@ namespace EmployeeApp.Data
             builder.Entity<Employee>()
                 .Property(e => e.Salary)
                 .HasPrecision(18, 2);
+
+            // One-to-one relationship between ApplicationUser and Employee
+            builder.Entity<ApplicationUser>()
+                .HasOne(u => u.Employee)
+                .WithOne(e => e.ApplicationUser)
+                .HasForeignKey<ApplicationUser>(u => u.EmployeeId);
         }
+
     }
 }

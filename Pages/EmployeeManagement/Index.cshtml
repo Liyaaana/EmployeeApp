@@ -2,10 +2,19 @@
 @model EmployeeApp.Pages.EmployeeManagement.IndexModel
 @{
     ViewData["Title"] = "Employee Management";
+    var successMessage = TempData["EmployeeAdded"] as string;
 }
 
 <div class="container mt-4">
     <h2>Employee Management</h2>
+
+    <!-- Display success message if exists -->
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <div class="alert alert-success">
+            @successMessage
+        </div>
+    }
 
     <input type="text" id="searchBox" class="form-control mb-3" placeholder="Search Employees by Name (Min 3 letters)" />
 
@@ -210,6 +219,14 @@
                 function () { $(this).css('background', 'green'); },
                 function () { $(this).css('background', ''); }
             );
+
+            // Check if success message exists and trigger redirection
+            if ("@TempData["EmployeeAdded"]" != "") {
+                // Delay redirection to allow message to show
+                setTimeout(function () {
+                    window.location.href = '/EmployeeManagement/Index';
+                }, 2000); // Delay of 2 seconds before redirect
+            }
         });
     </script>
 }

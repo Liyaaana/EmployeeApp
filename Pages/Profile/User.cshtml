@@ -1,0 +1,36 @@
+﻿@page
+@model EmployeeApp.Pages.Profile.UserModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<h1 class="mb-4">My Profile</h1>
+
+<div class="card shadow-sm p-4 mb-5 bg-white rounded" style="max-width: 700px;">
+    <div class="row">
+        <div class="col-6 font-weight-bold mb-2">Name:</div>
+        <div class="col-6 mb-2">@Model.Profile.FullName</div>
+
+        <div class="col-6 font-weight-bold mb-2">Employee ID:</div>
+        <div class="col-6 mb-2">@Model.Profile.EmployeeCode</div>
+
+        <div class="col-6 font-weight-bold mb-2">Email:</div>
+        <div class="col-6 mb-2">@Model.Profile.Email</div>
+
+        <div class="col-6 font-weight-bold mb-2">Phone Number:</div>
+        <div class="col-6 mb-2">
+            @(!string.IsNullOrEmpty(Model.Profile.PhoneNumber) ? Model.Profile.PhoneNumber : "-")
+        </div>
+
+        <div class="col-6 font-weight-bold mb-2">Department:</div>
+        <div class="col-6 mb-2">@Model.Profile.Department</div>
+
+        <div class="col-6 font-weight-bold mb-2">Salary:</div>
+        <div class="col-6 mb-2">
+            @(Model.Profile.Salary > 0 ?
+                Model.Profile.Salary.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-IN")) :
+                "Not Available")
+        </div>
+
+    </div>
+</div>

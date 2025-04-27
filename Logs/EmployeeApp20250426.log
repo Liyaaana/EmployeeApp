@@ -1,0 +1,548 @@
+2025-04-26 11:26:34.531 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:26:34.708 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:26:39.012 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:26:39.389 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 11:26:39.419 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 11:26:39.421 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-26 11:26:39.423 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-26 11:26:39.456 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-26 11:26:39.468 +05:30 [INF] Applying migration '20250426055635_AddSalaryToApplicationUser'.
+2025-04-26 11:26:39.536 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] ADD [Salary] decimal(18,2) NOT NULL DEFAULT 0.0;
+2025-04-26 11:26:39.540 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250426055635_AddSalaryToApplicationUser', N'8.0.3');
+2025-04-26 11:29:04.227 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-26 11:29:04.761 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:29:05.200 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:29:05.257 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:29:05.315 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-26 11:29:05.362 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-26 11:29:05.369 +05:30 [INF] EmployeeApp started successfully.
+2025-04-26 11:29:05.402 +05:30 [INF] Creating key {7a4f6ae3-ea06-458a-b8c7-70bded58f98b} with creation date 2025-04-26 05:59:05Z, activation date 2025-04-27 07:49:52Z, and expiration date 2025-07-25 05:59:05Z.
+2025-04-26 11:29:05.412 +05:30 [INF] Writing data to file 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys\key-7a4f6ae3-ea06-458a-b8c7-70bded58f98b.xml'.
+2025-04-26 11:29:05.483 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-26 11:29:05.485 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-26 11:29:05.534 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 11:29:05.537 +05:30 [INF] Hosting environment: Development
+2025-04-26 11:29:05.538 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-26 11:29:05.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-26 11:29:06.141 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:29:06.174 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-26 11:29:06.195 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:29:06.200 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:29:06.207 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-26 11:29:06.214 +05:30 [INF] Executing endpoint '/Index'
+2025-04-26 11:29:06.225 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-26 11:29:06.231 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-26 11:29:06.233 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-26 11:29:06.235 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-26 11:29:06.236 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:29:06.258 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:29:06.291 +05:30 [INF] Executed page /Index in 62.5798ms
+2025-04-26 11:29:06.296 +05:30 [INF] Executed endpoint '/Index'
+2025-04-26 11:29:06.300 +05:30 [INF] HTTP GET / responded 200 in 238.7505 ms
+2025-04-26 11:29:06.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:29:06.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:29:06.311 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 320.7974ms
+2025-04-26 11:29:06.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.1384ms
+2025-04-26 11:29:06.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.8042ms
+2025-04-26 11:30:00.090 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-26 11:30:00.524 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:30:00.934 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:30:00.996 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:30:01.037 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-26 11:30:01.092 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-26 11:30:01.100 +05:30 [INF] EmployeeApp started successfully.
+2025-04-26 11:30:01.171 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-26 11:30:01.174 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-26 11:30:01.213 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 11:30:01.216 +05:30 [INF] Hosting environment: Development
+2025-04-26 11:30:01.217 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-26 11:30:01.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-04-26 11:30:01.457 +05:30 [INF] Executing endpoint '/Index'
+2025-04-26 11:30:01.469 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-04-26 11:30:01.476 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-04-26 11:30:01.479 +05:30 [INF] Executed handler method OnGet, returned result .
+2025-04-26 11:30:01.481 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-26 11:30:01.482 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:30:01.554 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:30:01.582 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:30:01.610 +05:30 [INF] Executed page /Index in 135.6165ms
+2025-04-26 11:30:01.613 +05:30 [INF] Executed endpoint '/Index'
+2025-04-26 11:30:01.622 +05:30 [INF] HTTP GET / responded 200 in 179.1452 ms
+2025-04-26 11:30:01.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:30:01.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:30:01.636 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 245.7798ms
+2025-04-26 11:30:01.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.0436ms
+2025-04-26 11:30:01.655 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.8861ms
+2025-04-26 11:30:01.664 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/favicon.ico - null null
+2025-04-26 11:30:01.670 +05:30 [INF] The file /favicon.ico was not modified
+2025-04-26 11:30:01.671 +05:30 [INF] HTTP GET /favicon.ico responded 304 in 4.0398 ms
+2025-04-26 11:30:01.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/favicon.ico - 304 null image/x-icon 8.0004ms
+2025-04-26 11:30:05.394 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-04-26 11:30:05.405 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-04-26 11:30:05.408 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-04-26 11:30:05.413 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-04-26 11:30:05.417 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-04-26 11:30:05.419 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-04-26 11:30:05.419 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-04-26 11:30:05.420 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-04-26 11:30:05.421 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-04-26 11:30:05.422 +05:30 [INF] Executed page /Account/Logout in 13.1227ms
+2025-04-26 11:30:05.423 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-04-26 11:30:05.423 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 21.7991 ms
+2025-04-26 11:30:05.424 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 30.0244ms
+2025-04-26 11:30:05.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-04-26 11:30:05.432 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-26 11:30:05.441 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-26 11:30:05.453 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-04-26 11:30:05.454 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:30:05.483 +05:30 [INF] Executed page /Account/Login in 39.8197ms
+2025-04-26 11:30:05.485 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-26 11:30:05.487 +05:30 [INF] HTTP GET /Account/Login responded 200 in 56.5710 ms
+2025-04-26 11:30:05.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 62.3097ms
+2025-04-26 11:30:05.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-04-26 11:30:05.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:30:05.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:30:05.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-04-26 11:30:05.499 +05:30 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2025-04-26 11:30:05.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.0918ms
+2025-04-26 11:30:05.505 +05:30 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2025-04-26 11:30:05.506 +05:30 [INF] HTTP GET /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js responded 304 in 7.5314 ms
+2025-04-26 11:30:05.509 +05:30 [INF] HTTP GET /lib/jquery-validation/dist/jquery.validate.min.js responded 304 in 4.3739 ms
+2025-04-26 11:30:05.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 304 null text/javascript 14.3844ms
+2025-04-26 11:30:05.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 18.0885ms
+2025-04-26 11:30:05.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.3544ms
+2025-04-26 11:30:09.974 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 227
+2025-04-26 11:30:09.978 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-04-26 11:30:09.979 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-04-26 11:30:09.995 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-04-26 11:30:10.033 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-26 11:30:10.053 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-04-26 11:30:10.171 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-04-26 11:30:10.182 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:30:10.190 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:30:10.204 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-04-26 11:30:10.217 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-04-26 11:30:10.224 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-04-26 11:30:10.228 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType12`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-26 11:30:10.239 +05:30 [INF] Executed page /Account/Login in 258.7466ms
+2025-04-26 11:30:10.242 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-04-26 11:30:10.244 +05:30 [INF] HTTP POST /Account/Login responded 200 in 265.5135 ms
+2025-04-26 11:30:10.245 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 271.399ms
+2025-04-26 11:30:10.251 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-26 11:30:10.256 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-26 11:30:10.261 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-26 11:30:10.263 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-26 11:30:10.292 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:30:10.312 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-04-26 11:30:10.319 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:30:10.332 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-26 11:30:10.357 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:30:10.373 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:30:10.381 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:30:10.386 +05:30 [INF] Executed page /Dashboard/Index in 124.0597ms
+2025-04-26 11:30:10.388 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-26 11:30:10.389 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 134.3750 ms
+2025-04-26 11:30:10.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 139.9978ms
+2025-04-26 11:30:10.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:30:10.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:30:10.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.7701ms
+2025-04-26 11:30:10.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.8244ms
+2025-04-26 11:31:35.379 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-26 11:31:35.848 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:31:36.250 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:31:36.300 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:31:36.345 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-26 11:31:36.392 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-26 11:31:36.400 +05:30 [INF] EmployeeApp started successfully.
+2025-04-26 11:31:36.475 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-26 11:31:36.477 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-26 11:31:36.515 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 11:31:36.518 +05:30 [INF] Hosting environment: Development
+2025-04-26 11:31:36.519 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-26 11:31:36.682 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-26 11:31:36.746 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-26 11:31:36.760 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-26 11:31:36.768 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-26 11:31:36.830 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:31:36.847 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-04-26 11:31:36.852 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:31:36.861 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-26 11:31:36.876 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:31:36.910 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:31:36.940 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:31:36.973 +05:30 [INF] Executed page /Dashboard/Index in 207.8213ms
+2025-04-26 11:31:36.977 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-26 11:31:36.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:31:36.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:31:36.981 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 252.4640 ms
+2025-04-26 11:31:36.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.8971ms
+2025-04-26 11:31:36.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 309.8062ms
+2025-04-26 11:31:37.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.0018ms
+2025-04-26 11:31:40.007 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Profile/User - null null
+2025-04-26 11:31:40.020 +05:30 [INF] Executing endpoint '/Profile/User'
+2025-04-26 11:31:40.023 +05:30 [INF] Route matched with {page = "/Profile/User"}. Executing page /Profile/User
+2025-04-26 11:31:40.026 +05:30 [INF] Executing handler method EmployeeApp.Pages.Profile.UserModel.OnGet - ModelState is "Valid"
+2025-04-26 11:31:40.048 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-04-26 11:31:40.055 +05:30 [INF] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:31:40.064 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:31:40.070 +05:30 [INF] Executed page /Profile/User in 45.1128ms
+2025-04-26 11:31:40.071 +05:30 [INF] Executed endpoint '/Profile/User'
+2025-04-26 11:31:40.072 +05:30 [INF] HTTP GET /Profile/User responded 200 in 58.2244 ms
+2025-04-26 11:31:40.073 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Profile/User - 200 null text/html; charset=utf-8 66.4274ms
+2025-04-26 11:31:40.081 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:31:40.081 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:31:40.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.4324ms
+2025-04-26 11:31:40.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.2847ms
+2025-04-26 11:34:16.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-04-26 11:34:16.278 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-26 11:34:16.280 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-26 11:34:16.281 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-26 11:34:16.287 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:34:16.292 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-04-26 11:34:16.296 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:34:16.298 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-26 11:34:16.302 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:34:16.309 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:34:16.313 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:34:16.316 +05:30 [INF] Executed page /Dashboard/Index in 35.8943ms
+2025-04-26 11:34:16.317 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-26 11:34:16.318 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 50.2347 ms
+2025-04-26 11:34:16.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 59.4747ms
+2025-04-26 11:34:16.329 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:34:16.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:34:16.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.3534ms
+2025-04-26 11:34:16.337 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.8823ms
+2025-04-26 11:34:19.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?page=12 - null null
+2025-04-26 11:34:19.437 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-26 11:34:19.439 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-26 11:34:19.443 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-26 11:34:19.445 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:34:19.446 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-04-26 11:34:19.448 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:34:19.449 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-26 11:34:19.451 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:34:19.455 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:34:19.458 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:34:19.460 +05:30 [INF] Executed page /Dashboard/Index in 20.5978ms
+2025-04-26 11:34:19.461 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-26 11:34:19.462 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 25.2290 ms
+2025-04-26 11:34:19.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?page=12 - 200 null text/html; charset=utf-8 35.2081ms
+2025-04-26 11:34:19.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:34:19.475 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:34:19.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.7758ms
+2025-04-26 11:34:19.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.8832ms
+2025-04-26 11:34:23.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?page=11 - null null
+2025-04-26 11:34:23.403 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-26 11:34:23.405 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-26 11:34:23.407 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-26 11:34:23.409 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:34:23.412 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-04-26 11:34:23.414 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:34:23.417 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-26 11:34:23.420 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:34:23.422 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:34:23.429 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:34:23.431 +05:30 [INF] Executed page /Dashboard/Index in 24.3498ms
+2025-04-26 11:34:23.432 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-26 11:34:23.433 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 31.7618 ms
+2025-04-26 11:34:23.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?page=11 - 200 null text/html; charset=utf-8 40.3891ms
+2025-04-26 11:34:23.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:34:23.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:34:23.445 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.0101ms
+2025-04-26 11:34:23.450 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.5126ms
+2025-04-26 11:46:09.513 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-26 11:46:09.977 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-04-26 11:46:10.365 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:46:10.415 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-04-26 11:46:10.460 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-04-26 11:46:10.506 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-26 11:46:10.514 +05:30 [INF] EmployeeApp started successfully.
+2025-04-26 11:46:10.592 +05:30 [INF] Now listening on: https://localhost:7134
+2025-04-26 11:46:10.593 +05:30 [INF] Now listening on: http://localhost:5207
+2025-04-26 11:46:10.638 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 11:46:10.640 +05:30 [INF] Hosting environment: Development
+2025-04-26 11:46:10.641 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-04-26 11:46:10.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?page=11 - null null
+2025-04-26 11:46:10.975 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-04-26 11:46:10.989 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-04-26 11:46:11.002 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Valid"
+2025-04-26 11:46:11.062 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:46:11.080 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-04-26 11:46:11.086 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-04-26 11:46:11.095 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-04-26 11:46:11.109 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:46:11.144 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-04-26 11:46:11.176 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:46:11.211 +05:30 [INF] Executed page /Dashboard/Index in 215.7792ms
+2025-04-26 11:46:11.214 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-04-26 11:46:11.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:46:11.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:46:11.220 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 259.3029 ms
+2025-04-26 11:46:11.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.3054ms
+2025-04-26 11:46:11.234 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?page=11 - 200 null text/html; charset=utf-8 321.9007ms
+2025-04-26 11:46:11.249 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.5348ms
+2025-04-26 11:46:12.016 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Profile/User - null null
+2025-04-26 11:46:12.028 +05:30 [INF] Executing endpoint '/Profile/User'
+2025-04-26 11:46:12.031 +05:30 [INF] Route matched with {page = "/Profile/User"}. Executing page /Profile/User
+2025-04-26 11:46:12.034 +05:30 [INF] Executing handler method EmployeeApp.Pages.Profile.UserModel.OnGet - ModelState is "Valid"
+2025-04-26 11:46:12.054 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-04-26 11:46:12.062 +05:30 [INF] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-04-26 11:46:12.074 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-04-26 11:46:12.077 +05:30 [INF] Executed page /Profile/User in 44.2742ms
+2025-04-26 11:46:12.078 +05:30 [INF] Executed endpoint '/Profile/User'
+2025-04-26 11:46:12.078 +05:30 [INF] HTTP GET /Profile/User responded 200 in 56.0285 ms
+2025-04-26 11:46:12.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Profile/User - 200 null text/html; charset=utf-8 64.2303ms
+2025-04-26 11:46:12.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-04-26 11:46:12.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-26 11:46:12.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8814ms
+2025-04-26 11:46:12.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.2309ms

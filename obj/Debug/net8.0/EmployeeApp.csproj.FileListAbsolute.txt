@@ -8,6 +8,7 @@ C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\EmployeeApp.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\EmployeeApp.pdb
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Bogus.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Humanizer.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
@@ -177,4 +178,3 @@ C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\refint\Employee
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\EmployeeApp.pdb
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\EmployeeApp.genruntimeconfig.cache
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\obj\Debug\net8.0\ref\EmployeeApp.dll
-C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Bogus.dll

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using EmployeeApp.Data;
 using EmployeeApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeApp.Pages.Leaves
 {
+    [Authorize(Roles = "User")]
     public class UserModel : PageModel
     {
         private readonly ApplicationDbContext _context;

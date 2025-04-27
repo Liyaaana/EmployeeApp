@@ -28,19 +28,14 @@ namespace EmployeeApp.Services
                 namePart += namePart[0];
             }
 
-            // Generate the numeric part (e.g., 0001, 0002)
-            var lastEmployee = _context.Users
-                .Where(u => !string.IsNullOrEmpty(u.EmployeeCode))  // Only consider users with an EmployeeCode
-                .OrderByDescending(u => u.EmployeeCode)
-                .FirstOrDefault();
+            // Generate a random number between 1000 and 9999
+            Random rand = new Random();
+            int randomNumber = rand.Next(1000, 9999);  // Generates a number between 1000 and 9999 (inclusive of 1000, exclusive of 9999)
 
-            var lastNumber = lastEmployee == null ? 0 : int.Parse(lastEmployee.EmployeeCode.Substring(3));
-            var newNumber = lastNumber + 1;
-
-            string employeeCode = $"{namePart}{newNumber:D4}";  // Ensure the number is 4 digits
+            // Combine namePart with random number
+            string employeeCode = $"{namePart}{randomNumber}";
 
             return employeeCode;
         }
-
     }
 }

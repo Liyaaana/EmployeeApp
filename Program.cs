@@ -5,7 +5,7 @@ using Serilog;
 using EmployeeApp.Data;
 using EmployeeApp.Models;
 using EmployeeApp.Services;
-using Bogus; 
+using Bogus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,8 +59,9 @@ async Task SeedDataAsync(IHost app)
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+    var employeeService = scope.ServiceProvider.GetRequiredService<EmployeeService>(); // Inject EmployeeService
 
-    // Seed roles
+    logger.LogInformation("Seeding roles...");
     string[] roles = { "Admin", "User" };
     foreach (var role in roles)
     {
@@ -73,7 +74,7 @@ async Task SeedDataAsync(IHost app)
 
     var faker = new Faker("en");
 
-    // Seed default admin user (ONLY into AspNetUsers)
+    // Seed default admin user
     var adminEmail = "admin@example.com";
     var existingAdmin = await userManager.FindByEmailAsync(adminEmail);
     if (existingAdmin == null)
@@ -86,7 +87,6 @@ async Task SeedDataAsync(IHost app)
             Department = "HR",
             EmployeeCode = "ADM001",
             EmailConfirmed = true
-            // No EmployeeId assigned here
         };
 
         var result = await userManager.CreateAsync(adminUser, "Admin@123");
@@ -103,16 +103,19 @@ async Task SeedDataAsync(IHost app)
         }
     }
 
-    // Seed employees and user accounts if none exist
+    // Seed employees if none exist
     if (!await dbContext.Employees.AnyAsync())
     {
+        logger.LogInformation("Seeding employees...");
         var departments = new[] { "Finance", "HR", "IT", "Marketing", "Sales" };
+
+        var employees = new List<Employee>(); // Create a list to hold the employees to be added
 
         for (int i = 1; i <= 50; i++)
         {
             var fullName = faker.Name.FullName();
             var email = faker.Internet.Email().ToLower();
-            var employeeCode = new EmployeeService(dbContext).GenerateEmployeeCode(fullName);
+            var employeeCode = employeeService.GenerateEmployeeCode(fullName); // Use the injected service
 
             // Create Employee record
             var employee = new Employee
@@ -121,21 +124,27 @@ async Task SeedDataAsync(IHost app)
                 Email = email,
                 PhoneNumber = faker.Phone.PhoneNumber("9#########"),
                 Department = faker.PickRandom(departments),
-                Salary = faker.Random.Int(30000, 100000)
+                Salary = faker.Random.Int(30000, 100000),
+                EmployeeCode = employeeCode // Use generated employee code
             };
 
-            dbContext.Employees.Add(employee);
-            await dbContext.SaveChangesAsync(); // Ensure employee.Id is available
+            employees.Add(employee); // Add the employee to the list
+        }
 
-            // Create corresponding ApplicationUser and link to employee
+        dbContext.Employees.AddRange(employees); // Add all employees to the database at once
+        await dbContext.SaveChangesAsync(); // Save all employee records in one go
+
+        // Create corresponding ApplicationUser and link to employee
+        foreach (var employee in employees)
+        {
             var employeeUser = new ApplicationUser
             {
-                UserName = email,
-                Email = email,
-                FullName = fullName,
+                UserName = employee.Email,
+                Email = employee.Email,
+                FullName = employee.Name,
                 Department = employee.Department,
                 EmployeeId = employee.Id,
-                EmployeeCode = employeeCode,
+                EmployeeCode = employee.EmployeeCode,
                 EmailConfirmed = true
             };
 
@@ -143,9 +152,13 @@ async Task SeedDataAsync(IHost app)
             if (result.Succeeded)
             {
                 await userManager.AddToRoleAsync(employeeUser, "User");
-                logger.LogInformation($"Employee user created: {email} and linked to EmployeeId {employee.Id}");
+                logger.LogInformation($"Employee user created: {employee.Email} and linked to EmployeeId {employee.Id}");
             }
         }
+    }
+    else
+    {
+        logger.LogInformation("Employees already exist, skipping seeding.");
     }
 }
 

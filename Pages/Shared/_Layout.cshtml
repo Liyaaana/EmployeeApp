@@ -18,22 +18,29 @@
 
                 @if (SignInManager.IsSignedIn(User))
                 {
-                    <a class="nav-link text-white me-3" href="/Dashboard/Index">Dashboard</a>
-
-                    @if (User.IsInRole("Admin"))
+                    var user = await UserManager.GetUserAsync(User);
+                    if (user != null)
                     {
-                        <a class="nav-link text-white me-3" href="/EmployeeManagement/Index">Employee Management</a>
-                        <a class="nav-link text-white me-3" href="/Account/Register">Register Employees</a>
-                        <a class="nav-link text-white me-3" href="/Leaves/Admin">Leaves</a>
-                        <a class="nav-link text-white me-3" href="/Calendar/Admin">Calendar</a>
-                    }
-                    else
-                    {
-                        <a class="nav-link text-white me-3" href="/Leaves/User">Leaves</a>
-                        <a class="nav-link text-white me-3" href="/Calendar/User">Calendar</a>
-                    }
+                        var roles = await UserManager.GetRolesAsync(user);
+                        var isAdmin = roles.Contains("Admin");
 
-                    <a class="nav-link text-white me-3" href="/Settings/Index">Settings</a>
+                        <a class="nav-link text-white me-3" href="/Dashboard/Index">Dashboard</a>
+
+                        @if (isAdmin)
+                        {
+                            <a class="nav-link text-white me-3" href="/EmployeeManagement/Index">Employee Management</a>
+                            <a class="nav-link text-white me-3" href="/Leaves/Admin">Leaves</a>
+                            <a class="nav-link text-white me-3" href="/Calendar/Admin">Calendar</a>
+                        }
+                        else
+                        {
+                            <a class="nav-link text-white me-3" href="/Profile/User">My Profile</a>
+                            <a class="nav-link text-white me-3" href="/Leaves/User">Leaves</a>
+                            <a class="nav-link text-white me-3" href="/Calendar/User">Calendar</a>
+                        }
+
+                        <a class="nav-link text-white me-3" href="/Settings/Index">Settings</a>
+                    }
                 }
             </div>
 
@@ -41,12 +48,10 @@
                 @if (SignInManager.IsSignedIn(User))
                 {
                     var user = await UserManager.GetUserAsync(User);
-
                     if (user != null)
                     {
                         var roles = await UserManager.GetRolesAsync(user);
                         var userRole = roles.FirstOrDefault() ?? "User";
-
                         <span class="text-white me-3">👤 @user.UserName (@userRole)</span>
                     }
 
@@ -62,15 +67,11 @@
         </div>
     </nav>
 
-
     <div class="container mt-4">
         @RenderBody()
     </div>
 
-    <!-- jQuery (Required before Bootstrap JS) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     @RenderSection("Scripts", required: false)

@@ -16,7 +16,8 @@ namespace EmployeeApp.Models
 
         // Navigation property
         public Employee Employee { get; set; }
-        public string EmployeeCode { get; set; } 
+        public string EmployeeCode { get; set; }
 
+        public decimal Salary { get; set; }
     }
 }

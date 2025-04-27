@@ -8,6 +8,13 @@
     <div class="form-container">
         <h2 class="text-center">Add Employee</h2>
 
+        @if (TempData["EmployeeExists"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["EmployeeExists"]
+            </div>
+        }
+
         <form method="post">
             <div class="form-group">
                 <label>Name</label>
