@@ -84,3 +84,8 @@ th {
         text-align: center;
     }
 }
+
+.today-highlight {
+    background-color: #ffeb3b !important; /* Example: Yellow background for today's date */
+    color: #000; /* Text color */
+}

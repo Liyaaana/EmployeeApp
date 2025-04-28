@@ -10,6 +10,7 @@ C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Bogus.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Humanizer.dll
+C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\WebOptimizer.Core.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -60,6 +61,8 @@ C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.Ident
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\NUglify.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Serilog.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll

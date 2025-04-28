@@ -9,6 +9,7 @@
       "EmployeeApp/1.0.0": {
         "dependencies": {
           "Bogus": "35.6.3",
+          "LigerShark.WebOptimizer.Core": "3.0.436",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.3",
           "Microsoft.AspNetCore.Authorization": "8.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
@@ -21,6 +22,7 @@
           "Microsoft.Extensions.Identity.Core": "8.0.3",
           "Microsoft.Extensions.Identity.Stores": "8.0.3",
           "Microsoft.IdentityModel.Tokens": "8.1.0",
+          "Newtonsoft.Json": "13.0.3",
           "Serilog.AspNetCore": "9.0.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "6.0.0"
@@ -76,6 +78,17 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "LigerShark.WebOptimizer.Core/3.0.436": {
+        "dependencies": {
+          "NUglify": "1.21.15"
+        },
+        "runtime": {
+          "lib/net8.0/WebOptimizer.Core.dll": {
+            "assemblyVersion": "3.0.436.0",
+            "fileVersion": "3.0.436.0"
           }
         }
       },
@@ -895,6 +908,22 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "NUglify/1.21.15": {
+        "runtime": {
+          "lib/net5.0/NUglify.dll": {
+            "assemblyVersion": "1.21.15.0",
+            "fileVersion": "1.21.15.0"
+          }
+        }
+      },
       "Serilog/4.2.0": {
         "runtime": {
           "lib/net8.0/Serilog.dll": {
@@ -1313,6 +1342,13 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
+    "LigerShark.WebOptimizer.Core/3.0.436": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nvz10YHpIFilkTNWPdhIXXEBnBXPGG0ngmuCAFIwQ/HJC8ip1/yycgzWdLDehWqfMkd+N27jRL5Z2UBfABzH4w==",
+      "path": "ligershark.weboptimizer.core/3.0.436",
+      "hashPath": "ligershark.weboptimizer.core.3.0.436.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1704,6 +1740,20 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "NUglify/1.21.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vxwg0EjbM/gmILPtzfmzlf0MDu9a17OQb8b57oTgoHoRsZNHWIFQFa00Izcvuam3Hbw2eH272TfczDRHSXgSlA==",
+      "path": "nuglify/1.21.15",
+      "hashPath": "nuglify.1.21.15.nupkg.sha512"
     },
     "Serilog/4.2.0": {
       "type": "package",

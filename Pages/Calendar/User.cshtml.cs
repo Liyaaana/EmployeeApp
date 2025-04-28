@@ -1,52 +1,64 @@
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using EmployeeApp.Data;
 using EmployeeApp.Models;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using EmployeeApp.Data;
 
 namespace EmployeeApp.Pages.Calendar
 {
-    [Authorize]
-    public class EmployeeModel : PageModel
+    public class UserModel : PageModel
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public EmployeeModel(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public UserModel(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _userManager = userManager;
         }
 
-        public List<CalendarEvent> Events { get; set; }
+        public void OnGet()
+        {
+        }
 
-        public async Task OnGetAsync()
+        public async Task<JsonResult> OnGetEventsAsync()
         {
             var user = await _userManager.GetUserAsync(User);
 
             var leaves = await _context.Leaves
-                .Where(l => l.UserId == user.Id)
+                .Where(l => l.UserId == user.Id && l.Status != "Rejected")
                 .ToListAsync();
 
-            Events = leaves.Select(l => new CalendarEvent
-            {
-                Title = l.LeaveType,
-                Date = l.From,
-                Type = "Leave"
-            }).ToList();
+            var events = new List<object>();
 
-            var holidays = new List<CalendarEvent>
+            foreach (var leave in leaves)
             {
-                new CalendarEvent { Title = "New Year's Day", Date = new DateTime(DateTime.Now.Year, 1, 1), Type = "Holiday" },
-                new CalendarEvent { Title = "Independence Day", Date = new DateTime(DateTime.Now.Year, 8, 15), Type = "Holiday" },
-                new CalendarEvent { Title = "Diwali", Date = new DateTime(DateTime.Now.Year, 11, 1), Type = "Holiday" }
+                var currentDate = leave.From.Date;
+                while (currentDate <= leave.To.Date)
+                {
+                    events.Add(new
+                    {
+                        title = leave.LeaveType,
+                        start = currentDate.ToString("yyyy-MM-dd"),
+                        type = "Leave"
+                    });
+                    currentDate = currentDate.AddDays(1);
+                }
+            }
+
+            int currentYear = DateTime.Now.Year;
+            var holidays = new List<object>
+            {
+                new { title = "Diwali Holiday", start = new DateTime(currentYear, 10, 29).ToString("yyyy-MM-dd"), type = "Holiday" },
+                new { title = "New Year Holiday", start = new DateTime(currentYear, 1, 1).ToString("yyyy-MM-dd"), type = "Holiday" }
             };
 
-            Events.AddRange(holidays);
+
+            events.AddRange(holidays);
+
+            return new JsonResult(events);
         }
     }
 }
+
