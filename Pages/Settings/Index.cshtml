@@ -9,13 +9,14 @@
         <h4 class="mb-4 text-center">Change Password</h4>
 
         <div id="alert-placeholder">
-            @if (TempData["StatusMessage"] != null)
+            @if (Model.Request.Method == "POST" && TempData["StatusMessage"] != null)
             {
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     @TempData["StatusMessage"]
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             }
+
 
             @if (!ViewData.ModelState.IsValid && ViewData.ModelState.ErrorCount > 0)
             {
@@ -31,23 +32,27 @@
             }
         </div>
 
-        <form id="changePasswordForm" method="post">
+        <form id="changePasswordForm" method="post" autocomplete="off">
+            <!-- Browser autofill guidance -->
+            <input type="text" name="username" value="@User.Identity.Name" autocomplete="username" class="d-none" />
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group mb-3">
                 <label asp-for="Input.OldPassword"></label>
-                <input asp-for="Input.OldPassword" class="form-control" placeholder="Change Password" type="password" />
+                <input asp-for="Input.OldPassword" class="form-control" placeholder="Old Password" type="password" autocomplete="current-password" />
                 <span asp-validation-for="Input.OldPassword" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-3">
                 <label asp-for="Input.NewPassword"></label>
-                <input asp-for="Input.NewPassword" class="form-control" placeholder="New Password" type="password" />
+                <input asp-for="Input.NewPassword" class="form-control" placeholder="New Password" type="password" autocomplete="new-password" />
                 <span asp-validation-for="Input.NewPassword" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-4">
                 <label asp-for="Input.ConfirmPassword"></label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm Password" type="password" />
+                <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm Password" type="password" autocomplete="new-password" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
 

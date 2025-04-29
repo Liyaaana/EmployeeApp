@@ -19,5 +19,7 @@ namespace EmployeeApp.Models
         public string EmployeeCode { get; set; }
 
         public decimal Salary { get; set; }
+
+        public bool IsFirstLogin { get; set; } = true;
     }
 }

@@ -54,6 +54,7 @@ namespace EmployeeApp.Pages.Settings
             if (user == null)
                 return NotFound("User not found");
 
+            // Check if the old password is correct
             var isCorrect = await _userManager.CheckPasswordAsync(user, Input.OldPassword);
             if (!isCorrect)
             {
@@ -61,6 +62,7 @@ namespace EmployeeApp.Pages.Settings
                 return Page();
             }
 
+            // Change the password
             var result = await _userManager.ChangePasswordAsync(user, Input.OldPassword, Input.NewPassword);
             if (!result.Succeeded)
             {
@@ -69,10 +71,27 @@ namespace EmployeeApp.Pages.Settings
                 return Page();
             }
 
-            await _signInManager.RefreshSignInAsync(user);
-            TempData["StatusMessage"] = "Your password has been changed.";
-            return RedirectToPage();
+            // Force sign out the current user
+            await _signInManager.SignOutAsync();
+
+            // Now sign in the user again with the new password
+            var signInResult = await _signInManager.PasswordSignInAsync(user, Input.NewPassword, isPersistent: false, lockoutOnFailure: false);
+            if (signInResult.Succeeded)
+            {
+                // Update the user's "first login" status
+                user.IsFirstLogin = false;
+                await _userManager.UpdateAsync(user);
+
+                TempData["StatusMessage"] = "Password changed successfully.";
+                return RedirectToPage("/Dashboard/Index");
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "An error occurred while signing you in after the password change.");
+                return Page();
+            }
         }
+
 
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostValidateOldPasswordAsync([FromBody] string oldPassword)

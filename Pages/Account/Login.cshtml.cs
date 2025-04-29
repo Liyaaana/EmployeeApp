@@ -38,21 +38,18 @@ namespace EmployeeApp.Pages.Account
         public async Task<JsonResult> OnPostLoginAsync(string email, string password)
         {
             if (!ModelState.IsValid)
-            {
                 return new JsonResult(new { success = false, error = "Invalid input data." });
-            }
 
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
-            {
                 return new JsonResult(new { success = false, error = "No account found with this email." });
-            }
 
             var result = await _signInManager.PasswordSignInAsync(user.UserName, password, false, false);
             if (!result.Succeeded)
-            {
                 return new JsonResult(new { success = false, error = "Incorrect password." });
-            }
+
+            if (user.IsFirstLogin)
+                return new JsonResult(new { success = true, redirectToSettings = true });
 
             return new JsonResult(new { success = true });
         }

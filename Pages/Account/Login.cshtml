@@ -53,13 +53,18 @@
                     url: "?handler=Login",
                     type: "POST",
                     data: { email: email, password: password, __RequestVerificationToken: token },
-                    success: function (response) {
-                        if (response.success) {
-                            window.location.href = "/Dashboard/Index"; // Redirect on success
-                        } else {
-                            $("#errorMessage").text(response.error);
-                        }
-                    },
+                            success: function (response) {
+            if (response.success) {
+                if (response.redirectToSettings) {
+                    alert("Please change your password. This is your first login.");
+                    window.location.href = "/Settings/Index";
+                } else {
+                    window.location.href = "/Dashboard/Index";
+                }
+            } else {
+                $("#errorMessage").text(response.error);
+            }
+        },
                     error: function () {
                         $("#errorMessage").text("An error occurred. Please try again.");
                     }

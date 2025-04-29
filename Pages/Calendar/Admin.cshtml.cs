@@ -49,7 +49,9 @@ namespace EmployeeApp.Pages.Calendar
             int currentYear = DateTime.Now.Year;
             var holidays = new List<object>
             {
+                new { title = "May1 Holiday", start = new DateTime(currentYear, 5, 1).ToString("yyyy-MM-dd"), type = "Holiday" },
                 new { title = "Diwali Holiday", start = new DateTime(currentYear, 10, 29).ToString("yyyy-MM-dd"), type = "Holiday" },
+                new { title = "Christmas Holiday", start = new DateTime(currentYear, 12, 25).ToString("yyyy-MM-dd"), type = "Holiday" },
                 new { title = "New Year Holiday", start = new DateTime(currentYear, 1, 1).ToString("yyyy-MM-dd"), type = "Holiday" }
             };
 
