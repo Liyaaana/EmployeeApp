@@ -19,7 +19,10 @@ namespace EmployeeApp.Pages.Dashboard
             _context = context;
         }
 
-        public List<Employee> Employees { get; set; } = new List<Employee>();
+        [BindProperty(SupportsGet = true)]
+        public EmployeeSearch Filter { get; set; }
+
+        public List<Employee> Employees { get; set; } = new();
         public int TotalEmployees { get; set; }
         public int TotalDepartments { get; set; }
         public int CurrentPage { get; set; }
@@ -53,48 +56,38 @@ namespace EmployeeApp.Pages.Dashboard
             return Page();
         }
 
-        public async Task<JsonResult> OnGetSearchEmployeesAsync(string query)
+        public async Task<JsonResult> OnGetFilterEmployees(string name, string department, decimal? minSalary, decimal? maxSalary)
         {
-            if (string.IsNullOrEmpty(query) || query.Length < 3)
+            IsAdmin = User.IsInRole("Admin");
+
+            var query = _context.Employees.AsQueryable();
+
+            if (!string.IsNullOrEmpty(name))
+                query = query.Where(e => e.Name.Contains(name));
+            if (!string.IsNullOrEmpty(department))
+                query = query.Where(e => e.Department.Contains(department));
+            if (IsAdmin)
             {
-                return new JsonResult(new { isAdmin = User.IsInRole("Admin"), employees = new List<object>() });
+                if (minSalary.HasValue)
+                    query = query.Where(e => e.Salary >= minSalary);
+                if (maxSalary.HasValue)
+                    query = query.Where(e => e.Salary <= maxSalary);
             }
 
-            var isAdmin = User.IsInRole("Admin");
+            var employees = await query.ToListAsync();
 
-            if (isAdmin)
+            return new JsonResult(new
             {
-                var employees = await _context.Employees
-                    .Where(e => e.Name.StartsWith(query))
-                    .Select(e => new
-                    {
-                        e.Id,
-                        e.Name,
-                        e.Email,
-                        e.PhoneNumber,
-                        e.Department,
-                        e.Salary
-                    })
-                    .ToListAsync();
-
-                return new JsonResult(new { isAdmin = true, employees });
-            }
-            else
-            {
-                var employees = await _context.Employees
-                    .Where(e => e.Name.StartsWith(query))
-                    .Select(e => new
-                    {
-                        e.Id,
-                        e.Name,
-                        e.Email,
-                        e.PhoneNumber,
-                        e.Department
-                    })
-                    .ToListAsync();
-
-                return new JsonResult(new { isAdmin = false, employees });
-            }
+                employees = employees.Select(e => new
+                {
+                    name = e.Name,
+                    email = e.Email,
+                    phoneNumber = e.PhoneNumber,
+                    department = e.Department,
+                    salary = e.Salary
+                }),
+                isAdmin = IsAdmin
+            });
         }
     }
 }

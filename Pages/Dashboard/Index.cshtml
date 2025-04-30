@@ -32,23 +32,53 @@
     </div>
 </div>
 
-<!-- Search + Toggle Section -->
-<div class="container">
-    <div class="row mb-3">
-        <div class="col-md-8 mx-auto">
-            <input type="text" id="searchInput" class="form-control shadow-sm" placeholder="Search Employees by Name (Min 3 letters)">
+<!-- Filter Form -->
+<div class="row g-2 mb-4" id="dynamicFilterForm">
+    @if (Model.IsAdmin)
+    {
+        <div class="col-md-4">
+            <input type="text" id="filterName" class="form-control" placeholder="Search by Name" />
         </div>
-    </div>
+        <div class="col-md-3">
+            <input type="text" id="filterDepartment" class="form-control" placeholder="Department" />
+        </div>
+        <div class="col-md-2">
+            <input type="number" step="0.01" id="filterMinSalary" class="form-control" placeholder="Min Salary" />
+        </div>
+        <div class="col-md-2">
+            <input type="number" step="0.01" id="filterMaxSalary" class="form-control" placeholder="Max Salary" />
+        </div>
+        <div class="col-md-1 d-flex align-items-center">
+            <button id="clearFilterBtn" class="btn btn-outline-primary btn-sm w-100 hover:bg-primary">Clear</button>
+        </div>
+    }
+    else
+    {
+        <div class="col-md-8">
+            <input type="text" id="filterName" class="form-control" placeholder="Search by Name" />
+        </div>
+        <div class="col-md-3">
+            <input type="text" id="filterDepartment" class="form-control" placeholder="Department" />
+        </div>
+        <div class="col-md-1 d-flex align-items-center">
+            <button id="clearFilterBtn" class="btn btn-outline-primary btn-sm w-100 hover:bg-primary">Clear</button>
+        </div>
+    }
+</div>
 
+
+
+<!-- Toggle Section -->
+<div class="container">
     <div class="row mb-4 text-center">
         <div class="col">
-            <button id="toggleEmployeesBtn" class="btn btn-primary text-white px-4 py-2 fw-bold rounded shadow-sm">Show All Employees</button>
+            <button id="toggleEmployeesBtn" class="btn btn-primary text-white px-4 py-2 fw-bold rounded shadow-sm">Hide All Employees</button>
         </div>
     </div>
 </div>
 
-<!-- 👇 Table -->
-<div class="container" id="employeeTable" style="display: block;">
+<!-- Table -->
+<div class="container" id="employeeTable">
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
             <tr>
@@ -72,7 +102,7 @@
                     <td>@employee.Department</td>
                     @if (Model.IsAdmin)
                     {
-                        <td>@employee.Salary</td>
+                        <td>@((int)Math.Floor(employee.Salary))</td>
                     }
                 </tr>
             }
@@ -80,7 +110,7 @@
     </table>
 </div>
 
-<!-- 👇 Pagination -->
+<!-- Pagination -->
 <div class="container" id="pagination" style="display: @(Model.TotalPages > 1 ? "block" : "none");">
     <nav aria-label="Page navigation">
         <ul class="pagination">
@@ -99,78 +129,73 @@
         let isVisible = true;
 
         $(document).ready(function () {
-            $("#toggleEmployeesBtn").text("Hide All Employees");
-
+            // Toggle Table
             $("#toggleEmployeesBtn").click(function () {
                 isVisible = !isVisible;
-
-                if (isVisible) {
-                    $("#employeeTable").show();
-                    $("#pagination").show();
-                    $("#toggleEmployeesBtn").text("Hide All Employees");
-                } else {
-                    $("#employeeTable").hide();
-                    $("#pagination").hide();
-                    $("#toggleEmployeesBtn").text("Show All Employees");
-                }
+                $("#employeeTable, #pagination").toggle(isVisible);
+                $(this).text(isVisible ? "Hide All Employees" : "Show All Employees");
             });
 
-            $("#searchInput").on("input", function () {
-                var query = $(this).val();
+            
 
-                if (query.length < 1) {
-                    location.reload();
-                    return;
-                }
+            // Clear Button
+            $("#clearFilterBtn").click(function () {
+                $("#filterName, #filterDepartment, #filterMinSalary, #filterMaxSalary").val('');
+                loadFilteredEmployees({});
+            });
 
-                $.ajax({
-                    url: '?handler=SearchEmployees',
-                    method: 'GET',
-                    data: { query: query },
-                    success: function (response) {
-                        $("#employeeTableBody").empty();
-
-                        var employees = response.employees;
-                        var isAdmin = response.isAdmin;
-
-                        if (!isAdmin) {
-                            $("th#salaryHeader").hide();
-                        } else {
-                            $("th#salaryHeader").show();
-                        }
-
-                        if (employees.length === 0) {
-                            $("#employeeTableBody").append(`<tr><td colspan="${isAdmin ? 5 : 4}">No employees found.</td></tr>`);
-                        } else {
-                            employees.forEach(emp => {
-                                const row = `
-                                    <tr>
-                                        <td>${emp.name}</td>
-                                        <td>${emp.email}</td>
-                                        <td>${emp.phoneNumber}</td>
-                                        <td>${emp.department}</td>
-                                        ${isAdmin ? `<td>${emp.salary ?? "N/A"}</td>` : ""}
-                                    </tr>
-                                `;
-                                $("#employeeTableBody").append(row);
-                            });
-                        }
-
-                        if (employees.length < 5) {
-                            $("#pagination").hide();
-                        } else {
-                            $("#pagination").show();
-                        }
-
-                        if (!isVisible) {
-                            $("#employeeTable").show();
-                            $("#pagination").hide();
-                            $("#toggleEmployeesBtn").text("Hide All Employees");
-                            isVisible = true;
-                        }
-                    }
-                });
+            // Real-time filtering
+            $("#filterName, #filterDepartment, #filterMinSalary, #filterMaxSalary").on("input", function () {
+                const filters = collectFilters();
+                loadFilteredEmployees(filters);
             });
         });
+
+        function collectFilters() {
+            return {
+                name: $("#filterName").val(),
+                department: $("#filterDepartment").val(),
+                minSalary: $("#filterMinSalary").val(),
+                maxSalary: $("#filterMaxSalary").val()
+            };
+        }
+
+        function loadFilteredEmployees(filters) {
+            $.ajax({
+                url: '?handler=FilterEmployees',
+                method: 'GET',
+                data: filters,
+                success: function (response) {
+                    const employees = response.employees;
+                    const isAdmin = response.isAdmin;
+
+                    $("#employeeTableBody").empty();
+                    $("#salaryHeader").toggle(isAdmin);
+
+                    if (employees.length === 0) {
+                        $("#employeeTableBody").append(`<tr><td colspan="${isAdmin ? 5 : 4}" class="text-center">No employees found.</td></tr>`);
+                    } else {
+                        employees.forEach(emp => {
+                            const row = `
+                                <tr>
+                                    <td>${emp.name}</td>
+                                    <td>${emp.email}</td>
+                                    <td>${emp.phoneNumber}</td>
+                                    <td>${emp.department}</td>
+                                    ${isAdmin ? `<td>${Math.floor(emp.salary)}</td>` : ""}
+                                </tr>`;
+                            $("#employeeTableBody").append(row);
+                        });
+                    }
+
+                    if (!isVisible) {
+                        $("#employeeTable").show();
+                        $("#pagination").hide();
+                        $("#toggleEmployeesBtn").text("Hide All Employees");
+                        isVisible = true;
+                    }
+                }
+            });
+        }
     </script>
 }

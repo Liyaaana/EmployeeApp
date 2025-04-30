@@ -44,7 +44,7 @@
                         <td>@employee.Email</td>
                         <td>@employee.PhoneNumber</td>
                         <td>@employee.Department</td>
-                        <td>@employee.Salary</td>
+                        <td>@((int)Math.Floor(employee.Salary))</td>
                         <td>
                             <a asp-page="Edit" asp-route-id="@employee.Id" class="btn btn-warning btn-sm">Edit</a>
                             <button class="btn btn-danger btn-sm delete-btn"
