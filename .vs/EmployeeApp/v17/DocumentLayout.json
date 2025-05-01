@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,18 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\calendar\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\calendar\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -236,7 +236,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -264,28 +264,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
+              "RelativeToolTip": "Pages\\Calendar\\Admin.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T09:47:29.866Z",
+              "WhenOpened": "2025-04-28T06:42:21.674Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:22:50.163Z",
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\User.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
+              "RelativeToolTip": "Pages\\Calendar\\User.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T16:36:18.331Z",
               "EditorCaption": ""
             },
             {
@@ -294,20 +294,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAGkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-01T07:42:52.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T13:12:22.369Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T07:38:56.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T09:47:29.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "User.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Profile\\User.cshtml",
               "RelativeDocumentMoniker": "Pages\\Profile\\User.cshtml",
@@ -315,12 +338,11 @@
               "RelativeToolTip": "Pages\\Profile\\User.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-01T09:01:01.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T09:01:01.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml",
@@ -332,39 +354,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-01T07:38:56.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Calendar\\User.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
-              "RelativeToolTip": "Pages\\Calendar\\User.cshtml",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAiwHoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T16:36:18.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
-              "RelativeToolTip": "Pages\\Calendar\\Admin.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAiwHwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T06:42:21.674Z"
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:22:50.163Z"
             },
             {
               "$type": "Document",
