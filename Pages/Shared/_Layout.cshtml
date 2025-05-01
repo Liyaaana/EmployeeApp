@@ -9,41 +9,54 @@
     <meta charset="utf-8" />
     <title>@ViewData["Title"] - EmployeeApp</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #343a40;
+            padding-top: 70px;
+            position: fixed;
+        }
+
+            #sidebar a {
+                color: white;
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+
+                #sidebar a:hover {
+                    background-color: #495057;
+                }
+
+        #main-content {
+            width: 100%;
+        }
+
+        .with-sidebar #main-content {
+            margin-left: 220px;
+            width: calc(100% - 220px);
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
 </head>
-<body>
+<body class="@(SignInManager.IsSignedIn(User) ? "with-sidebar" : "")">
+
+    <!-- Top Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
         <div class="container-fluid">
-            <div class="d-flex align-items-center">
-                <a class="navbar-brand fw-bold text-white me-4" href="/">EmployeeApp</a>
-
-                @if (SignInManager.IsSignedIn(User))
-                {
-                    var user = await UserManager.GetUserAsync(User);
-                    if (user != null)
-                    {
-                        var roles = await UserManager.GetRolesAsync(user);
-                        var isAdmin = roles.Contains("Admin");
-
-                        <a class="nav-link text-white me-3" href="/Dashboard/Index">Dashboard</a>
-
-                        @if (isAdmin)
-                        {
-                            <a class="nav-link text-white me-3" href="/EmployeeManagement/Index">Employee Management</a>
-                            <a class="nav-link text-white me-3" href="/Leaves/Admin">Leaves</a>
-                            <a class="nav-link text-white me-3" href="/Calendar/Admin">Calendar</a>
-                        }
-                        else
-                        {
-                            <a class="nav-link text-white me-3" href="/Profile/User">My Profile</a>
-                            <a class="nav-link text-white me-3" href="/Leaves/User">Leaves</a>
-                            <a class="nav-link text-white me-3" href="/Calendar/User">Calendar</a>
-                        }
-
-                        <a class="nav-link text-white me-3" href="/Settings/Index">Settings</a>
-                    }
-                }
-            </div>
-
+            <a class="navbar-brand fw-bold text-white" href="/">EmployeeApp</a>
             <div class="ms-auto d-flex align-items-center">
                 @if (SignInManager.IsSignedIn(User))
                 {
@@ -51,11 +64,11 @@
                     if (user != null)
                     {
                         var roles = await UserManager.GetRolesAsync(user);
-                        var userRole = roles.FirstOrDefault() ?? "User"; // if null, then right side..
+                        var userRole = roles.FirstOrDefault() ?? "User";
                         <span class="text-white me-3">👤 @user.UserName (@userRole)</span>
                     }
 
-                    <form method="post" asp-page="/Account/Logout">
+                    <form method="post" asp-page="/Account/Logout" class="mb-0">
                         <button type="submit" class="btn btn-light btn-sm">Logout</button>
                     </form>
                 }
@@ -67,10 +80,42 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        @RenderBody()
-    </div>
+    <!-- Sidebar (only visible after login) -->
+    @if (SignInManager.IsSignedIn(User))
+    {
+        var user = await UserManager.GetUserAsync(User);
+        if (user != null)
+        {
+            var roles = await UserManager.GetRolesAsync(user);
+            var isAdmin = roles.Contains("Admin");
 
+            <div id="sidebar">
+                <a href="/Dashboard/Index">Dashboard</a>
+
+                @if (isAdmin)
+                {
+                    <a href="/EmployeeManagement/Index">Employee Management</a>
+                    <a href="/Leaves/Admin">Leaves</a>
+                    <a href="/Calendar/Admin">Calendar</a>
+                }
+                else
+                {
+                    <a href="/Profile/User">My Profile</a>
+                    <a href="/Leaves/User">Leaves</a>
+                    <a href="/Calendar/User">Calendar</a>
+                }
+
+                <a href="/Settings/Index">Settings</a>
+            </div>
+        }
+    }
+
+    <!-- Main Content -->
+    <div id="main-content" class="pt-5 mt-3">
+        <div class="container mt-4">
+            @RenderBody()
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

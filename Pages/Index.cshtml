@@ -1,9 +1,32 @@
 ﻿@page
-@model IndexModel
+@model EmployeeApp.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Welcome";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome To Employee Management</h1>
+<style>
+    .fade-in-js {
+        opacity: 0;
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        transform: translateY(20px);
+    }
+
+    .fade-in-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<div class="text-center mt-5">
+    <img id="logo" src="~/images/employeeapp-logo.png" alt="EmployeeApp Logo" style="height: 100px;" class="mb-3 fade-in-js" />
+    <h1 id="title" class="display-4 fw-bold fade-in-js">Welcome to EmployeeApp</h1>
+    <p id="tagline" class="lead text-muted fade-in-js">Smart. Secure. Streamlined Employee Management.</p>
 </div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => document.getElementById('logo').classList.add('fade-in-visible'), 200);
+        setTimeout(() => document.getElementById('title').classList.add('fade-in-visible'), 500);
+        setTimeout(() => document.getElementById('tagline').classList.add('fade-in-visible'), 800);
+    });
+</script>

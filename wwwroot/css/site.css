@@ -89,3 +89,42 @@ th {
     background-color: #ffeb3b !important; /* Example: Yellow background for today's date */
     color: #000; /* Text color */
 }
+
+/* Ensure that the body takes up the full height of the viewport */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centering the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* This ensures the container takes full height */
+}
+
+/* Adjust the card itself to be centered */
+.card {
+    width: 100%;
+    max-width: 400px; /* Limit the max-width of the card */
+}
+
+/* Ensure the content of the card doesn't overflow */
+.card-body {
+    padding: 20px;
+}
+
+/* For centering the content inside the card */
+h2 {
+    text-align: center;
+}
+
+/* Optional: Add background color to the body to see the full page */
+body {
+    background-color: #f8f9fa;
+}
+

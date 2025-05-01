@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ma7DBNqcU+Y7U7eL6hXvGYutkafM9C3GFlW+OzVu9wA=",
+  "Hash": "q40IKDPd5cNsJykhOAxrJwx/zGH8+cYZRPekJ3QPimM=",
   "Source": "EmployeeApp",
   "BasePath": "_content/EmployeeApp",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\default-avatar.png"
+    },
+    {
+      "Identity": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\Images\\employeeapp-logo.png",
+      "SourceId": "EmployeeApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\",
+      "BasePath": "_content/EmployeeApp",
+      "RelativePath": "Images/employeeapp-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\employeeapp-logo.png"
     },
     {
       "Identity": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\js\\site.js",

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\default-avatar.png"
     },
     {
+      "Id": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\Images\\employeeapp-logo.png",
+      "PackagePath": "staticwebassets\\Images\\employeeapp-logo.png"
+    },
+    {
       "Id": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

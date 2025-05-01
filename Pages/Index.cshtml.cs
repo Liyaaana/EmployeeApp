@@ -12,8 +12,15 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
-    public void OnGet()
+    public IActionResult OnGet()
     {
+        // If user is authenticated, redirect to Dashboard
+        if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            return RedirectToPage("/Dashboard/Index");
+        }
 
+        // Else, stay on welcome page
+        return Page();
     }
 }
