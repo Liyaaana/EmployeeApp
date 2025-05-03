@@ -2,6 +2,8 @@
 @using EmployeeApp.Models
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,9 +70,8 @@
                         <span class="text-white me-3">👤 @user.UserName (@userRole)</span>
                     }
 
-                    <form method="post" asp-page="/Account/Logout" class="mb-0">
-                        <button type="submit" class="btn btn-light btn-sm">Logout</button>
-                    </form>
+                    <!-- Logout Trigger -->
+                    <a href="javascript:void(0);" onclick="showLogoutModal()" class="btn btn-light btn-sm">Logout</a>
                 }
                 else
                 {
@@ -117,10 +118,37 @@
         </div>
     </div>
 
+    <!-- Logout Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Do you really want to log out?
+                </div>
+                <div class="modal-footer">
+                    <form method="post" action="/Account/Logout">
+                        <input name="__RequestVerificationToken" type="hidden" value="@Antiforgery.GetTokens(HttpContextAccessor.HttpContext).RequestToken" />
+                        <button type="submit" class="btn btn-danger">Yes, Logout</button>
+                    </form>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, Stay Logged In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        function showLogoutModal() {
+            var logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
+            logoutModal.show();
+        }
+
         $(document).ready(function () {
             $('.event').on('click', function () {
                 var eventTitle = $(this).text();
