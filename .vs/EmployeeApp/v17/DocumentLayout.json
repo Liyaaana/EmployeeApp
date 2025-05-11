@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -67,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\settings\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -85,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\settings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\settings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\leaves\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\pages\\employeemanagement\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\employeemanagement\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -227,6 +235,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\migrations\\20250429111035_addisfirstlogintoapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:migrations\\20250429111035_addisfirstlogintoapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -240,7 +252,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml.cs",
@@ -277,21 +289,80 @@
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAwwKcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T16:24:28.545Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAALEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T07:59:58.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwDMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T05:41:58.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:37:08.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeDto.cs",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\EmployeeDto.cs",
+              "RelativeToolTip": "Models\\EmployeeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T07:59:41.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\SQLQuery1.sql",
+              "RelativeToolTip": "SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-11T07:55:10.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml",
@@ -303,29 +374,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
-              "RelativeToolTip": "Pages\\Calendar\\Admin.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T06:42:21.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -337,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "User.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Profile\\User.cshtml",
               "RelativeDocumentMoniker": "Pages\\Profile\\User.cshtml",
@@ -349,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml",
@@ -357,12 +407,23 @@
               "RelativeToolTip": "Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-29T10:08:07.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:08:07.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml",
+              "RelativeToolTip": "Pages\\Calendar\\Admin.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T06:42:21.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
@@ -374,7 +435,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAwwKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T16:24:28.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -386,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "User.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\User.cshtml",
               "RelativeDocumentMoniker": "Pages\\Calendar\\User.cshtml",
@@ -398,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Index.cshtml",
@@ -410,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Admin.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\Admin.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\Admin.cshtml",
@@ -422,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "User.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\User.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\User.cshtml",
@@ -434,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
@@ -446,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Settings\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Settings\\Index.cshtml.cs",
@@ -458,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml.cs",
@@ -470,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Delete.cshtml",
@@ -482,19 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwEoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:41:58.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Edit.cshtml",
@@ -506,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Create.cshtml",
@@ -518,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Settings\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Settings\\Index.cshtml",
@@ -530,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "20250429111035_AddIsFirstLoginToApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250429111035_AddIsFirstLoginToApplicationUser.cs",
               "RelativeDocumentMoniker": "Migrations\\20250429111035_AddIsFirstLoginToApplicationUser.cs",
@@ -542,19 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:10:42.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Calendar\\Admin.cshtml.cs",
@@ -566,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "User.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\User.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Leaves\\User.cshtml.cs",
@@ -578,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\2f149894-b1fd-48e2-ac34-5f9b77e3211b_EmployeeApp_Calendar_Files.zip.11b\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\2f149894-b1fd-48e2-ac34-5f9b77e3211b_EmployeeApp_Calendar_Files.zip.11b\\Admin.cshtml.cs",
@@ -590,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\3b8a1cd1-82e2-4b5e-895c-688570ccd2f2_EmployeeApp_Calendar_Files.zip.2f2\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\3b8a1cd1-82e2-4b5e-895c-688570ccd2f2_EmployeeApp_Calendar_Files.zip.2f2\\Admin.cshtml.cs",
@@ -603,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\858697b8-a1ef-4a52-9685-0fc781dd140b_EmployeeApp.zip.40b\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\858697b8-a1ef-4a52-9685-0fc781dd140b_EmployeeApp.zip.40b\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
@@ -616,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\83f459f5-3908-4f81-b240-5f9de96e8658_EmployeeApp.zip.658\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\83f459f5-3908-4f81-b240-5f9de96e8658_EmployeeApp.zip.658\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
@@ -629,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "_LeaveTablePartial.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveTablePartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\_LeaveTablePartial.cshtml",
@@ -641,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "_LeaveTableAdminPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveTableAdminPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\_LeaveTableAdminPartial.cshtml",
@@ -653,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "_LeaveDetailsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LeaveDetailsPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\_LeaveDetailsPartial.cshtml",
@@ -665,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "CalendarEvent.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Models\\CalendarEvent.cs",
               "RelativeDocumentMoniker": "Models\\CalendarEvent.cs",
@@ -677,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "fullcalendar.css",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\wwwroot\\lib\\fullcalendar\\fullcalendar.css",
               "RelativeDocumentMoniker": "wwwroot\\lib\\fullcalendar\\fullcalendar.css",
@@ -689,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Index.cshtml.cs",
@@ -701,19 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:37:08.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
@@ -725,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "_AddLeavePartial.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_AddLeavePartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\_AddLeavePartial.cshtml",
@@ -737,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Desktop\\React\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\React\\Account\\Register.cshtml.cs",
@@ -749,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "EmployeeApp.csproj.Backup.tmp",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\EmployeeApp.csproj.Backup.tmp",
               "RelativeDocumentMoniker": "EmployeeApp.csproj.Backup.tmp",
@@ -761,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\Leaves\\_LoginPartial.cshtml",
@@ -773,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "EmployeeApp20250415.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250415.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250415.log",
@@ -785,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "20250415124251_AddEmployeeIdToApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Migrations\\20250415124251_AddEmployeeIdToApplicationUser.cs",
               "RelativeDocumentMoniker": "Migrations\\20250415124251_AddEmployeeIdToApplicationUser.cs",
@@ -797,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "EmployeeApp20250413.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250413.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250413.log",
@@ -809,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "EmployeeAppLog20250318.txt",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeAppLog20250318.txt",
               "RelativeDocumentMoniker": "Logs\\EmployeeAppLog20250318.txt",
@@ -821,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Error.cshtml",
               "RelativeDocumentMoniker": "Pages\\Error.cshtml",
@@ -833,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "EmployeeApp20250409.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250409.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250409.log",
@@ -845,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "_LoginPartial.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs",
@@ -857,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "EmployeeApp20250408_001.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408_001.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250408_001.log",
@@ -869,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "EmployeeApp20250408.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250408.log",
@@ -881,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "EmployeeApp20250328.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250328.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250328.log",
@@ -893,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "EmployeeApp20250406.log",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250406.log",
               "RelativeDocumentMoniker": "Logs\\EmployeeApp20250406.log",
@@ -905,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -917,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -929,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml.css",
@@ -941,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Delete.cshtml.cs",
@@ -953,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Edit.cshtml.cs",
@@ -965,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",

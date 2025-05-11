@@ -6,6 +6,7 @@ using EmployeeApp.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 
 namespace EmployeeApp.Pages.Dashboard
 {
@@ -19,7 +20,7 @@ namespace EmployeeApp.Pages.Dashboard
             _context = context;
         }
 
-        [BindProperty(SupportsGet = true)]
+        [BindProperty(SupportsGet = true)] // allows model binding from GET requests (query string) instead of POST requests only
         public EmployeeSearch Filter { get; set; }
 
         public List<Employee> Employees { get; set; } = new();
@@ -39,7 +40,7 @@ namespace EmployeeApp.Pages.Dashboard
                 .Distinct()
                 .CountAsync();
 
-            CurrentPage = page ?? 1;
+            CurrentPage = page ?? 1; // if page is null then page = 1
             if (CurrentPage < 1) CurrentPage = 1;
 
             int totalEmployees = await _context.Employees.CountAsync();
@@ -48,7 +49,7 @@ namespace EmployeeApp.Pages.Dashboard
                 CurrentPage = TotalPages;
 
             Employees = await _context.Employees
-                .OrderBy(e => e.Id)
+                .OrderBy(e => e.Name)
                 .Skip((CurrentPage - 1) * PageSize)
                 .Take(PageSize)
                 .ToListAsync();
@@ -60,25 +61,19 @@ namespace EmployeeApp.Pages.Dashboard
         {
             IsAdmin = User.IsInRole("Admin");
 
-            var query = _context.Employees.AsQueryable();
+            var nameParam = new SqlParameter("@SearchTerm", string.IsNullOrWhiteSpace(name) ? DBNull.Value : name);
+            var deptParam = new SqlParameter("@Department", string.IsNullOrWhiteSpace(department) ? DBNull.Value : department);
+            var minParam = new SqlParameter("@MinSalary", minSalary.HasValue ? minSalary : DBNull.Value);
+            var maxParam = new SqlParameter("@MaxSalary", maxSalary.HasValue ? maxSalary : DBNull.Value);
 
-            if (!string.IsNullOrEmpty(name))
-                query = query.Where(e => e.Name.Contains(name));
-            if (!string.IsNullOrEmpty(department))
-                query = query.Where(e => e.Department.Contains(department));
-            if (IsAdmin)
-            {
-                if (minSalary.HasValue)
-                    query = query.Where(e => e.Salary >= minSalary);
-                if (maxSalary.HasValue)
-                    query = query.Where(e => e.Salary <= maxSalary);
-            }
-
-            var employees = await query.ToListAsync();
+            var results = await _context.EmployeeDtos
+                .FromSqlRaw("EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary",
+                    nameParam, deptParam, minParam, maxParam)
+                .ToListAsync();
 
             return new JsonResult(new
             {
-                employees = employees.Select(e => new
+                employees = results.Select(e => new
                 {
                     name = e.Name,
                     email = e.Email,

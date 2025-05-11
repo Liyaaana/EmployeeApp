@@ -6,7 +6,6 @@
 
 <h2 class="mb-4 text-center">Employee Dashboard</h2>
 
-<!-- Summary Cards -->
 <div class="row justify-content-center mb-4">
     <div class="col-md-4 col-lg-3 mb-3">
         <div class="card text-white bg-success shadow-sm h-100">
@@ -40,10 +39,6 @@
         </div>
     </div>
 </div>
-
-<!-- Filter Form -->
-
-
 
 
 <!-- Table -->
@@ -133,14 +128,11 @@
 
         $(document).ready(function () {
             // Toggle Table
-                    $("#toggleEmployeesBtn").click(function () {
+            $("#toggleEmployeesBtn").click(function () {
             isVisible = !isVisible;
             $("#employeeTable, #pagination, #dynamicFilterForm").toggle(isVisible);
             $(this).text(isVisible ? "Hide All Employees" : "Show All Employees");
         });
-
-
-            
 
             // Clear Button
             $("#clearFilterBtn").click(function () {
@@ -149,8 +141,27 @@
             });
 
             // Real-time filtering
+                    let salaryAlertShown = false;
+
             $("#filterName, #filterDepartment, #filterMinSalary, #filterMaxSalary").on("input", function () {
                 const filters = collectFilters();
+
+                // Check if minSalary and maxSalary are valid numbers
+                const min = parseFloat(filters.minSalary);
+                const max = parseFloat(filters.maxSalary);
+
+                if (!isNaN(min) && !isNaN(max)) {
+                    if (max < min) {
+                        if (!salaryAlertShown) {
+                            alert("Max salary cannot be less than Min salary.");
+                            salaryAlertShown = true;
+                        }
+                        return;
+                    } else {
+                        salaryAlertShown = false;
+                    }
+                }
+
                 loadFilteredEmployees(filters);
             });
         });
@@ -178,28 +189,74 @@
 
                     if (employees.length === 0) {
                         $("#employeeTableBody").append(`<tr><td colspan="${isAdmin ? 5 : 4}" class="text-center">No employees found.</td></tr>`);
-                    } else {
-                        employees.forEach(emp => {
-                            const row = `
-                                <tr>
-                                    <td>${emp.name}</td>
-                                    <td>${emp.email}</td>
-                                    <td>${emp.phoneNumber}</td>
-                                    <td>${emp.department}</td>
-                                    ${isAdmin ? `<td>${Math.floor(emp.salary)}</td>` : ""}
-                                </tr>`;
-                            $("#employeeTableBody").append(row);
-                        });
+                        $("#pagination").hide();
+                        return;
                     }
 
+                    // Store employees for pagination
+                    window.filteredEmployees = employees;
+                    window.currentPage = 1;
+                    window.pageSize = 5;
+                    window.isAdminView = isAdmin;
+
+                    renderPaginatedEmployees();
+
+                    // Ensure employee section is visible
                     if (!isVisible) {
                         $("#employeeTable").show();
-                        $("#pagination").hide();
                         $("#toggleEmployeesBtn").text("Hide All Employees");
                         isVisible = true;
                     }
                 }
             });
         }
+
+        function renderPaginatedEmployees() {
+            const startIndex = (window.currentPage - 1) * window.pageSize;
+            const endIndex = startIndex + window.pageSize;
+            const pageEmployees = window.filteredEmployees.slice(startIndex, endIndex);
+
+            $("#employeeTableBody").empty();
+            pageEmployees.forEach(emp => {
+                const row = `
+                    <tr>
+                        <td>${emp.name}</td>
+                        <td>${emp.email}</td>
+                        <td>${emp.phoneNumber}</td>
+                        <td>${emp.department}</td>
+                        ${window.isAdminView ? `<td>${Math.floor(emp.salary)}</td>` : ""}
+                    </tr>`;
+                $("#employeeTableBody").append(row);
+            });
+
+            renderPaginationControls();
+        }
+
+        function renderPaginationControls() {
+            const totalPages = Math.ceil(window.filteredEmployees.length / window.pageSize);
+            const pagination = $("#pagination ul");
+            pagination.empty();
+
+            for (let i = 1; i <= totalPages; i++) {
+                const activeClass = (i === window.currentPage) ? "active" : "";
+                const pageItem = `<li class="page-item ${activeClass}">
+                    <a class="page-link" href="#">${i}</a>
+                </li>`;
+                pagination.append(pageItem);
+            }
+
+            $("#pagination").show();
+
+            // Bind click
+            $(".page-item a").click(function (e) {
+                e.preventDefault();
+                const selectedPage = parseInt($(this).text());
+                if (!isNaN(selectedPage)) {
+                    window.currentPage = selectedPage;
+                    renderPaginatedEmployees();
+                }
+            });
+        }
+
     </script>
 }

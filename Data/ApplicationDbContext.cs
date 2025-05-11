@@ -11,6 +11,7 @@ namespace EmployeeApp.Data
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Leave> Leaves { get; set; }
+        public DbSet<EmployeeDto> EmployeeDtos { get; set; } // result from stored procedure
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -26,7 +27,9 @@ namespace EmployeeApp.Data
                 .HasOne(u => u.Employee)
                 .WithOne(e => e.ApplicationUser)
                 .HasForeignKey<ApplicationUser>(u => u.EmployeeId);
-        }
 
+            // Configure EmployeeDto for stored procedure 
+            builder.Entity<EmployeeDto>().HasNoKey().ToView(null);
+        }
     }
 }
