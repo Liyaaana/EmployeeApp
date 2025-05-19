@@ -1,0 +1,312 @@
+2025-05-19 22:20:09.728 +05:30 [INF] User profile is available. Using 'C:\Users\liyan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-19 22:20:10.170 +05:30 [INF] Seeding roles...
+2025-05-19 22:20:10.791 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-19 22:20:10.807 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'EmployeeDto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-19 22:20:11.622 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-19 22:20:11.682 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-19 22:20:11.743 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-19 22:20:11.798 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-19 22:20:11.801 +05:30 [INF] Employees already exist, skipping seeding.
+2025-05-19 22:20:11.805 +05:30 [INF] EmployeeApp started successfully.
+2025-05-19 22:20:11.881 +05:30 [INF] Now listening on: https://localhost:7134
+2025-05-19 22:20:11.883 +05:30 [INF] Now listening on: http://localhost:5207
+2025-05-19 22:20:11.932 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 22:20:11.933 +05:30 [INF] Hosting environment: Development
+2025-05-19 22:20:11.934 +05:30 [INF] Content root path: C:\Users\liyan\Documents\GitHub\CCS\EmployeeApp
+2025-05-19 22:20:12.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-05-19 22:20:12.612 +05:30 [INF] Executing endpoint '/Index'
+2025-05-19 22:20:12.622 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-05-19 22:20:12.628 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-05-19 22:20:12.632 +05:30 [INF] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-05-19 22:20:12.647 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Dashboard/Index.
+2025-05-19 22:20:12.650 +05:30 [INF] Executed page /Index in 25.6898ms
+2025-05-19 22:20:12.652 +05:30 [INF] Executed endpoint '/Index'
+2025-05-19 22:20:12.654 +05:30 [INF] HTTP GET / responded 302 in 61.2760 ms
+2025-05-19 22:20:12.658 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 302 0 null 169.2195ms
+2025-05-19 22:20:12.663 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard - null null
+2025-05-19 22:20:12.671 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:12.679 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:12.689 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Invalid"
+2025-05-19 22:20:12.756 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-05-19 22:20:12.777 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-05-19 22:20:12.783 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-05-19 22:20:12.798 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-05-19 22:20:12.813 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-05-19 22:20:12.850 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-05-19 22:20:12.886 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-19 22:20:12.894 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-19 22:20:12.915 +05:30 [INF] Executed page /Dashboard/Index in 234.1107ms
+2025-05-19 22:20:12.917 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:12.919 +05:30 [INF] HTTP GET /Dashboard responded 200 in 252.7852 ms
+2025-05-19 22:20:12.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-19 22:20:12.926 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard - 200 null text/html; charset=utf-8 262.7979ms
+2025-05-19 22:20:12.927 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-05-19 22:20:12.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.0614ms
+2025-05-19 22:20:12.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.759ms
+2025-05-19 22:20:17.919 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-05-19 22:20:17.944 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-05-19 22:20:17.950 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-05-19 22:20:17.955 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPostAsync - ModelState is "Valid"
+2025-05-19 22:20:17.961 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-05-19 22:20:17.963 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-05-19 22:20:17.965 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-05-19 22:20:17.966 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-05-19 22:20:17.968 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-05-19 22:20:17.968 +05:30 [INF] Executed page /Account/Logout in 17.2112ms
+2025-05-19 22:20:17.969 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-05-19 22:20:17.970 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 44.7586 ms
+2025-05-19 22:20:17.972 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 52.5882ms
+2025-05-19 22:20:17.976 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-05-19 22:20:17.981 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-05-19 22:20:17.986 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-05-19 22:20:17.990 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-05-19 22:20:17.991 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-05-19 22:20:18.029 +05:30 [INF] Executed page /Account/Login in 42.3777ms
+2025-05-19 22:20:18.033 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-05-19 22:20:18.035 +05:30 [INF] HTTP GET /Account/Login responded 200 in 54.3580 ms
+2025-05-19 22:20:18.037 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 61.5042ms
+2025-05-19 22:20:18.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-19 22:20:18.052 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-05-19 22:20:18.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.2205ms
+2025-05-19 22:20:18.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.9581ms
+2025-05-19 22:20:22.505 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - application/x-www-form-urlencoded; charset=UTF-8 229
+2025-05-19 22:20:22.514 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-05-19 22:20:22.517 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-05-19 22:20:22.533 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LoginModel.OnPostLoginAsync - ModelState is "Valid"
+2025-05-19 22:20:22.582 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-19 22:20:22.599 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-19 22:20:22.731 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-05-19 22:20:22.750 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-19 22:20:22.760 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-19 22:20:22.774 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-05-19 22:20:22.782 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-05-19 22:20:22.786 +05:30 [INF] Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:22.791 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType13`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:22.807 +05:30 [INF] Executed page /Account/Login in 288.3689ms
+2025-05-19 22:20:22.811 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-05-19 22:20:22.815 +05:30 [INF] HTTP POST /Account/Login responded 200 in 301.2624 ms
+2025-05-19 22:20:22.818 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Login?handler=Login - 200 null application/json; charset=utf-8 312.403ms
+2025-05-19 22:20:22.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index - null null
+2025-05-19 22:20:22.826 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:22.830 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:22.831 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetAsync - ModelState is "Invalid"
+2025-05-19 22:20:22.838 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-05-19 22:20:22.842 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT [e].[Department]
+    FROM [Employees] AS [e]
+) AS [t]
+2025-05-19 22:20:22.844 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2025-05-19 22:20:22.847 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[EmployeeCode], [e].[Name], [e].[PhoneNumber], [e].[Salary]
+FROM [Employees] AS [e]
+ORDER BY [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-05-19 22:20:22.849 +05:30 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-05-19 22:20:22.854 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-05-19 22:20:22.857 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-19 22:20:22.859 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-19 22:20:22.861 +05:30 [INF] Executed page /Dashboard/Index in 30.4312ms
+2025-05-19 22:20:22.862 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:22.863 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 37.5316 ms
+2025-05-19 22:20:22.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index - 200 null text/html; charset=utf-8 41.9453ms
+2025-05-19 22:20:22.874 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-05-19 22:20:22.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-19 22:20:22.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.8365ms
+2025-05-19 22:20:22.879 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.0734ms
+2025-05-19 22:20:25.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=9&maxSalary= - null null
+2025-05-19 22:20:25.934 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:25.937 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:25.945 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:26.014 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?'], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:26.025 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:26.028 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:26.054 +05:30 [INF] Executed page /Dashboard/Index in 114.9702ms
+2025-05-19 22:20:26.057 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.058 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 125.0399 ms
+2025-05-19 22:20:26.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=9&maxSalary= - 200 null application/json; charset=utf-8 130.2418ms
+2025-05-19 22:20:26.170 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90&maxSalary= - null null
+2025-05-19 22:20:26.175 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.176 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:26.178 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:26.190 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?'], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:26.196 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:26.196 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:26.198 +05:30 [INF] Executed page /Dashboard/Index in 20.5984ms
+2025-05-19 22:20:26.199 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.200 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 25.7467 ms
+2025-05-19 22:20:26.201 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90&maxSalary= - 200 null application/json; charset=utf-8 31.5052ms
+2025-05-19 22:20:26.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=900&maxSalary= - null null
+2025-05-19 22:20:26.316 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.317 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:26.318 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:26.322 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?'], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:26.324 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:26.325 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:26.326 +05:30 [INF] Executed page /Dashboard/Index in 8.6997ms
+2025-05-19 22:20:26.328 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.328 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 13.0616 ms
+2025-05-19 22:20:26.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=900&maxSalary= - 200 null application/json; charset=utf-8 17.8088ms
+2025-05-19 22:20:26.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=9000&maxSalary= - null null
+2025-05-19 22:20:26.437 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.438 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:26.440 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:26.444 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?'], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:26.448 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:26.450 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:26.452 +05:30 [INF] Executed page /Dashboard/Index in 12.602ms
+2025-05-19 22:20:26.453 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.453 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 17.6093 ms
+2025-05-19 22:20:26.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=9000&maxSalary= - 200 null application/json; charset=utf-8 21.713ms
+2025-05-19 22:20:26.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary= - null null
+2025-05-19 22:20:26.568 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.569 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:26.572 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:26.579 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?'], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:26.583 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:26.585 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:26.586 +05:30 [INF] Executed page /Dashboard/Index in 14.3834ms
+2025-05-19 22:20:26.588 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:26.589 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 21.6754 ms
+2025-05-19 22:20:26.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary= - 200 null application/json; charset=utf-8 27.6017ms
+2025-05-19 22:20:34.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary=90000 - null null
+2025-05-19 22:20:34.800 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:34.802 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:34.805 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:34.812 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:34.817 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:34.818 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:34.819 +05:30 [INF] Executed page /Dashboard/Index in 14.9352ms
+2025-05-19 22:20:34.820 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:34.821 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 21.7137 ms
+2025-05-19 22:20:34.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary=90000 - 200 null application/json; charset=utf-8 26.1578ms
+2025-05-19 22:20:39.858 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary=90000 - null null
+2025-05-19 22:20:39.863 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:39.864 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:39.868 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:39.873 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:39.882 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:39.886 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:39.888 +05:30 [INF] Executed page /Dashboard/Index in 21.4943ms
+2025-05-19 22:20:39.891 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:39.892 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 30.0448 ms
+2025-05-19 22:20:39.893 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary=90000 - 200 null application/json; charset=utf-8 34.5546ms
+2025-05-19 22:20:49.709 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary=95000 - null null
+2025-05-19 22:20:49.714 +05:30 [INF] Executing endpoint '/Dashboard/Index'
+2025-05-19 22:20:49.714 +05:30 [INF] Route matched with {page = "/Dashboard/Index"}. Executing page /Dashboard/Index
+2025-05-19 22:20:49.716 +05:30 [INF] Executing handler method EmployeeApp.Pages.Dashboard.IndexModel.OnGetFilterEmployees - ModelState is "Invalid"
+2025-05-19 22:20:49.718 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@SearchTerm='?', @Department='?', @MinSalary='?' (DbType = Decimal), @MaxSalary='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+EXEC SearchEmployees @SearchTerm, @Department, @MinSalary, @MaxSalary
+2025-05-19 22:20:49.720 +05:30 [INF] Executed handler method OnGetFilterEmployees, returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2025-05-19 22:20:49.721 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType15`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], EmployeeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-19 22:20:49.722 +05:30 [INF] Executed page /Dashboard/Index in 6.7268ms
+2025-05-19 22:20:49.724 +05:30 [INF] Executed endpoint '/Dashboard/Index'
+2025-05-19 22:20:49.725 +05:30 [INF] HTTP GET /Dashboard/Index responded 200 in 11.9827 ms
+2025-05-19 22:20:49.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Dashboard/Index?handler=FilterEmployees&name=&department=&minSalary=90000&maxSalary=95000 - 200 null application/json; charset=utf-8 17.4215ms
+2025-05-19 22:20:54.818 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7134/Account/Logout - application/x-www-form-urlencoded 225
+2025-05-19 22:20:54.825 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-05-19 22:20:54.827 +05:30 [INF] Route matched with {page = "/Account/Logout"}. Executing page /Account/Logout
+2025-05-19 22:20:54.828 +05:30 [INF] Executing handler method EmployeeApp.Pages.Account.LogoutModel.OnPostAsync - ModelState is "Valid"
+2025-05-19 22:20:54.829 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-05-19 22:20:54.830 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-05-19 22:20:54.830 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-05-19 22:20:54.831 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2025-05-19 22:20:54.832 +05:30 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2025-05-19 22:20:54.832 +05:30 [INF] Executed page /Account/Logout in 4.4866ms
+2025-05-19 22:20:54.833 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-05-19 22:20:54.834 +05:30 [INF] HTTP POST /Account/Logout responded 302 in 9.3948 ms
+2025-05-19 22:20:54.835 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7134/Account/Logout - 302 0 null 16.9337ms
+2025-05-19 22:20:54.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/Account/Login - null null
+2025-05-19 22:20:54.840 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-05-19 22:20:54.840 +05:30 [INF] Route matched with {page = "/Account/Login"}. Executing page /Account/Login
+2025-05-19 22:20:54.842 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-05-19 22:20:54.842 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-05-19 22:20:54.863 +05:30 [INF] Executed page /Account/Login in 21.4005ms
+2025-05-19 22:20:54.864 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-05-19 22:20:54.865 +05:30 [INF] HTTP GET /Account/Login responded 200 in 25.6444 ms
+2025-05-19 22:20:54.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/Account/Login - 200 null text/html; charset=utf-8 29.4561ms
+2025-05-19 22:20:54.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-05-19 22:20:54.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-19 22:20:54.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.0111ms
+2025-05-19 22:20:54.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.432ms

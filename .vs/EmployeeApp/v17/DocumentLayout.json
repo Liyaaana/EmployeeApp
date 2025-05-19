@@ -235,10 +235,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\migrations\\20250429111035_addisfirstlogintoapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:migrations\\20250429111035_addisfirstlogintoapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyan\\documents\\github\\ccs\\employeeapp\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -261,8 +257,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T15:37:14.239Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -300,7 +295,7 @@
               "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAAALEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAAANAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-11T07:59:58.637Z",
               "EditorCaption": ""
@@ -313,10 +308,9 @@
               "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAuwDMAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAADMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:41:58.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T05:41:58.961Z"
             },
             {
               "$type": "Document",
@@ -328,12 +322,7 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:37:08.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-04-27T13:37:08.742Z"
             },
             {
               "$type": "Document",
@@ -345,20 +334,18 @@
               "RelativeToolTip": "Models\\EmployeeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T07:59:41.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T07:59:41.367Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SQLQuery1.sql ",
+              "Title": "SQLQuery1.sql",
               "DocumentMoniker": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\SQLQuery1.sql",
               "RelativeDocumentMoniker": "SQLQuery1.sql",
               "ToolTip": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\SQLQuery1.sql",
               "RelativeToolTip": "SQLQuery1.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-11T07:55:10.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T07:55:10.46Z"
             },
             {
               "$type": "Document",
@@ -370,8 +357,7 @@
               "RelativeToolTip": "Pages\\Account\\Logout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-29T10:08:28.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:08:28.9Z"
             },
             {
               "$type": "Document",

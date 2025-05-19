@@ -136,8 +136,8 @@
 
             // Clear Button
             $("#clearFilterBtn").click(function () {
-                $("#filterName, #filterDepartment, #filterMinSalary, #filterMaxSalary").val('');
-                loadFilteredEmployees({});
+                $("#filterName, #filterDepartment, #filterMinSalary, #filterMaxSalary").val(''); // empty string to clear all filter inputs
+                loadFilteredEmployees({}); // empty object {} ie, no filters are applied and that reloads all employee data (through an AJAX request).
             });
 
             // Real-time filtering
@@ -147,22 +147,22 @@
                 const filters = collectFilters();
 
                 // Check if minSalary and maxSalary are valid numbers
-                const min = parseFloat(filters.minSalary);
+                const min = parseFloat(filters.minSalary); // converts string values like "50000" to float
                 const max = parseFloat(filters.maxSalary);
 
-                if (!isNaN(min) && !isNaN(max)) {
+                if (!isNaN(min) && !isNaN(max)) { // NaN : Not a Number, Here if min and max are valid nos
                     if (max < min) {
                         if (!salaryAlertShown) {
                             alert("Max salary cannot be less than Min salary.");
-                            salaryAlertShown = true;
+                            salaryAlertShown = true; // to prevent the alert from showing repeatedly
                         }
-                        return;
+                        return; // Exits the function early since the input is invalid.
                     } else {
                         salaryAlertShown = false;
                     }
                 }
 
-                loadFilteredEmployees(filters);
+                loadFilteredEmployees(filters); // If inputs are valid, it calls a function that loads filtered employee data
             });
         });
 
@@ -177,7 +177,7 @@
 
         function loadFilteredEmployees(filters) {
             $.ajax({
-                url: '?handler=FilterEmployees',
+                url: '?handler=FilterEmployees', // Sends a GET request to the Razor Page’s handler method OnGetFilterEmployees()
                 method: 'GET',
                 data: filters,
                 success: function (response) {
@@ -188,12 +188,13 @@
                     $("#salaryHeader").toggle(isAdmin);
 
                     if (employees.length === 0) {
+                        // Creates a table row (<tr>) with one table cell (<td>) with column span 4 or 5
                         $("#employeeTableBody").append(`<tr><td colspan="${isAdmin ? 5 : 4}" class="text-center">No employees found.</td></tr>`);
                         $("#pagination").hide();
-                        return;
+                        return; // Exits the function early.
                     }
 
-                    // Store employees for pagination
+                    // Stores the results and pagination data in global variables so they can be accessed by another function (renderPaginatedEmployees).
                     window.filteredEmployees = employees;
                     window.currentPage = 1;
                     window.pageSize = 5;
@@ -204,7 +205,7 @@
                     // Ensure employee section is visible
                     if (!isVisible) {
                         $("#employeeTable").show();
-                        $("#toggleEmployeesBtn").text("Hide All Employees");
+                        $("#toggleEmployeesBtn").text("Hide All Employees"); // Changes button text to "Hide All Employees".
                         isVisible = true;
                     }
                 }
@@ -212,7 +213,7 @@
         }
 
         function renderPaginatedEmployees() {
-            const startIndex = (window.currentPage - 1) * window.pageSize;
+            const startIndex = (window.currentPage - 1) * window.pageSize; // ie, if currentPage = 2 and pageSize = 5, startIndex = 5
             const endIndex = startIndex + window.pageSize;
             const pageEmployees = window.filteredEmployees.slice(startIndex, endIndex);
 
@@ -228,29 +229,32 @@
                     </tr>`;
                 $("#employeeTableBody").append(row);
             });
-
-            renderPaginationControls();
+            // Math.floor() removes decimal places.
+            renderPaginationControls(); // Calls the function to render the pagination buttons.
         }
 
         function renderPaginationControls() {
             const totalPages = Math.ceil(window.filteredEmployees.length / window.pageSize);
-            const pagination = $("#pagination ul");
-            pagination.empty();
+            const pagination = $("#pagination ul"); // <ul> inside the #pagination container.
+            pagination.empty(); // Clears out old pagination links.
+
 
             for (let i = 1; i <= totalPages; i++) {
-                const activeClass = (i === window.currentPage) ? "active" : "";
+                const activeClass = (i === window.currentPage) ? "active" : ""; // To highlight the current page
+                // page-item is a Bootstrap class to style item in pagination in which activeClass literal is added for highlighting if current page
                 const pageItem = `<li class="page-item ${activeClass}">
                     <a class="page-link" href="#">${i}</a>
                 </li>`;
+                // class="page-link" is a Bootstrap class that styles the link to look like a pagination button in which i comes. href="#" means the link doesn't go to another page, it just triggers JavaScript.
                 pagination.append(pageItem);
             }
 
             $("#pagination").show();
 
-            // Bind click
+            // Adds a click event to each pagination link.
             $(".page-item a").click(function (e) {
                 e.preventDefault();
-                const selectedPage = parseInt($(this).text());
+                const selectedPage = parseInt($(this).text()); // Gets the page number that was clicked
                 if (!isNaN(selectedPage)) {
                     window.currentPage = selectedPage;
                     renderPaginatedEmployees();
