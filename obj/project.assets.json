@@ -5282,23 +5282,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\liyan\\.nuget\\packages\\": {},
+    "C:\\Users\\liyana.tk\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\EmployeeApp.csproj",
+      "projectUniqueName": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\EmployeeApp.csproj",
       "projectName": "EmployeeApp",
-      "projectPath": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\EmployeeApp.csproj",
-      "packagesPath": "C:\\Users\\liyan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\liyan\\Documents\\GitHub\\CCS\\EmployeeApp\\obj\\",
+      "projectPath": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\EmployeeApp.csproj",
+      "packagesPath": "C:\\Users\\liyana.tk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\liyan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\liyana.tk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5325,7 +5325,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -5427,7 +5428,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
