@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -12,11 +14,13 @@ namespace EmployeeApp.Pages.Account
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IConfiguration _configuration;
 
-        public LoginModel(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
+        public LoginModel(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, IConfiguration configuration)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _configuration = configuration;
         }
 
         [BindProperty]
@@ -48,10 +52,23 @@ namespace EmployeeApp.Pages.Account
             if (!result.Succeeded)
                 return new JsonResult(new { success = false, error = "Incorrect password." });
 
+            //  Log login directly into the database
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                await connection.OpenAsync();
+                var command = new SqlCommand("INSERT INTO EmployeeAuditLogs (EmployeeCode, PageVisited, ActionType, ActionTime) VALUES (@EmployeeCode, @PageVisited, @ActionType, @ActionTime)", connection);
+                command.Parameters.AddWithValue("@EmployeeCode", user.EmployeeCode);
+                command.Parameters.AddWithValue("@PageVisited", "/Account/Login");
+                command.Parameters.AddWithValue("@ActionType", "Login");
+                command.Parameters.AddWithValue("@ActionTime", DateTime.Now);
+                await command.ExecuteNonQueryAsync();
+            }
+
             if (user.IsFirstLogin)
                 return new JsonResult(new { success = true, redirectToSettings = true });
 
             return new JsonResult(new { success = true });
         }
+
     }
 }

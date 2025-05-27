@@ -9,6 +9,7 @@
       "EmployeeApp/1.0.0": {
         "dependencies": {
           "Bogus": "35.6.3",
+          "Dapper": "2.1.66",
           "LigerShark.WebOptimizer.Core": "3.0.436",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.3",
           "Microsoft.AspNetCore.Authorization": "8.0.3",
@@ -70,6 +71,14 @@
           "lib/net6.0/Bogus.dll": {
             "assemblyVersion": "35.6.3.0",
             "fileVersion": "35.6.3.0"
+          }
+        }
+      },
+      "Dapper/2.1.66": {
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.66.48463"
           }
         }
       },
@@ -1334,6 +1343,13 @@
       "sha512": "sha512-+5omfZWy8gOcbpc48vKfMI4h/ecbdf3NQm6xCl3zMbaP4J3rMMm5h3kPFeIWBgt4mbz6YY0eeZDLR/6yv1khKw==",
       "path": "bogus/35.6.3",
       "hashPath": "bogus.35.6.3.nupkg.sha512"
+    },
+    "Dapper/2.1.66": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "path": "dapper/2.1.66",
+      "hashPath": "dapper.2.1.66.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

@@ -1,0 +1,133 @@
+﻿@page
+@model EmployeeApp.Pages.Auditing.IndexModel
+@{
+    ViewData["Title"] = "Audit Logs";
+}
+
+<h2>Audit Logs</h2>
+
+<form id="auditForm" method="get" class="d-flex flex-wrap align-items-center gap-3 mb-3">
+
+    <div class="me-3">
+        <input type="text" id="EmployeeCode" name="EmployeeCode"
+               value="@Model.EmployeeCode"
+               placeholder="Employee Code"
+               class="form-control" style="min-width: 180px;" />
+        <span id="codeError" class="text-danger small d-block mt-1"></span>
+    </div>
+
+    <div class="me-3">
+        <input type="text" id="StartDate" name="StartDate"
+               value="@Model.StartDate?.ToString("dd-MM-yyyy")"
+               placeholder="Start Date"
+               class="form-control" />
+    </div>
+
+    <div class="me-3">
+        <input type="text" id="EndDate" name="EndDate"
+               value="@Model.EndDate?.ToString("dd-MM-yyyy")"
+               placeholder="End Date"
+               class="form-control" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </div>
+
+</form>
+
+<table class="table table-bordered table-striped" style="table-layout: fixed; width: 100%;">
+    <thead>
+        <tr>
+            <th style="width: 15%;">Employee Code</th>
+            <th style="width: 20%;">Name</th>
+            <th style="width: 25%;">Page</th>
+            <th style="width: 20%;">Action</th>
+            <th style="width: 20%;">Time</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @if (Model.Logs != null && Model.Logs.Any())
+        {
+            foreach (var log in Model.Logs)
+            {
+                <tr>
+                    <td>@log.EmployeeCode</td>
+                    <td>@log.FullName</td>
+                    <td>@log.PageVisited</td>
+                    <td>@log.ActionType</td>
+                    <td>@log.ActionTime.ToString("g")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center text-muted">No data found</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!--Pagination-->
+@if (Model.TotalRecords > Model.PageSize)
+{
+    int totalPages = (int)Math.Ceiling((double)Model.TotalRecords / Model.PageSize);
+    <nav>
+        <ul class="pagination">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(Model.PageNumber == i ? "active" : "")">
+                    <a class="page-link"
+                       href="?EmployeeCode=@Model.EmployeeCode&StartDate=@Model.StartDate?.ToString("dd-MM-yyyy")&EndDate=@Model.EndDate?.ToString("dd-MM-yyyy")&PageNumber=@i">
+                        @i
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#EmployeeCode').on('blur', function () {
+                const code = $(this).val().trim();
+                if (code === "") {
+                    $('#codeError').text("");
+                    return;
+                }
+
+                $.get('@Url.Page("Index", "ValidateEmployeeCode")', { code: code }, function (data) {
+                    if (!data.isValid) {
+                        $('#codeError').text("Invalid Employee Code.");
+                    } else {
+                        $('#codeError').text("");
+                    }
+                });
+            });
+
+            $('#auditForm').on('submit', function (e) {
+                if ($('#codeError').text().length > 0) {
+                    e.preventDefault(); // prevent submission if invalid
+                }
+            });
+        });
+
+        $(function () {
+            const currentYear = new Date().getFullYear();
+            $("#StartDate, #EndDate").datepicker({
+                dateFormat: "dd-mm-yy",
+                changeMonth: true, 
+                changeYear: true,
+                yearRange: "2000:" + currentYear
+            });
+        });
+    </script>
+}

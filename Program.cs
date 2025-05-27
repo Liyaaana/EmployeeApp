@@ -6,6 +6,7 @@ using EmployeeApp.Data;
 using EmployeeApp.Models;
 using EmployeeApp.Services;
 using Bogus;
+using EmployeeApp.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +43,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseAuditLogging();
 app.MapRazorPages();
 
 //  Seed roles and generate random employees if table is empty

@@ -11,7 +11,6 @@ namespace EmployeeApp.Models
         public string FullName { get; set; }
         public string Department { get; set; }
 
-        // Add the EmployeeId property
         public int? EmployeeId { get; set; }
 
         // Navigation property
@@ -21,5 +20,6 @@ namespace EmployeeApp.Models
         public decimal Salary { get; set; }
 
         public bool IsFirstLogin { get; set; } = true;
+        public ICollection<EmployeeAuditLog> AuditLogs { get; set; }
     }
 }

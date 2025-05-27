@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[35.6.3, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "LigerShark.WebOptimizer.Core": {
               "target": "Package",
               "version": "[3.0.436, )"

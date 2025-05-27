@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nteTpRKqDR8=",
+  "dgSpecHash": "euN57EXy3a8=",
   "success": true,
   "projectFilePath": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\EmployeeApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liyana.tk\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\liyana.tk\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\liyana.tk\\.nuget\\packages\\bogus\\35.6.3\\bogus.35.6.3.nupkg.sha512",
+    "C:\\Users\\liyana.tk\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\liyana.tk\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\liyana.tk\\.nuget\\packages\\ligershark.weboptimizer.core\\3.0.436\\ligershark.weboptimizer.core.3.0.436.nupkg.sha512",
     "C:\\Users\\liyana.tk\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.3\\microsoft.aspnetcore.authentication.jwtbearer.8.0.3.nupkg.sha512",

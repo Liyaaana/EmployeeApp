@@ -1,0 +1,83 @@
+2025-05-26 09:47:51.524 +05:30 [INF] User profile is available. Using 'C:\Users\liyana.tk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-26 09:47:52.258 +05:30 [INF] Seeding roles...
+2025-05-26 09:47:53.232 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-26 09:47:53.245 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'EmployeeDto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-26 09:47:54.197 +05:30 [INF] Executed DbCommand (84ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-26 09:47:54.347 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-26 09:47:54.450 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-26 09:47:54.553 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-26 09:47:54.558 +05:30 [INF] Employees already exist, skipping seeding.
+2025-05-26 09:47:54.566 +05:30 [INF] EmployeeApp started successfully.
+2025-05-26 09:47:54.608 +05:30 [INF] Creating key {9669a3fd-2e8c-475a-926b-587e89e52c05} with creation date 2025-05-26 04:17:54Z, activation date 2025-05-26 04:17:54Z, and expiration date 2025-08-24 04:17:54Z.
+2025-05-26 09:47:54.639 +05:30 [INF] Writing data to file 'C:\Users\liyana.tk\AppData\Local\ASP.NET\DataProtection-Keys\key-9669a3fd-2e8c-475a-926b-587e89e52c05.xml'.
+2025-05-26 09:47:54.963 +05:30 [INF] Now listening on: https://localhost:7134
+2025-05-26 09:47:54.964 +05:30 [INF] Now listening on: http://localhost:5207
+2025-05-26 09:47:55.074 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-26 09:47:55.095 +05:30 [INF] Hosting environment: Development
+2025-05-26 09:47:55.097 +05:30 [INF] Content root path: C:\Users\liyana.tk\Downloads\CCS\EmployeeApp
+2025-05-26 09:47:55.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/ - null null
+2025-05-26 09:47:55.920 +05:30 [INF] Executing endpoint '/Index'
+2025-05-26 09:47:55.966 +05:30 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2025-05-26 09:47:55.978 +05:30 [INF] Executing handler method EmployeeApp.Pages.IndexModel.OnGet - ModelState is "Valid"
+2025-05-26 09:47:55.981 +05:30 [INF] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-05-26 09:47:56.086 +05:30 [INF] Executed page /Index in 112.3257ms
+2025-05-26 09:47:56.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/images/employeeapp-logo.png - null null
+2025-05-26 09:47:56.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_vs/browserLink - null null
+2025-05-26 09:47:56.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-26 09:47:56.096 +05:30 [INF] Executed endpoint '/Index'
+2025-05-26 09:47:56.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 21.2616ms
+2025-05-26 09:47:56.114 +05:30 [INF] HTTP GET / responded 200 in 215.3381 ms
+2025-05-26 09:47:56.126 +05:30 [INF] Sending file. Request path: '/images/employeeapp-logo.png'. Physical path: 'C:\Users\liyana.tk\Downloads\CCS\EmployeeApp\wwwroot\Images\employeeapp-logo.png'
+2025-05-26 09:47:56.129 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/ - 200 null text/html; charset=utf-8 457.909ms
+2025-05-26 09:47:56.131 +05:30 [INF] HTTP GET /images/employeeapp-logo.png responded 200 in 32.4374 ms
+2025-05-26 09:47:56.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/images/employeeapp-logo.png - 200 9166 image/png 45.0793ms
+2025-05-26 09:47:56.178 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.3724ms
+2025-05-26 09:47:57.152 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7134/favicon.ico - null null
+2025-05-26 09:47:57.169 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\liyana.tk\Downloads\CCS\EmployeeApp\wwwroot\favicon.ico'
+2025-05-26 09:47:57.172 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 16.1219 ms
+2025-05-26 09:47:57.174 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7134/favicon.ico - 200 5430 image/x-icon 21.7623ms
+2025-05-26 09:48:28.760 +05:30 [INF] User profile is available. Using 'C:\Users\liyana.tk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-26 09:48:29.074 +05:30 [INF] Seeding roles...
+2025-05-26 09:48:30.019 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'ApplicationUser'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-26 09:48:30.034 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'EmployeeDto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-26 09:48:31.176 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-26 09:48:31.263 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-26 09:48:31.322 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[EmployeeCode], [a].[EmployeeId], [a].[FullName], [a].[IsFirstLogin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Salary], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-26 09:48:31.401 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-26 09:48:31.406 +05:30 [INF] Employees already exist, skipping seeding.
+2025-05-26 09:48:31.413 +05:30 [INF] EmployeeApp started successfully.
+2025-05-26 09:48:31.562 +05:30 [INF] Now listening on: https://localhost:7134
+2025-05-26 09:48:31.564 +05:30 [INF] Now listening on: http://localhost:5207
+2025-05-26 09:48:31.645 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-26 09:48:31.647 +05:30 [INF] Hosting environment: Development
+2025-05-26 09:48:31.648 +05:30 [INF] Content root path: C:\Users\liyana.tk\Downloads\CCS\EmployeeApp
