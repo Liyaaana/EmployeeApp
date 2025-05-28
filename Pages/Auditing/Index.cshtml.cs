@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System.Data;
-using System.Linq;
 
 namespace EmployeeApp.Pages.Auditing
 {
@@ -54,15 +53,27 @@ namespace EmployeeApp.Pages.Auditing
             };
 
             using var multi = await connection.QueryMultipleAsync(
-                "GetEmployeeAuditLogsPagination",
+                "GetEmployeeAuditLogs",
                 parameters,
                 commandType: CommandType.StoredProcedure);
 
-            Logs = (await multi.ReadAsync<AuditLogViewModel>()).ToList();
-            TotalRecords = await multi.ReadFirstAsync<int>();
+            // Read total count first
+            var totalCountRow = await multi.ReadFirstOrDefaultAsync<dynamic>();
+            TotalRecords = totalCountRow?.TotalCount ?? 0;
+
+
+            if (TotalRecords > 0)
+            {
+                Logs = (await multi.ReadAsync<AuditLogViewModel>()).ToList();
+            }
+            else
+            {
+                Logs = new List<AuditLogViewModel>(); // explicitly clear logs
+            }
 
             return Page();
         }
+
 
         public JsonResult OnGetValidateEmployeeCode(string code)
         {

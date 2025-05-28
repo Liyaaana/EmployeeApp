@@ -18,14 +18,14 @@
 
     <div class="me-3">
         <input type="text" id="StartDate" name="StartDate"
-               value="@Model.StartDate?.ToString("dd-MM-yyyy")"
+               value="@Model.StartDate?.ToString("yyyy-MM-dd")"
                placeholder="Start Date"
                class="form-control" />
     </div>
 
     <div class="me-3">
         <input type="text" id="EndDate" name="EndDate"
-               value="@Model.EndDate?.ToString("dd-MM-yyyy")"
+               value="@Model.EndDate?.ToString("yyyy-MM-dd")"
                placeholder="End Date"
                class="form-control" />
     </div>
@@ -49,24 +49,24 @@
 
 
     <tbody>
-        @if (Model.Logs != null && Model.Logs.Any())
+        @if (Model.Logs.Count == 0)
         {
-            foreach (var log in Model.Logs)
+            <tr>
+                <td colspan="5" class="text-center text-danger">No data found.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var log in Model.Logs)
             {
                 <tr>
                     <td>@log.EmployeeCode</td>
                     <td>@log.FullName</td>
                     <td>@log.PageVisited</td>
                     <td>@log.ActionType</td>
-                    <td>@log.ActionTime.ToString("g")</td>
+                    <td>@log.ActionTime.ToString("yyyy-MM-dd HH:mm")</td>
                 </tr>
             }
-        }
-        else
-        {
-            <tr>
-                <td colspan="5" class="text-center text-muted">No data found</td>
-            </tr>
         }
     </tbody>
 </table>
@@ -77,18 +77,44 @@
     int totalPages = (int)Math.Ceiling((double)Model.TotalRecords / Model.PageSize);
     <nav>
         <ul class="pagination">
+
+            @* Previous Button *@
+            @if (Model.PageNumber > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?EmployeeCode=@Model.EmployeeCode&StartDate=@Model.StartDate?.ToString("yyyy-MM-dd")&EndDate=@Model.EndDate?.ToString("yyyy-MM-dd")&PageNumber=@(Model.PageNumber - 1)">
+                        Previous
+                    </a>
+                </li>
+            }
+
+            @* Page Numbers *@
             @for (int i = 1; i <= totalPages; i++)
             {
                 <li class="page-item @(Model.PageNumber == i ? "active" : "")">
                     <a class="page-link"
-                       href="?EmployeeCode=@Model.EmployeeCode&StartDate=@Model.StartDate?.ToString("dd-MM-yyyy")&EndDate=@Model.EndDate?.ToString("dd-MM-yyyy")&PageNumber=@i">
+                       href="?EmployeeCode=@Model.EmployeeCode&StartDate=@Model.StartDate?.ToString("yyyy-MM-dd")&EndDate=@Model.EndDate?.ToString("yyyy-MM-dd")&PageNumber=@i">
                         @i
                     </a>
                 </li>
             }
+
+            @* Next Button *@
+            @if (Model.PageNumber < totalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?EmployeeCode=@Model.EmployeeCode&StartDate=@Model.StartDate?.ToString("yyyy-MM-dd")&EndDate=@Model.EndDate?.ToString("yyyy-MM-dd")&PageNumber=@(Model.PageNumber + 1)">
+                        Next
+                    </a>
+                </li>
+            }
+
         </ul>
     </nav>
 }
+
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -123,7 +149,7 @@
         $(function () {
             const currentYear = new Date().getFullYear();
             $("#StartDate, #EndDate").datepicker({
-                dateFormat: "dd-mm-yy",
+                dateFormat: "yy-mm-dd",
                 changeMonth: true, 
                 changeYear: true,
                 yearRange: "2000:" + currentYear
