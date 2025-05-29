@@ -20,7 +20,7 @@ namespace EmployeeApp.Pages.Auditing
             _context = context;
         }
 
-        [BindProperty(SupportsGet = true)]
+        [BindProperty(SupportsGet = true)] // binding of data from query strings (ie, read values from URL)
         public string EmployeeCode { get; set; }
 
         [BindProperty(SupportsGet = true)]
@@ -38,12 +38,12 @@ namespace EmployeeApp.Pages.Auditing
         public List<AuditLogViewModel> Logs { get; set; } = new List<AuditLogViewModel>();
         public int TotalRecords { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync() 
         {
             using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
             await connection.OpenAsync();
 
-            var parameters = new
+            var parameters = new // Parameters for Stored Procedure var object
             {
                 StartDate,
                 EndDate,
@@ -52,6 +52,7 @@ namespace EmployeeApp.Pages.Auditing
                 PageSize
             };
 
+            // Calls the stored procedure and expects multiple result sets (Dapper QueryMultipleAsync)
             using var multi = await connection.QueryMultipleAsync(
                 "GetEmployeeAuditLogs",
                 parameters,
@@ -68,7 +69,7 @@ namespace EmployeeApp.Pages.Auditing
             }
             else
             {
-                Logs = new List<AuditLogViewModel>(); // explicitly clear logs
+                Logs = new List<AuditLogViewModel>(); // explicitly clear logs with new empty list.
             }
 
             return Page();

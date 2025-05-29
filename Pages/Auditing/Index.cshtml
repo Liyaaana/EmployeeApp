@@ -97,6 +97,7 @@
                        href="?EmployeeCode=@Model.EmployeeCode&StartDate=@Model.StartDate?.ToString("yyyy-MM-dd")&EndDate=@Model.EndDate?.ToString("yyyy-MM-dd")&PageNumber=@i">
                         @i
                     </a>
+                    <!-- ? is the Beginning of query string of the URL-->
                 </li>
             }
 
@@ -123,11 +124,11 @@
 
     <script>
         $(function () {
-            $('#EmployeeCode').on('blur', function () {
+            $('#EmployeeCode').on('blur', function () { // blur: input loses focus (when the user moves away from it)
                 const code = $(this).val().trim();
                 if (code === "") {
                     $('#codeError').text("");
-                    return;
+                    return; // exits the function using return
                 }
 
                 $.get('@Url.Page("Index", "ValidateEmployeeCode")', { code: code }, function (data) {
