@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\models\\auditlogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\auditlogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\pages\\auditing\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\auditing\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\pages\\auditing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\auditing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\models\\employeeauditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\employeeauditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\pages\\auditing\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\auditing\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\models\\auditlogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\auditlogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,10 +55,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -235,11 +235,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
@@ -258,15 +258,14 @@
               "RelativeDocumentMoniker": "Pages\\Auditing\\Index.cshtml",
               "ToolTip": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Auditing\\Index.cshtml",
               "RelativeToolTip": "Pages\\Auditing\\Index.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAgwHQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-26T08:44:20.724Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "AuditLogViewModel.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Models\\AuditLogViewModel.cs",
               "RelativeDocumentMoniker": "Models\\AuditLogViewModel.cs",
@@ -274,29 +273,11 @@
               "RelativeToolTip": "Models\\AuditLogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:14:23.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T11:14:23.268Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:32:29.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "EmployeeAuditLog.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Models\\EmployeeAuditLog.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeAuditLog.cs",
@@ -304,24 +285,36 @@
               "RelativeToolTip": "Models\\EmployeeAuditLog.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T04:46:52.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T04:46:52.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Auditing\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Auditing\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Auditing\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Auditing\\Index.cshtml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAUwDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAzwCIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T08:44:51.87Z"
+              "WhenOpened": "2025-05-26T08:44:51.87Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:32:29.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml",
@@ -333,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EmployeeAppLog20250318.txt",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Logs\\EmployeeAppLog20250318.txt",
               "RelativeDocumentMoniker": "Logs\\EmployeeAppLog20250318.txt",
@@ -345,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
@@ -704,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\2f149894-b1fd-48e2-ac34-5f9b77e3211b_EmployeeApp_Calendar_Files.zip.11b\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\liyan\\AppData\\Local\\Temp\\2f149894-b1fd-48e2-ac34-5f9b77e3211b_EmployeeApp_Calendar_Files.zip.11b\\Admin.cshtml.cs",
@@ -715,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\3b8a1cd1-82e2-4b5e-895c-688570ccd2f2_EmployeeApp_Calendar_Files.zip.2f2\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\liyan\\AppData\\Local\\Temp\\3b8a1cd1-82e2-4b5e-895c-688570ccd2f2_EmployeeApp_Calendar_Files.zip.2f2\\Admin.cshtml.cs",
@@ -727,7 +720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\858697b8-a1ef-4a52-9685-0fc781dd140b_EmployeeApp.zip.40b\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\liyan\\AppData\\Local\\Temp\\858697b8-a1ef-4a52-9685-0fc781dd140b_EmployeeApp.zip.40b\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
@@ -739,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\83f459f5-3908-4f81-b240-5f9de96e8658_EmployeeApp.zip.658\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\liyan\\AppData\\Local\\Temp\\83f459f5-3908-4f81-b240-5f9de96e8658_EmployeeApp.zip.658\\EmployeeApp\\Pages\\Calendar\\Admin.cshtml.cs",
@@ -787,7 +780,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\Desktop\\React\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\liyan\\Desktop\\React\\Account\\Register.cshtml.cs",
@@ -858,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "_LoginPartial.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\liyan\\AppData\\Local\\Temp\\af2ade7f-15eb-40de-a960-e43695ad1116_EmployeeApp.zip.116\\EmployeeApp\\Pages\\Leaves\\_LoginPartial.cshtml.cs",
@@ -939,6 +932,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-17T15:48:22.808Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         },

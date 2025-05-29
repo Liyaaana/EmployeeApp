@@ -204,10 +204,6 @@
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250409.log||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\logs\\employeeapp20250408_001.log||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:logs\\employeeapp20250408_001.log||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|c:\\users\\liyana.tk\\downloads\\ccs\\employeeapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0CA276B7-92C1-4C64-A324-6DC9D2BC9C8E}|EmployeeApp.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -235,7 +231,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -248,8 +244,7 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAowBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T09:44:51.051Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -262,8 +257,7 @@
               "ViewState": "AgIAAGwAAAAAAAAAAAAAAIIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-26T08:44:20.724Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -275,12 +269,7 @@
               "RelativeToolTip": "Models\\AuditLogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:14:23.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-05-27T11:14:23.268Z"
             },
             {
               "$type": "Document",
@@ -292,8 +281,7 @@
               "RelativeToolTip": "Models\\EmployeeAuditLog.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T04:46:52.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T04:46:52.481Z"
             },
             {
               "$type": "Document",
@@ -303,10 +291,14 @@
               "RelativeDocumentMoniker": "Pages\\Auditing\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Auditing\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Auditing\\Index.cshtml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwCIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAzwCIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T08:44:51.87Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -318,8 +310,7 @@
               "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T11:32:29.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T11:32:29.473Z"
             },
             {
               "$type": "Document",
@@ -873,18 +864,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 52,
-              "Title": "EmployeeApp20250408_001.log",
-              "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408_001.log",
-              "RelativeDocumentMoniker": "Logs\\EmployeeApp20250408_001.log",
-              "ToolTip": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Logs\\EmployeeApp20250408_001.log",
-              "RelativeToolTip": "Logs\\EmployeeApp20250408_001.log",
-              "ViewState": "AgIAAIYNAAAAAAAAAEBlwKINAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-04-08T16:24:03.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -896,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml.css",
@@ -908,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Delete.cshtml.cs",
@@ -920,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Pages\\EmployeeManagement\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\EmployeeManagement\\Edit.cshtml.cs",
@@ -932,7 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\liyana.tk\\Downloads\\CCS\\EmployeeApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
